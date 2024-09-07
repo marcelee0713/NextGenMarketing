@@ -8,9 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sora: ["var(--font-sora)"],
+        inter: ["var(--font-inter)"],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#3562FF",
+        secondary: "#F5F7FF",
+        accent: "#DCE4FF",
+        textColor: "#383838",
+        textColorAccent: "#666666",
       },
     },
   },
