@@ -47,6 +47,15 @@ export interface ServicePackages {
   };
 }
 
+export interface ServiceAddOns {
+  serviceId: string;
+  header: string;
+  description: string;
+  durationTime: number;
+  price: number;
+  additionalSubHeader: string | null;
+}
+
 export interface Reviews {
   serviceReviewsId: string;
   userId: string;
@@ -58,6 +67,7 @@ export interface Reviews {
 
 export interface Package {
   class: ServiceClassType;
+  description: string;
   servicesPackagesId: string;
   edge: string;
   delivery: number;
