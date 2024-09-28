@@ -4,11 +4,19 @@ import { ServiceClassType } from "@/types/services/services.types";
 export interface IProject {
   projectId: string;
   serviceId: string;
-  status: ProjectStatus;
+  startDate: Date;
+  endDate: Date | null;
+  status: ProjectStatus; // If the status is FINISHED, the user can leave now a review.
   class: ServiceClassType;
-  userId: string;
-  partnerId: string;
+  userId: string; // Business owner
+  partnerId: string; // Marketer
+  reviewStatus: IProjectReviewStatus;
   // TODO: Might add some more in here soon. Because we haven't talked about this one yet.
+}
+
+export interface IProjectReviewStatus {
+  reviewed: boolean; // Default will be false
+  serviceReviewsId: string | null;
 }
 
 export interface IProjectChatRoom {
@@ -18,5 +26,6 @@ export interface IProjectChatRoom {
 
 export interface IChat {
   message: string;
-  messenger: string; // The guy who sends the message
+  messengerId: string; // The guy who sends the message
+  createdAt: Date;
 }

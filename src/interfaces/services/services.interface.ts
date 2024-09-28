@@ -1,15 +1,15 @@
+import { ProjectStatus } from "@/types/project.types";
 import { ServiceClassType } from "@/types/services/services.types";
 
 export interface Service {
   serviceId: string;
-  partnerId: string;
   overview: string;
   shortDescription: string;
   about: string;
   banner: string | null;
   rating: number;
   tags: string[];
-  likes: string[]; // An array of userId, only business owners can save it on favorites.
+  likes: string[];
   createdAt: Date;
 }
 
@@ -32,12 +32,6 @@ export interface ServiceQuestions {
   createdAt: Date;
 }
 
-export interface ServiceReviews {
-  serviceReviewsId: string;
-  serviceId: string;
-  reviews: Reviews[];
-}
-
 export interface ServicePackages {
   serviceId: string;
   packages: {
@@ -51,22 +45,25 @@ export interface ServiceAddOns {
   serviceId: string;
   header: string;
   description: string;
-  durationTime: number;
-  price: number;
+  durationTime: number; // Days for example if the value is 1 it'll be 1 day
+  price: number; // Let's make it PHP instead
   additionalSubHeader: string | null;
 }
 
 export interface Reviews {
   serviceReviewsId: string;
-  userId: string;
+  projectStatus: ProjectStatus;
+  serviceId: string;
+  reviewerId: string; // It could be a userId or partnerId
   rating: number;
-  comment: number;
+  comment: string;
   createdAt: Date;
   likes: string[]; // An array of userId, only business owners can like it btw.
 }
 
 export interface Package {
   class: ServiceClassType;
+  price: number; // Make it PHP instead
   description: string;
   servicesPackagesId: string;
   edge: string;

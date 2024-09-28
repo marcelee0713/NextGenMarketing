@@ -1,7 +1,7 @@
 import { BadgeType, FreeStatusType } from "@/types/partner/partner.types";
 
 export interface IPartner {
-  userId: string;
+  partnerId: string;
   email: string;
   password: string;
   freeStatus: FreeStatusType;
@@ -12,7 +12,7 @@ export interface IPartner {
 }
 
 export interface IPartnerProfile {
-  userId: string;
+  partnerId: string;
   username: string;
   coverImage: string | null;
   profilePicture: string | null;
