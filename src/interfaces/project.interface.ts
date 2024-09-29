@@ -11,7 +11,6 @@ export interface IProject {
   userId: string; // Business owner
   partnerId: string; // Marketer
   reviewStatus: IProjectReviewStatus;
-  // TODO: Might add some more in here soon. Because we haven't talked about this one yet.
 }
 
 export interface IProjectReviewStatus {

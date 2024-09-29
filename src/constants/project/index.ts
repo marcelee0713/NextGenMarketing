@@ -8,8 +8,6 @@ import { IProject } from "@/interfaces/project.interface";
  * - A business owner or partner/marketer can cancel a project when the status is "STARTED".
  *
  * - But, when it reaches to the point it is "ON-GOING", either the two of then can no longer cancel the project.
- *
- * - If the status of the project is CANCELLED or FINISHED the user/busines owner can leave a review.
  */
 const PROJECTS: Record<string, IProject[]> = {
   projectId1: [

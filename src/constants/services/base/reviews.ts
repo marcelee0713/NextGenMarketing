@@ -39,7 +39,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review4",
-      projectStatus: "ON-GOING",
+      projectStatus: "FINISHED",
       serviceId: "serviceId1",
       reviewerId: "partnerId2",
       rating: 3,
@@ -105,7 +105,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review10",
-      projectStatus: "ON-GOING",
+      projectStatus: "FINISHED",
       serviceId: "serviceId2",
       reviewerId: "userId6",
       rating: 4,
@@ -161,7 +161,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review15",
-      projectStatus: "ON-GOING",
+      projectStatus: "FINISHED",
       serviceId: "serviceId3",
       reviewerId: "userId1",
       rating: 4,
@@ -193,7 +193,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review18",
-      projectStatus: "ON-GOING",
+      projectStatus: "FINISHED",
       serviceId: "serviceId3",
       reviewerId: "partnerId4",
       rating: 5,
@@ -227,7 +227,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review21",
-      projectStatus: "ON-GOING",
+      projectStatus: "FINISHED",
       serviceId: "serviceId4",
       reviewerId: "userId5",
       rating: 3,
@@ -259,7 +259,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review24",
-      projectStatus: "ON-GOING",
+      projectStatus: "FINISHED",
       serviceId: "serviceId4",
       reviewerId: "partnerId3",
       rating: 4,
@@ -314,7 +314,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review29",
-      projectStatus: "ON-GOING",
+      projectStatus: "FINISHED",
       serviceId: "serviceId5",
       reviewerId: "userId10",
       rating: 4,

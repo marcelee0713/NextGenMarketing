@@ -7,7 +7,7 @@ const PARTNERS: Record<string, IPartner> = {
   partnerId1: {
     badge: "BUDGET PICK",
     createdAt: new Date(),
-    freeStatus: "REGULAR",
+    freeStatus: "TIER 1",
     email: "user1@gmail.com",
     password: "P@ssword123",
     overAllRating: 4.3,
@@ -17,7 +17,7 @@ const PARTNERS: Record<string, IPartner> = {
   partnerId2: {
     badge: "TOP RATED",
     createdAt: new Date(),
-    freeStatus: "PRO",
+    freeStatus: "TIER 2",
     email: "user2@hotmail.com",
     password: "P@ssword123",
     overAllRating: 3.8,
@@ -27,7 +27,7 @@ const PARTNERS: Record<string, IPartner> = {
   partnerId3: {
     badge: "CUSTOMER'S CHOICE",
     createdAt: new Date(),
-    freeStatus: "REGULAR",
+    freeStatus: "TIER 1",
     email: "user3@yahoo.com",
     password: "P@ssword123",
     overAllRating: 4.9,
@@ -37,7 +37,7 @@ const PARTNERS: Record<string, IPartner> = {
   partnerId4: {
     badge: "TRUSTED",
     createdAt: new Date(),
-    freeStatus: "PRO",
+    freeStatus: "TIER 3",
     email: "user4@gmail.com",
     password: "P@ssword123",
     overAllRating: 4.7,
@@ -47,7 +47,7 @@ const PARTNERS: Record<string, IPartner> = {
   partnerId5: {
     badge: "BUDGET PICK",
     createdAt: new Date(),
-    freeStatus: "REGULAR",
+    freeStatus: "TIER 1",
     email: "user5@yahoo.com",
     password: "P@ssword123",
     overAllRating: 4.1,
@@ -57,7 +57,7 @@ const PARTNERS: Record<string, IPartner> = {
   partnerId6: {
     badge: "TOP RATED",
     createdAt: new Date(),
-    freeStatus: "PRO",
+    freeStatus: "TIER 2",
     email: "user6@gmail.com",
     password: "P@ssword123",
     overAllRating: 3.5,
@@ -67,7 +67,7 @@ const PARTNERS: Record<string, IPartner> = {
   partnerId7: {
     badge: "TRUSTED",
     createdAt: new Date(),
-    freeStatus: "REGULAR",
+    freeStatus: "TIER 1",
     email: "user7@hotmail.com",
     password: "P@ssword123",
     overAllRating: 4.6,
@@ -77,7 +77,7 @@ const PARTNERS: Record<string, IPartner> = {
   partnerId8: {
     badge: "CUSTOMER'S CHOICE",
     createdAt: new Date(),
-    freeStatus: "PRO",
+    freeStatus: "TIER 2",
     email: "user8@gmail.com",
     password: "P@ssword123",
     overAllRating: 3.9,
@@ -87,7 +87,7 @@ const PARTNERS: Record<string, IPartner> = {
   partnerId9: {
     badge: "BUDGET PICK",
     createdAt: new Date(),
-    freeStatus: "REGULAR",
+    freeStatus: "TIER 1",
     email: "user9@gmail.com",
     password: "P@ssword123",
     overAllRating: 4.0,
@@ -97,7 +97,7 @@ const PARTNERS: Record<string, IPartner> = {
   partnerId10: {
     badge: "TOP RATED",
     createdAt: new Date(),
-    freeStatus: "PRO",
+    freeStatus: "TIER 2",
     email: "user10@hotmail.com",
     password: "P@ssword123",
     overAllRating: 4.5,
