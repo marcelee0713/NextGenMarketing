@@ -9,6 +9,7 @@ export interface IProduct {
   tags: string[];
   category: ProductCategoryType; // Define categories like Food, Clothing, Electronics, etc.
   price: number;
+  discount: number;
   coverImage: string | null;
   images: string[];
   ratings: number; // Dynamically can be changed whenever someone posted a product evaluation

@@ -1,6 +1,7 @@
 import { UserSubscriptionType } from "@/types/user/user.types";
 
 export interface IUser {
+  userId: string;
   subscriptionType: UserSubscriptionType;
   email: string;
   password: string;
@@ -11,6 +12,7 @@ export interface IUser {
 }
 
 export interface IUserProfile {
+  userId: string;
   username: string;
   name: {
     firstName: string;
@@ -23,6 +25,8 @@ export interface IUserProfile {
 }
 
 export interface IUserBusinessProfile {
+  ownerId: string;
+  businessId: string;
   businessName: string;
   businessEmail: string;
   industry: string; // Industry type, e.g., retail, software, etc.
