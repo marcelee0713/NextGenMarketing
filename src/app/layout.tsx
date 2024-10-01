@@ -32,7 +32,7 @@ const sora = localFont({
   src: [
     {
       path: "../../public/fonts/Sora/Sora-ExtraBold.ttf",
-      weight: "700",
+      weight: "800",
     },
     {
       path: "../../public/fonts/Sora/Sora-Bold.ttf",
@@ -44,6 +44,16 @@ const sora = localFont({
     },
   ],
   variable: "--font-sora",
+});
+
+const montserrat = localFont({
+  src: [
+    {
+      path: "../../public/fonts/Montserrat/Montserrat-Bold.ttf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-montserrat",
 });
 
 export const metadata: Metadata = {
@@ -61,9 +71,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-screen max-w-full scroll-smooth">
       <body
-        className={`${sora.variable} ${inter.variable} antialiased bg-secondary`}
+        className={`w-full h-full ${sora.variable} ${inter.variable} ${montserrat.variable} antialiased bg-secondary`}
       >
         {children}
       </body>

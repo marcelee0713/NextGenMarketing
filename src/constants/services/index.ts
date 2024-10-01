@@ -1,5 +1,18 @@
 import { Service } from "@/interfaces/services/services.interface";
 
+const SERVICES_CATEGORIES: string[] = [
+  "Affliate",
+  "Social Media Ads",
+  "SEO",
+  "Sponsorship",
+  "Billboards",
+  "TV Commercial",
+  "Celebrities",
+  "Endorsement",
+  "Radio Advertisement",
+  "Email Advertisement",
+];
+
 /**
  * The key string is the id of the partner.
  *
@@ -223,4 +236,4 @@ const PARTNERS_SERVICES: Record<string, Service[]> = {
   ],
 };
 
-export { PARTNERS_SERVICES };
+export { PARTNERS_SERVICES, SERVICES_CATEGORIES };

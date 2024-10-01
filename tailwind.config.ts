@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         sora: ["var(--font-sora)"],
         inter: ["var(--font-inter)"],
+        montserrat: ["var(--font-montserrat)"],
       },
       colors: {
         primary: "#3562FF",
@@ -18,6 +19,10 @@ const config: Config = {
         accent: "#DCE4FF",
         textColor: "#383838",
         textColorAccent: "#666666",
+        textColorNavSection: "#9398AD",
+      },
+      boxShadow: {
+        nav: "0 8px 12px 0 rgba(0, 0, 0, 0.15)",
       },
     },
   },
