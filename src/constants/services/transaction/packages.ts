@@ -1,13 +1,13 @@
 import { ServicePackages } from "@/interfaces/services/services.interface";
 
 /**
- * The key string is the serviceId.
+ * The key string is the service.
  *
  * The delivery value are on days and the price is on PHP Value.
  */
 const SERVICE_PACKAGES: Record<string, ServicePackages> = {
-  serviceId1: {
-    serviceId: "serviceId1",
+  service1: {
+    serviceId: "service1",
     packages: {
       basic: {
         class: "BASIC",
@@ -48,8 +48,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId2: {
-    serviceId: "serviceId2",
+  service2: {
+    serviceId: "service2",
     packages: {
       basic: {
         class: "BASIC",
@@ -92,8 +92,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId3: {
-    serviceId: "serviceId3",
+  service3: {
+    serviceId: "service3",
     packages: {
       basic: {
         class: "BASIC",
@@ -137,8 +137,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId4: {
-    serviceId: "serviceId4",
+  service4: {
+    serviceId: "service4",
     packages: {
       basic: {
         class: "BASIC",
@@ -183,8 +183,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId5: {
-    serviceId: "serviceId5",
+  service5: {
+    serviceId: "service5",
     packages: {
       basic: {
         class: "BASIC",
@@ -230,8 +230,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId6: {
-    serviceId: "serviceId6",
+  service6: {
+    serviceId: "service6",
     packages: {
       basic: {
         class: "BASIC",
@@ -278,8 +278,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId7: {
-    serviceId: "serviceId7",
+  service7: {
+    serviceId: "service7",
     packages: {
       basic: {
         class: "BASIC",
@@ -319,8 +319,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId8: {
-    serviceId: "serviceId8",
+  service8: {
+    serviceId: "service8",
     packages: {
       basic: {
         class: "BASIC",
@@ -360,8 +360,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId9: {
-    serviceId: "serviceId9",
+  service9: {
+    serviceId: "service9",
     packages: {
       basic: {
         class: "BASIC",
@@ -402,8 +402,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId10: {
-    serviceId: "serviceId10",
+  service10: {
+    serviceId: "service10",
     packages: {
       basic: {
         class: "BASIC",
@@ -443,8 +443,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId11: {
-    serviceId: "serviceId11",
+  service11: {
+    serviceId: "service11",
     packages: {
       basic: {
         class: "BASIC",
@@ -484,8 +484,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId12: {
-    serviceId: "serviceId12",
+  service12: {
+    serviceId: "service12",
     packages: {
       basic: {
         class: "BASIC",
@@ -528,8 +528,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId13: {
-    serviceId: "serviceId13",
+  service13: {
+    serviceId: "service13",
     packages: {
       basic: {
         class: "BASIC",
@@ -568,8 +568,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId14: {
-    serviceId: "serviceId14",
+  service14: {
+    serviceId: "service14",
     packages: {
       basic: {
         class: "BASIC",
@@ -605,8 +605,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId15: {
-    serviceId: "serviceId15",
+  service15: {
+    serviceId: "service15",
     packages: {
       basic: {
         class: "BASIC",
@@ -641,8 +641,8 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
       },
     },
   },
-  serviceId16: {
-    serviceId: "serviceId16",
+  service16: {
+    serviceId: "service16",
     packages: {
       basic: {
         class: "BASIC",
@@ -677,6 +677,167 @@ const SERVICE_PACKAGES: Record<string, ServicePackages> = {
           "All Standard features",
           "Backlink strategy",
           "Ongoing optimization",
+        ],
+      },
+    },
+  },
+  service17: {
+    serviceId: "service17",
+    packages: {
+      basic: {
+        class: "BASIC",
+        price: 4000,
+        description: "Basic affiliate package to kickstart your program.",
+        servicesPackagesId: "package17_basic",
+        edge: "Perfect for launching your affiliate strategy.",
+        delivery: 12,
+        includes: ["Affiliate recruitment", "Initial training"],
+      },
+      standard: {
+        class: "STANDARD",
+        price: 9000,
+        description: "Standard affiliate package for enhanced engagement.",
+        servicesPackagesId: "package17_standard",
+        edge: "Increased affiliate collaboration.",
+        delivery: 20,
+        includes: [
+          "All Basic features",
+          "Custom promotional materials",
+          "Performance tracking",
+        ],
+      },
+      premium: {
+        class: "PREMIUM",
+        price: 18000,
+        description: "Comprehensive affiliate package for optimal growth.",
+        servicesPackagesId: "package17_premium",
+        edge: "Complete support for affiliate success.",
+        delivery: 45,
+        includes: [
+          "All Standard features",
+          "Advanced analytics",
+          "Ongoing support and optimization",
+        ],
+      },
+    },
+  },
+  service18: {
+    serviceId: "service18",
+    packages: {
+      basic: {
+        class: "BASIC",
+        price: 3500,
+        description: "Basic influencer collaboration package.",
+        servicesPackagesId: "package18_basic",
+        edge: "Start collaborating with influencers easily.",
+        delivery: 10,
+        includes: ["Influencer identification", "Basic outreach support"],
+      },
+      standard: {
+        class: "STANDARD",
+        price: 8500,
+        description: "Standard influencer package for effective campaigns.",
+        servicesPackagesId: "package18_standard",
+        edge: "Boost campaign effectiveness with tailored strategies.",
+        delivery: 15,
+        includes: [
+          "All Basic features",
+          "Campaign strategy development",
+          "Performance monitoring",
+        ],
+      },
+      premium: {
+        class: "PREMIUM",
+        price: 16000,
+        description: "Comprehensive influencer marketing package.",
+        servicesPackagesId: "package18_premium",
+        edge: "Maximize impact with full-service support.",
+        delivery: 30,
+        includes: [
+          "All Standard features",
+          "Advanced collaboration techniques",
+          "Detailed reporting and analysis",
+        ],
+      },
+    },
+  },
+  service19: {
+    serviceId: "service19",
+    packages: {
+      basic: {
+        class: "BASIC",
+        price: 4500,
+        description: "Basic custom landing page package.",
+        servicesPackagesId: "package19_basic",
+        edge: "Start converting with optimized landing pages.",
+        delivery: 7,
+        includes: ["Landing page design", "Basic analytics setup"],
+      },
+      standard: {
+        class: "STANDARD",
+        price: 9500,
+        description: "Standard package for advanced landing pages.",
+        servicesPackagesId: "package19_standard",
+        edge: "Enhance conversion rates with strategic designs.",
+        delivery: 14,
+        includes: [
+          "All Basic features",
+          "A/B testing",
+          "Custom analytics integration",
+        ],
+      },
+      premium: {
+        class: "PREMIUM",
+        price: 17000,
+        description:
+          "Comprehensive landing page package for maximum conversions.",
+        servicesPackagesId: "package19_premium",
+        edge: "Full-service support for landing page success.",
+        delivery: 25,
+        includes: [
+          "All Standard features",
+          "SEO optimization",
+          "Ongoing adjustments and improvements",
+        ],
+      },
+    },
+  },
+  service20: {
+    serviceId: "service20",
+    packages: {
+      basic: {
+        class: "BASIC",
+        price: 3000,
+        description: "Basic package for automated affiliate payments.",
+        servicesPackagesId: "package20_basic",
+        edge: "Simplify your payment processes.",
+        delivery: 5,
+        includes: ["Setup payment system", "Basic reporting"],
+      },
+      standard: {
+        class: "STANDARD",
+        price: 8000,
+        description: "Standard package for comprehensive payment solutions.",
+        servicesPackagesId: "package20_standard",
+        edge: "Efficient payment processing for affiliates.",
+        delivery: 10,
+        includes: [
+          "All Basic features",
+          "Advanced reporting tools",
+          "Integration support",
+        ],
+      },
+      premium: {
+        class: "PREMIUM",
+        price: 15000,
+        description: "Comprehensive package for automated payments.",
+        servicesPackagesId: "package20_premium",
+        edge: "Ultimate solution for affiliate payments.",
+        delivery: 20,
+        includes: [
+          "All Standard features",
+          "24/7 support",
+          "Custom integration options",
         ],
       },
     },

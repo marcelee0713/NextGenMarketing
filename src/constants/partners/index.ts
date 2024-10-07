@@ -13,6 +13,7 @@ const PARTNERS: Record<string, IPartner> = {
     overAllRating: 4.3,
     projectOnQueue: 3,
     partnerId: "partnerId1",
+    isPro: true,
   },
   partnerId2: {
     badge: "TOP RATED",
@@ -23,6 +24,7 @@ const PARTNERS: Record<string, IPartner> = {
     overAllRating: 3.8,
     projectOnQueue: 5,
     partnerId: "partnerId2",
+    isPro: true,
   },
   partnerId3: {
     badge: "CUSTOMER'S CHOICE",
@@ -33,6 +35,7 @@ const PARTNERS: Record<string, IPartner> = {
     overAllRating: 4.9,
     projectOnQueue: 2,
     partnerId: "partnerId3",
+    isPro: true,
   },
   partnerId4: {
     badge: "TRUSTED",
@@ -43,6 +46,7 @@ const PARTNERS: Record<string, IPartner> = {
     overAllRating: 4.7,
     projectOnQueue: 7,
     partnerId: "partnerId4",
+    isPro: false,
   },
   partnerId5: {
     badge: "BUDGET PICK",
@@ -53,6 +57,7 @@ const PARTNERS: Record<string, IPartner> = {
     overAllRating: 4.1,
     projectOnQueue: 1,
     partnerId: "partnerId5",
+    isPro: true,
   },
   partnerId6: {
     badge: "TOP RATED",
@@ -63,6 +68,7 @@ const PARTNERS: Record<string, IPartner> = {
     overAllRating: 3.5,
     projectOnQueue: 9,
     partnerId: "partnerId6",
+    isPro: true,
   },
   partnerId7: {
     badge: "TRUSTED",
@@ -73,6 +79,7 @@ const PARTNERS: Record<string, IPartner> = {
     overAllRating: 4.6,
     projectOnQueue: 4,
     partnerId: "partnerId7",
+    isPro: true,
   },
   partnerId8: {
     badge: "CUSTOMER'S CHOICE",
@@ -83,6 +90,7 @@ const PARTNERS: Record<string, IPartner> = {
     overAllRating: 3.9,
     projectOnQueue: 6,
     partnerId: "partnerId8",
+    isPro: true,
   },
   partnerId9: {
     badge: "BUDGET PICK",
@@ -93,6 +101,7 @@ const PARTNERS: Record<string, IPartner> = {
     overAllRating: 4.0,
     projectOnQueue: 8,
     partnerId: "partnerId9",
+    isPro: true,
   },
   partnerId10: {
     badge: "TOP RATED",
@@ -103,6 +112,7 @@ const PARTNERS: Record<string, IPartner> = {
     overAllRating: 4.5,
     projectOnQueue: 2,
     partnerId: "partnerId10",
+    isPro: true,
   },
 };
 

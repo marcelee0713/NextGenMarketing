@@ -1,14 +1,14 @@
 import { Reviews } from "@/interfaces/services/services.interface";
 
 /**
- * The key string is the serviceId
+ * The key string is the service
  */
 const SERVICES_REVIEWS: Record<string, Reviews[]> = {
-  serviceId1: [
+  service1: [
     {
       serviceReviewsId: "review1",
       projectStatus: "FINISHED",
-      serviceId: "serviceId1",
+      serviceId: "service1",
       reviewerId: "userId1",
       rating: 5,
       comment: "Excellent SEO strategies that really improved my site traffic!",
@@ -17,8 +17,8 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review2",
-      projectStatus: "CANCELLED",
-      serviceId: "serviceId1",
+      projectStatus: "FINISHED",
+      serviceId: "service1",
       reviewerId: "partnerId1",
       rating: 2,
       comment:
@@ -29,7 +29,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review3",
       projectStatus: "FINISHED",
-      serviceId: "serviceId1",
+      serviceId: "service1",
       reviewerId: "userId2",
       rating: 4,
       comment:
@@ -40,7 +40,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review4",
       projectStatus: "FINISHED",
-      serviceId: "serviceId1",
+      serviceId: "service1",
       reviewerId: "partnerId2",
       rating: 3,
       comment:
@@ -51,7 +51,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review5",
       projectStatus: "FINISHED",
-      serviceId: "serviceId1",
+      serviceId: "service1",
       reviewerId: "userId3",
       rating: 5,
       comment:
@@ -62,7 +62,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review6",
       projectStatus: "FINISHED",
-      serviceId: "serviceId1",
+      serviceId: "service1",
       reviewerId: "partnerId3",
       rating: 4,
       comment: "Great results, but I wish the process was faster.",
@@ -70,11 +70,11 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
       likes: [],
     },
   ],
-  serviceId2: [
+  service2: [
     {
       serviceReviewsId: "review7",
       projectStatus: "FINISHED",
-      serviceId: "serviceId2",
+      serviceId: "service2",
       reviewerId: "userId4",
       rating: 4,
       comment: "Great content marketing! My audience engagement has increased.",
@@ -83,8 +83,8 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review8",
-      projectStatus: "CANCELLED",
-      serviceId: "serviceId2",
+      projectStatus: "FINISHED",
+      serviceId: "service2",
       reviewerId: "partnerId4",
       rating: 3,
       comment:
@@ -95,7 +95,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review9",
       projectStatus: "FINISHED",
-      serviceId: "serviceId2",
+      serviceId: "service2",
       reviewerId: "userId5",
       rating: 5,
       comment:
@@ -106,7 +106,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review10",
       projectStatus: "FINISHED",
-      serviceId: "serviceId2",
+      serviceId: "service2",
       reviewerId: "userId6",
       rating: 4,
       comment:
@@ -117,7 +117,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review11",
       projectStatus: "FINISHED",
-      serviceId: "serviceId2",
+      serviceId: "service2",
       reviewerId: "userId7",
       rating: 4,
       comment:
@@ -127,8 +127,8 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review12",
-      projectStatus: "CANCELLED",
-      serviceId: "serviceId2",
+      projectStatus: "FINISHED",
+      serviceId: "service2",
       reviewerId: "userId8",
       rating: 2,
       comment:
@@ -137,11 +137,11 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
       likes: [],
     },
   ],
-  serviceId3: [
+  service3: [
     {
       serviceReviewsId: "review13",
       projectStatus: "FINISHED",
-      serviceId: "serviceId3",
+      serviceId: "service3",
       reviewerId: "userId9",
       rating: 3,
       comment:
@@ -152,7 +152,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review14",
       projectStatus: "FINISHED",
-      serviceId: "serviceId3",
+      serviceId: "service3",
       reviewerId: "userId10",
       rating: 5,
       comment: "Fantastic engagement tactics! Highly recommended.",
@@ -162,7 +162,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review15",
       projectStatus: "FINISHED",
-      serviceId: "serviceId3",
+      serviceId: "service3",
       reviewerId: "userId1",
       rating: 4,
       comment:
@@ -172,8 +172,8 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review16",
-      projectStatus: "CANCELLED",
-      serviceId: "serviceId3",
+      projectStatus: "FINISHED",
+      serviceId: "service3",
       reviewerId: "partnerId5",
       rating: 2,
       comment:
@@ -184,7 +184,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review17",
       projectStatus: "FINISHED",
-      serviceId: "serviceId3",
+      serviceId: "service3",
       reviewerId: "userId3",
       rating: 4,
       comment: "Great content creation, but I expected more frequency.",
@@ -194,7 +194,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review18",
       projectStatus: "FINISHED",
-      serviceId: "serviceId3",
+      serviceId: "service3",
       reviewerId: "partnerId4",
       rating: 5,
       comment:
@@ -203,11 +203,11 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
       likes: [],
     },
   ],
-  serviceId4: [
+  service4: [
     {
       serviceReviewsId: "review19",
       projectStatus: "FINISHED",
-      serviceId: "serviceId4",
+      serviceId: "service4",
       reviewerId: "userId2",
       rating: 4,
       comment: "Effective PPC campaigns that increased my sales.",
@@ -217,7 +217,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review20",
       projectStatus: "FINISHED",
-      serviceId: "serviceId4",
+      serviceId: "service4",
       reviewerId: "userId1",
       rating: 5,
       comment:
@@ -228,7 +228,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review21",
       projectStatus: "FINISHED",
-      serviceId: "serviceId4",
+      serviceId: "service4",
       reviewerId: "userId5",
       rating: 3,
       comment:
@@ -238,8 +238,8 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review22",
-      projectStatus: "CANCELLED",
-      serviceId: "serviceId4",
+      projectStatus: "FINISHED",
+      serviceId: "service4",
       reviewerId: "partnerId2",
       rating: 2,
       comment:
@@ -250,7 +250,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review23",
       projectStatus: "FINISHED",
-      serviceId: "serviceId4",
+      serviceId: "service4",
       reviewerId: "userId6",
       rating: 5,
       comment: "Exceptional service and results that exceeded my expectations!",
@@ -260,7 +260,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review24",
       projectStatus: "FINISHED",
-      serviceId: "serviceId4",
+      serviceId: "service4",
       reviewerId: "partnerId3",
       rating: 4,
       comment:
@@ -269,11 +269,11 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
       likes: [],
     },
   ],
-  serviceId5: [
+  service5: [
     {
       serviceReviewsId: "review25",
       projectStatus: "FINISHED",
-      serviceId: "serviceId5",
+      serviceId: "service5",
       reviewerId: "userId7",
       rating: 5,
       comment: "Incredible web design! My site looks amazing now.",
@@ -283,7 +283,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review26",
       projectStatus: "FINISHED",
-      serviceId: "serviceId5",
+      serviceId: "service5",
       reviewerId: "userId8",
       rating: 4,
       comment:
@@ -293,8 +293,8 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review27",
-      projectStatus: "CANCELLED",
-      serviceId: "serviceId5",
+      projectStatus: "FINISHED",
+      serviceId: "service5",
       reviewerId: "userId9",
       rating: 2,
       comment:
@@ -305,7 +305,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review28",
       projectStatus: "FINISHED",
-      serviceId: "serviceId5",
+      serviceId: "service5",
       reviewerId: "partnerId1",
       rating: 3,
       comment: "Decent work, but I expected more creativity.",
@@ -315,7 +315,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review29",
       projectStatus: "FINISHED",
-      serviceId: "serviceId5",
+      serviceId: "service5",
       reviewerId: "userId10",
       rating: 4,
       comment: "The design looks good, but I'm waiting for some adjustments.",
@@ -325,7 +325,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     {
       serviceReviewsId: "review30",
       projectStatus: "FINISHED",
-      serviceId: "serviceId5",
+      serviceId: "service5",
       reviewerId: "userId4",
       rating: 5,
       comment: "Highly recommend! They went above and beyond.",
@@ -333,7 +333,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
       likes: ["userId2"],
     },
   ],
-  serviceId6: [
+  service6: [
     {
       serviceReviewsId: "review30",
       projectStatus: "FINISHED",
@@ -358,7 +358,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review32",
-      projectStatus: "CANCELLED",
+      projectStatus: "FINISHED",
       serviceId: "service6",
       reviewerId: "partnerId1",
       rating: 2,
@@ -401,7 +401,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
       likes: ["userId1", "userId4"],
     },
   ],
-  serviceId7: [
+  service7: [
     {
       serviceReviewsId: "review36",
       projectStatus: "FINISHED",
@@ -426,7 +426,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review38",
-      projectStatus: "CANCELLED",
+      projectStatus: "FINISHED",
       serviceId: "service7",
       reviewerId: "partnerId2",
       rating: 2,
@@ -469,7 +469,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
       likes: ["userId3"],
     },
   ],
-  serviceId8: [
+  service8: [
     {
       serviceReviewsId: "review42",
       projectStatus: "FINISHED",
@@ -494,7 +494,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review44",
-      projectStatus: "CANCELLED",
+      projectStatus: "FINISHED",
       serviceId: "service8",
       reviewerId: "partnerId1",
       rating: 3,
@@ -526,7 +526,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
       likes: ["userId2"],
     },
   ],
-  serviceId9: [
+  service9: [
     {
       serviceReviewsId: "review47",
       projectStatus: "FINISHED",
@@ -551,7 +551,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review49",
-      projectStatus: "CANCELLED",
+      projectStatus: "FINISHED",
       serviceId: "service9",
       reviewerId: "partnerId2",
       rating: 3,
@@ -583,7 +583,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
       likes: ["userId1"],
     },
   ],
-  serviceId10: [
+  service10: [
     {
       serviceReviewsId: "review52",
       projectStatus: "FINISHED",
@@ -608,7 +608,7 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
     },
     {
       serviceReviewsId: "review54",
-      projectStatus: "CANCELLED",
+      projectStatus: "FINISHED",
       serviceId: "service10",
       reviewerId: "partnerId1",
       rating: 2,
@@ -649,6 +649,140 @@ const SERVICES_REVIEWS: Record<string, Reviews[]> = {
         "Great results! The influencers they paired us with were authentic and engaging.",
       createdAt: new Date(),
       likes: ["userId3"],
+    },
+  ],
+
+  service17: [
+    {
+      serviceReviewsId: "review48",
+      projectStatus: "FINISHED",
+      serviceId: "service17",
+      reviewerId: "userId1",
+      rating: 5,
+      comment:
+        "Amazing results! My affiliate campaign saw a huge boost in traffic.",
+      createdAt: new Date(),
+      likes: ["userId3", "userId6"],
+    },
+    {
+      serviceReviewsId: "review49",
+      projectStatus: "FINISHED",
+      serviceId: "service17",
+      reviewerId: "userId4",
+      rating: 4,
+      comment:
+        "Solid work, though it took a bit longer than expected to ramp up.",
+      createdAt: new Date(),
+      likes: ["userId2"],
+    },
+    {
+      serviceReviewsId: "review50",
+      projectStatus: "FINISHED",
+      serviceId: "service17",
+      reviewerId: "partnerId5",
+      rating: 3,
+      comment: "Good service but lacked customization for my niche market.",
+      createdAt: new Date(),
+      likes: [],
+    },
+  ],
+  service18: [
+    {
+      serviceReviewsId: "review51",
+      projectStatus: "FINISHED",
+      serviceId: "service18",
+      reviewerId: "userId2",
+      rating: 4,
+      comment:
+        "Excellent affiliate network setup. Very easy to track conversions.",
+      createdAt: new Date(),
+      likes: ["userId5"],
+    },
+    {
+      serviceReviewsId: "review52",
+      projectStatus: "FINISHED",
+      serviceId: "service18",
+      reviewerId: "userId6",
+      rating: 5,
+      comment:
+        "Great work! Saw results almost immediately after the campaign started.",
+      createdAt: new Date(),
+      likes: ["userId7", "userId1"],
+    },
+    {
+      serviceReviewsId: "review53",
+      projectStatus: "FINISHED",
+      serviceId: "service18",
+      reviewerId: "partnerId3",
+      rating: 4,
+      comment:
+        "Good campaign setup, but more detailed reporting would have been useful.",
+      createdAt: new Date(),
+      likes: [],
+    },
+  ],
+  service19: [
+    {
+      serviceReviewsId: "review54",
+      projectStatus: "FINISHED",
+      serviceId: "service19",
+      reviewerId: "userId3",
+      rating: 5,
+      comment: "Impressive reach for my affiliate program! Highly recommended.",
+      createdAt: new Date(),
+      likes: ["userId4", "userId6"],
+    },
+    {
+      serviceReviewsId: "review55",
+      projectStatus: "FINISHED",
+      serviceId: "service19",
+      reviewerId: "userId7",
+      rating: 4,
+      comment: "Good results but some affiliates were slow to engage.",
+      createdAt: new Date(),
+      likes: ["userId1"],
+    },
+    {
+      serviceReviewsId: "review56",
+      projectStatus: "FINISHED",
+      serviceId: "service19",
+      reviewerId: "partnerId6",
+      rating: 3,
+      comment: "Average results. The campaign could have been better managed.",
+      createdAt: new Date(),
+      likes: [],
+    },
+  ],
+  service20: [
+    {
+      serviceReviewsId: "review57",
+      projectStatus: "FINISHED",
+      serviceId: "service20",
+      reviewerId: "userId5",
+      rating: 4,
+      comment: "Very good campaign setup, helped me attract more affiliates.",
+      createdAt: new Date(),
+      likes: ["userId9"],
+    },
+    {
+      serviceReviewsId: "review58",
+      projectStatus: "FINISHED",
+      serviceId: "service20",
+      reviewerId: "userId8",
+      rating: 5,
+      comment: "Great service, my affiliate program is now running smoothly!",
+      createdAt: new Date(),
+      likes: ["userId3", "userId7"],
+    },
+    {
+      serviceReviewsId: "review59",
+      projectStatus: "FINISHED",
+      serviceId: "service20",
+      reviewerId: "partnerId7",
+      rating: 4,
+      comment: "Effective campaign but could improve on reporting metrics.",
+      createdAt: new Date(),
+      likes: [],
     },
   ],
 };

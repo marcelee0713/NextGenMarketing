@@ -1,5 +1,8 @@
 import { ProjectStatus } from "@/types/project.types";
-import { ServiceClassType } from "@/types/services/services.types";
+import {
+  ServiceCategoriesType,
+  ServiceClassType,
+} from "@/types/services/services.types";
 
 export interface Service {
   serviceId: string;
@@ -8,6 +11,7 @@ export interface Service {
   about: string;
   banner: string | null;
   rating: number;
+  category: ServiceCategoriesType;
   tags: string[];
   likes: string[];
   createdAt: Date;

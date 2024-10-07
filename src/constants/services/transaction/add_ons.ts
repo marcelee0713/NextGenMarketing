@@ -1,15 +1,15 @@
 import { ServiceAddOns } from "@/interfaces/services/services.interface";
 
 /**
- * The key string is the serviceId.
+ * The key string is the service.
  *
  * The duration time value is on days.
  * If the value is 0 it means that'll be done on the same day.
  */
 const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
-  serviceId1: [
+  service1: [
     {
-      serviceId: "serviceId1",
+      serviceId: "service1",
       header: "Rush Delivery",
       description: "Get your market analysis delivered within 5 days.",
       durationTime: 5, // days
@@ -17,7 +17,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Perfect for urgent needs.",
     },
     {
-      serviceId: "serviceId1",
+      serviceId: "service1",
       header: "Additional Consultation",
       description:
         "One extra hour of personalized consultation with our experts.",
@@ -26,7 +26,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Tailored advice for your business.",
     },
     {
-      serviceId: "serviceId1",
+      serviceId: "service1",
       header: "Market Trend Report",
       description:
         "Receive a comprehensive report on the latest market trends.",
@@ -35,7 +35,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Stay ahead of the competition.",
     },
     {
-      serviceId: "serviceId1",
+      serviceId: "service1",
       header: "Competitor Analysis",
       description: "In-depth analysis of your top competitors.",
       durationTime: 10, // days
@@ -43,7 +43,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Understand your competition better.",
     },
     {
-      serviceId: "serviceId1",
+      serviceId: "service1",
       header: "Customizable Templates",
       description: "Get access to customizable templates for reports.",
       durationTime: 3, // days
@@ -51,9 +51,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Streamline your reporting process.",
     },
   ],
-  serviceId2: [
+  service2: [
     {
-      serviceId: "serviceId2",
+      serviceId: "service2",
       header: "Extra Revisions",
       description: "Add 2 more revisions to your branding design.",
       durationTime: 0, // same day
@@ -61,7 +61,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Fine-tune your brand identity.",
     },
     {
-      serviceId: "serviceId2",
+      serviceId: "service2",
       header: "Branding Guidelines",
       description: "Receive a detailed branding guideline document.",
       durationTime: 7, // days
@@ -69,7 +69,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Ensure consistency in your branding.",
     },
     {
-      serviceId: "serviceId2",
+      serviceId: "service2",
       header: "Social Media Kit",
       description: "Get a complete kit with graphics for social media.",
       durationTime: 5, // days
@@ -77,7 +77,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Boost your online presence with ease.",
     },
     {
-      serviceId: "serviceId2",
+      serviceId: "service2",
       header: "Logo Animation",
       description: "Add a professional animation to your logo.",
       durationTime: 10, // days
@@ -85,7 +85,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Make your brand memorable.",
     },
     {
-      serviceId: "serviceId2",
+      serviceId: "service2",
       header: "Promotional Material Design",
       description: "Design brochures and flyers for your brand.",
       durationTime: 14, // days
@@ -93,9 +93,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Attract customers with stunning visuals.",
     },
   ],
-  serviceId3: [
+  service3: [
     {
-      serviceId: "serviceId3",
+      serviceId: "service3",
       header: "Social Media Package",
       description: "Create 5 promotional posts for your social media.",
       durationTime: 7, // days
@@ -103,7 +103,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Boost your online presence.",
     },
     {
-      serviceId: "serviceId3",
+      serviceId: "service3",
       header: "Engagement Booster",
       description: "Increase engagement with targeted ads.",
       durationTime: 30, // days
@@ -111,7 +111,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Maximize your reach.",
     },
     {
-      serviceId: "serviceId3",
+      serviceId: "service3",
       header: "Hashtag Strategy",
       description: "Get a tailored hashtag strategy for your posts.",
       durationTime: 2, // days
@@ -119,7 +119,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Optimize your visibility.",
     },
     {
-      serviceId: "serviceId3",
+      serviceId: "service3",
       header: "Analytics Report",
       description: "Receive a monthly report on social media performance.",
       durationTime: 30, // days
@@ -127,7 +127,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Understand your audience better.",
     },
     {
-      serviceId: "serviceId3",
+      serviceId: "service3",
       header: "Video Content Creation",
       description: "Produce short promotional videos for social media.",
       durationTime: 10, // days
@@ -135,9 +135,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Engage your audience with dynamic content.",
     },
   ],
-  serviceId4: [
+  service4: [
     {
-      serviceId: "serviceId4",
+      serviceId: "service4",
       header: "SEO Optimization",
       description: "Enhance your website with basic SEO strategies.",
       durationTime: 14, // days
@@ -145,7 +145,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Increase your visibility online.",
     },
     {
-      serviceId: "serviceId4",
+      serviceId: "service4",
       header: "Keyword Research",
       description: "Identify high-impact keywords for your niche.",
       durationTime: 5, // days
@@ -153,7 +153,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Drive more traffic to your site.",
     },
     {
-      serviceId: "serviceId4",
+      serviceId: "service4",
       header: "Competitor SEO Analysis",
       description: "Analyze your competitors' SEO strategies.",
       durationTime: 7, // days
@@ -161,7 +161,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Learn from the competition.",
     },
     {
-      serviceId: "serviceId4",
+      serviceId: "service4",
       header: "Content Optimization",
       description: "Optimize your existing content for SEO.",
       durationTime: 10, // days
@@ -169,7 +169,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Improve your rankings.",
     },
     {
-      serviceId: "serviceId4",
+      serviceId: "service4",
       header: "Monthly SEO Monitoring",
       description: "Receive monthly reports on SEO performance.",
       durationTime: 30, // days
@@ -177,9 +177,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Stay updated on your progress.",
     },
   ],
-  serviceId5: [
+  service5: [
     {
-      serviceId: "serviceId5",
+      serviceId: "service5",
       header: "Social Media Ads Management",
       description: "Manage your ad campaigns for 30 days.",
       durationTime: 30, // days
@@ -187,7 +187,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Maximize your advertising budget.",
     },
     {
-      serviceId: "serviceId5",
+      serviceId: "service5",
       header: "Ad Copywriting",
       description: "Receive professionally written ad copies.",
       durationTime: 5, // days
@@ -195,7 +195,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Capture your audience's attention.",
     },
     {
-      serviceId: "serviceId5",
+      serviceId: "service5",
       header: "Retargeting Strategy",
       description: "Implement a retargeting strategy for your ads.",
       durationTime: 10, // days
@@ -203,7 +203,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Convert interested leads into customers.",
     },
     {
-      serviceId: "serviceId5",
+      serviceId: "service5",
       header: "Creative Assets Development",
       description: "Get customized images or videos for your ads.",
       durationTime: 10, // days
@@ -211,7 +211,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Enhance your ad performance.",
     },
     {
-      serviceId: "serviceId5",
+      serviceId: "service5",
       header: "Performance Analysis",
       description: "Receive a detailed report on ad performance.",
       durationTime: 15, // days
@@ -219,9 +219,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Optimize your future campaigns.",
     },
   ],
-  serviceId6: [
+  service6: [
     {
-      serviceId: "serviceId6",
+      serviceId: "service6",
       header: "Content Creation",
       description: "Receive an additional 3 blog posts.",
       durationTime: 10, // days
@@ -229,7 +229,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Engage your audience with fresh content.",
     },
     {
-      serviceId: "serviceId6",
+      serviceId: "service6",
       header: "Content Calendar",
       description: "Receive a 3-month content calendar.",
       durationTime: 7, // days
@@ -237,7 +237,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Plan your content effectively.",
     },
     {
-      serviceId: "serviceId6",
+      serviceId: "service6",
       header: "SEO Content Optimization",
       description: "Optimize your blog posts for search engines.",
       durationTime: 10, // days
@@ -245,7 +245,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Improve your visibility.",
     },
     {
-      serviceId: "serviceId6",
+      serviceId: "service6",
       header: "Newsletter Writing",
       description: "Create a monthly newsletter for your audience.",
       durationTime: 5, // days
@@ -253,7 +253,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Engage your subscribers regularly.",
     },
     {
-      serviceId: "serviceId6",
+      serviceId: "service6",
       header: "Social Media Content",
       description: "Create 10 engaging posts for social media.",
       durationTime: 10, // days
@@ -261,9 +261,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Boost your social media presence.",
     },
   ],
-  serviceId7: [
+  service7: [
     {
-      serviceId: "serviceId7",
+      serviceId: "service7",
       header: "Graphic Design Add-On",
       description: "Get a customized infographic for your report.",
       durationTime: 5, // days
@@ -271,7 +271,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Visualize your data effectively.",
     },
     {
-      serviceId: "serviceId7",
+      serviceId: "service7",
       header: "Print Material Design",
       description: "Design brochures and posters for your events.",
       durationTime: 10, // days
@@ -279,7 +279,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Attract customers with high-quality prints.",
     },
     {
-      serviceId: "serviceId7",
+      serviceId: "service7",
       header: "Logo Variations",
       description: "Receive additional logo variations for different uses.",
       durationTime: 7, // days
@@ -287,7 +287,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Ensure your brand fits all platforms.",
     },
     {
-      serviceId: "serviceId7",
+      serviceId: "service7",
       header: "Presentation Design",
       description: "Create a visually appealing presentation for your pitch.",
       durationTime: 7, // days
@@ -295,7 +295,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Impress your audience with stunning visuals.",
     },
     {
-      serviceId: "serviceId7",
+      serviceId: "service7",
       header: "Brand Video Creation",
       description: "Produce a short video introducing your brand.",
       durationTime: 14, // days
@@ -303,9 +303,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Capture attention with dynamic storytelling.",
     },
   ],
-  serviceId8: [
+  service8: [
     {
-      serviceId: "serviceId8",
+      serviceId: "service8",
       header: "Additional Brand Assets",
       description: "Receive a set of 5 social media graphics.",
       durationTime: 7, // days
@@ -313,7 +313,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Expand your brand's visual toolkit.",
     },
     {
-      serviceId: "serviceId8",
+      serviceId: "service8",
       header: "Digital Branding Kit",
       description: "Get a comprehensive branding kit for online use.",
       durationTime: 10, // days
@@ -321,7 +321,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Streamline your digital marketing efforts.",
     },
     {
-      serviceId: "serviceId8",
+      serviceId: "service8",
       header: "Email Signature Design",
       description: "Create a professional email signature.",
       durationTime: 3, // days
@@ -329,7 +329,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Make a great first impression.",
     },
     {
-      serviceId: "serviceId8",
+      serviceId: "service8",
       header: "Website Graphics Package",
       description: "Design graphics specifically for your website.",
       durationTime: 14, // days
@@ -337,7 +337,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Enhance your website's aesthetics.",
     },
     {
-      serviceId: "serviceId8",
+      serviceId: "service8",
       header: "Brand Consultation",
       description: "Receive a 2-hour consultation on brand strategy.",
       durationTime: 0, // same day
@@ -345,9 +345,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Tailor your brand's approach.",
     },
   ],
-  serviceId9: [
+  service9: [
     {
-      serviceId: "serviceId9",
+      serviceId: "service9",
       header: "Script Enhancement",
       description: "Receive a professionally written script for your video.",
       durationTime: 3, // days
@@ -355,7 +355,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Elevate your video storytelling.",
     },
     {
-      serviceId: "serviceId9",
+      serviceId: "service9",
       header: "Video Editing",
       description: "Edit your raw footage into a polished final product.",
       durationTime: 10, // days
@@ -363,7 +363,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Make your videos shine.",
     },
     {
-      serviceId: "serviceId9",
+      serviceId: "service9",
       header: "Voice Over Services",
       description: "Get a professional voice over for your videos.",
       durationTime: 5, // days
@@ -371,7 +371,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Add a professional touch to your content.",
     },
     {
-      serviceId: "serviceId9",
+      serviceId: "service9",
       header: "Video SEO Optimization",
       description: "Optimize your video for search engines.",
       durationTime: 3, // days
@@ -379,7 +379,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Increase your video visibility.",
     },
     {
-      serviceId: "serviceId9",
+      serviceId: "service9",
       header: "Animated Graphics",
       description: "Add animated graphics to your videos.",
       durationTime: 7, // days
@@ -387,9 +387,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Enhance viewer engagement.",
     },
   ],
-  serviceId10: [
+  service10: [
     {
-      serviceId: "serviceId10",
+      serviceId: "service10",
       header: "Extra Design Revisions",
       description: "Add 3 more revisions to your graphic design project.",
       durationTime: 0, // same day
@@ -397,7 +397,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Perfect your design to meet your needs.",
     },
     {
-      serviceId: "serviceId10",
+      serviceId: "service10",
       header: "Custom Graphic Elements",
       description: "Create unique graphic elements for your design.",
       durationTime: 5, // days
@@ -405,7 +405,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Make your design stand out.",
     },
     {
-      serviceId: "serviceId10",
+      serviceId: "service10",
       header: "Print-Ready Files",
       description: "Receive high-quality files suitable for printing.",
       durationTime: 3, // days
@@ -413,7 +413,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Ensure your designs look great in print.",
     },
     {
-      serviceId: "serviceId10",
+      serviceId: "service10",
       header: "Website Banner Design",
       description: "Design a professional banner for your website.",
       durationTime: 7, // days
@@ -421,7 +421,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Attract visitors with stunning visuals.",
     },
     {
-      serviceId: "serviceId10",
+      serviceId: "service10",
       header: "Social Media Graphics Pack",
       description: "Receive a pack of 10 graphics for social media.",
       durationTime: 10, // days
@@ -429,9 +429,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Enhance your social media presence.",
     },
   ],
-  serviceId11: [
+  service11: [
     {
-      serviceId: "serviceId11",
+      serviceId: "service11",
       header: "Custom Dashboard Setup",
       description: "Get a tailored dashboard for your analytics.",
       durationTime: 14, // days
@@ -439,7 +439,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Visualize your data effectively.",
     },
     {
-      serviceId: "serviceId11",
+      serviceId: "service11",
       header: "Data Migration Service",
       description: "Help with migrating your existing data.",
       durationTime: 10, // days
@@ -447,7 +447,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Smooth transition to the new system.",
     },
     {
-      serviceId: "serviceId11",
+      serviceId: "service11",
       header: "Advanced Analytics Setup",
       description: "Implement advanced analytics features.",
       durationTime: 21, // days
@@ -455,7 +455,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Gain deeper insights into your data.",
     },
     {
-      serviceId: "serviceId11",
+      serviceId: "service11",
       header: "Training Session",
       description: "Conduct a training session on using the dashboard.",
       durationTime: 0, // same day
@@ -463,7 +463,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Ensure your team is ready to use it.",
     },
     {
-      serviceId: "serviceId11",
+      serviceId: "service11",
       header: "Monthly Maintenance",
       description: "Receive ongoing support and maintenance.",
       durationTime: 30, // days
@@ -471,9 +471,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Keep your analytics running smoothly.",
     },
   ],
-  serviceId12: [
+  service12: [
     {
-      serviceId: "serviceId12",
+      serviceId: "service12",
       header: "Ongoing Influencer Support",
       description: "Receive weekly check-ins during your campaign.",
       durationTime: 30, // days
@@ -481,7 +481,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Ensure your campaign stays on track.",
     },
     {
-      serviceId: "serviceId12",
+      serviceId: "service12",
       header: "Campaign Performance Analysis",
       description: "Receive detailed analysis on campaign performance.",
       durationTime: 15, // days
@@ -489,7 +489,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Optimize your influencer strategy.",
     },
     {
-      serviceId: "serviceId12",
+      serviceId: "service12",
       header: "Content Creation for Influencers",
       description: "Create posts and videos for your influencers.",
       durationTime: 10, // days
@@ -497,7 +497,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Streamline content production.",
     },
     {
-      serviceId: "serviceId12",
+      serviceId: "service12",
       header: "Brand Ambassador Program Setup",
       description: "Set up a program to engage brand ambassadors.",
       durationTime: 14, // days
@@ -505,7 +505,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Build a loyal customer base.",
     },
     {
-      serviceId: "serviceId12",
+      serviceId: "service12",
       header: "Influencer Database Access",
       description: "Gain access to a curated list of influencers.",
       durationTime: 0, // same day
@@ -513,9 +513,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Find the perfect fit for your brand.",
     },
   ],
-  serviceId13: [
+  service13: [
     {
-      serviceId: "serviceId13",
+      serviceId: "service13",
       header: "Additional Consultation Hours",
       description: "Purchase extra hours for consultations.",
       durationTime: 0, // same day
@@ -523,7 +523,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Get more tailored advice.",
     },
     {
-      serviceId: "serviceId13",
+      serviceId: "service13",
       header: "Website Audit",
       description: "Receive a comprehensive audit of your website.",
       durationTime: 5, // days
@@ -531,7 +531,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Identify areas for improvement.",
     },
     {
-      serviceId: "serviceId13",
+      serviceId: "service13",
       header: "Competitor Analysis",
       description: "Get insights on your competitors' strategies.",
       durationTime: 7, // days
@@ -539,7 +539,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Stay ahead of the competition.",
     },
     {
-      serviceId: "serviceId13",
+      serviceId: "service13",
       header: "Social Media Strategy Session",
       description: "Conduct a strategy session for social media marketing.",
       durationTime: 0, // same day
@@ -547,7 +547,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Enhance your online presence.",
     },
     {
-      serviceId: "serviceId13",
+      serviceId: "service13",
       header: "Custom Content Creation",
       description: "Create personalized content for your brand.",
       durationTime: 10, // days
@@ -555,9 +555,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Tailor your message to your audience.",
     },
   ],
-  serviceId14: [
+  service14: [
     {
-      serviceId: "serviceId14",
+      serviceId: "service14",
       header: "Lead Magnet Development",
       description: "Create a valuable lead magnet for your campaign.",
       durationTime: 7, // days
@@ -565,7 +565,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Attract potential customers effectively.",
     },
     {
-      serviceId: "serviceId14",
+      serviceId: "service14",
       header: "Email Marketing Campaign Setup",
       description: "Set up an email marketing campaign.",
       durationTime: 10, // days
@@ -573,7 +573,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Boost engagement with targeted emails.",
     },
     {
-      serviceId: "serviceId14",
+      serviceId: "service14",
       header: "Landing Page Design",
       description: "Design an optimized landing page for conversions.",
       durationTime: 14, // days
@@ -581,7 +581,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Maximize your marketing efforts.",
     },
     {
-      serviceId: "serviceId14",
+      serviceId: "service14",
       header: "A/B Testing Service",
       description: "Conduct A/B tests for your campaigns.",
       durationTime: 10, // days
@@ -589,7 +589,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Optimize your marketing strategies.",
     },
     {
-      serviceId: "serviceId14",
+      serviceId: "service14",
       header: "Analytics Reporting",
       description:
         "Receive a comprehensive report on your campaign's performance.",
@@ -598,9 +598,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Make data-driven decisions.",
     },
   ],
-  serviceId15: [
+  service15: [
     {
-      serviceId: "serviceId15",
+      serviceId: "service15",
       header: "Gamification Strategy Session",
       description:
         "Receive a tailored strategy session for your gamified elements.",
@@ -609,7 +609,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Enhance engagement with strategic insights.",
     },
     {
-      serviceId: "serviceId15",
+      serviceId: "service15",
       header: "Custom Game Development",
       description: "Develop a custom mini-game for your marketing campaign.",
       durationTime: 30, // days
@@ -617,7 +617,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Capture your audience's attention with fun.",
     },
     {
-      serviceId: "serviceId15",
+      serviceId: "service15",
       header: "Gamification Analytics",
       description: "Get detailed analytics on gamification performance.",
       durationTime: 7, // days
@@ -625,7 +625,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Measure the effectiveness of your strategies.",
     },
     {
-      serviceId: "serviceId15",
+      serviceId: "service15",
       header: "Interactive Content Creation",
       description: "Create quizzes and polls to engage your audience.",
       durationTime: 5, // days
@@ -633,7 +633,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Boost interaction through engaging content.",
     },
     {
-      serviceId: "serviceId15",
+      serviceId: "service15",
       header: "Incentive Program Design",
       description: "Design a reward system to motivate your audience.",
       durationTime: 14, // days
@@ -641,9 +641,9 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Drive participation with compelling incentives.",
     },
   ],
-  serviceId16: [
+  service16: [
     {
-      serviceId: "serviceId16",
+      serviceId: "service16",
       header: "Custom User Journey Mapping",
       description: "Create a personalized user journey map for your project.",
       durationTime: 10, // days
@@ -651,7 +651,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Understand your users' experience deeply.",
     },
     {
-      serviceId: "serviceId16",
+      serviceId: "service16",
       header: "Advanced Usability Testing",
       description: "Conduct thorough usability testing for your product.",
       durationTime: 14, // days
@@ -659,7 +659,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Ensure a seamless user experience.",
     },
     {
-      serviceId: "serviceId16",
+      serviceId: "service16",
       header: "User Feedback Analysis",
       description: "Analyze user feedback to drive improvements.",
       durationTime: 7, // days
@@ -667,7 +667,7 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Leverage insights for better user satisfaction.",
     },
     {
-      serviceId: "serviceId16",
+      serviceId: "service16",
       header: "Prototyping Service",
       description: "Create interactive prototypes for user testing.",
       durationTime: 10, // days
@@ -675,12 +675,132 @@ const SERVICE_ADD_ONS: Record<string, ServiceAddOns[]> = {
       additionalSubHeader: "Visualize your ideas before development.",
     },
     {
-      serviceId: "serviceId16",
+      serviceId: "service16",
       header: "User Training Workshop",
       description: "Conduct a training workshop for end users.",
       durationTime: 1, // days
       price: 4000, // PHP
       additionalSubHeader: "Empower users with knowledge about the system.",
+    },
+  ],
+  service17: [
+    {
+      serviceId: "service17",
+      header: "Affiliate Strategy Consultation",
+      description:
+        "Get expert advice on optimizing your affiliate marketing strategy.",
+      durationTime: 5, // days
+      price: 7000, // PHP
+      additionalSubHeader:
+        "Boost your affiliate program with a solid strategy.",
+    },
+    {
+      serviceId: "service17",
+      header: "Affiliate Network Expansion",
+      description:
+        "Grow your affiliate network with targeted outreach services.",
+      durationTime: 10, // days
+      price: 10000, // PHP
+      additionalSubHeader: "Expand your reach by adding more affiliates.",
+    },
+    {
+      serviceId: "service17",
+      header: "Custom Affiliate Reporting",
+      description:
+        "Receive detailed custom reports on your affiliate performance.",
+      durationTime: 7, // days
+      price: 5000, // PHP
+      additionalSubHeader:
+        "Understand your affiliates' impact with custom analytics.",
+    },
+  ],
+  service18: [
+    {
+      serviceId: "service18",
+      header: "Influencer Collaboration Setup",
+      description: "Facilitate collaborations with top influencers.",
+      durationTime: 14, // days
+      price: 12000, // PHP
+      additionalSubHeader:
+        "Connect with influencers to maximize affiliate impact.",
+    },
+    {
+      serviceId: "service18",
+      header: "Affiliate Campaign Monitoring",
+      description: "Track and monitor your affiliate campaigns in real-time.",
+      durationTime: 7, // days
+      price: 4500, // PHP
+      additionalSubHeader: "Keep your campaigns on track and maximize ROI.",
+    },
+    {
+      serviceId: "service18",
+      header: "Affiliate Onboarding Support",
+      description: "Help affiliates set up and navigate the platform smoothly.",
+      durationTime: 3, // days
+      price: 3000, // PHP
+      additionalSubHeader:
+        "Ensure affiliates get the support they need to succeed.",
+    },
+  ],
+  service19: [
+    {
+      serviceId: "service19",
+      header: "Custom Affiliate Landing Pages",
+      description:
+        "Design and create personalized landing pages for affiliates.",
+      durationTime: 8, // days
+      price: 9000, // PHP
+      additionalSubHeader:
+        "Increase conversions with optimized affiliate landing pages.",
+    },
+    {
+      serviceId: "service19",
+      header: "Performance Optimization Consultation",
+      description: "Get expert advice on improving affiliate performance.",
+      durationTime: 5, // days
+      price: 8000, // PHP
+      additionalSubHeader: "Boost your affiliate marketing efficiency.",
+    },
+    {
+      serviceId: "service19",
+      header: "Advanced Tracking Integration",
+      description:
+        "Implement advanced tracking tools for better campaign insights.",
+      durationTime: 7, // days
+      price: 6000, // PHP
+      additionalSubHeader:
+        "Gain detailed visibility into your affiliates' performance.",
+    },
+  ],
+  service20: [
+    {
+      serviceId: "service20",
+      header: "Automated Affiliate Payments",
+      description: "Set up an automated payment system for your affiliates.",
+      durationTime: 3, // days
+      price: 7000, // PHP
+      additionalSubHeader:
+        "Streamline payment processes and keep affiliates happy.",
+    },
+    {
+      serviceId: "service20",
+      header: "Affiliate Marketing Audit",
+      description:
+        "Conduct a thorough audit of your current affiliate program.",
+      durationTime: 10, // days
+      price: 9000, // PHP
+      additionalSubHeader:
+        "Identify key areas for improvement in your affiliate marketing.",
+    },
+    {
+      serviceId: "service20",
+      header: "Custom Affiliate Terms & Conditions",
+      description:
+        "Draft tailored terms and conditions for your affiliate program.",
+      durationTime: 4, // days
+      price: 5000, // PHP
+      additionalSubHeader:
+        "Ensure compliance and clarity with custom agreements.",
     },
   ],
 };

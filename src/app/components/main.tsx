@@ -1,14 +1,75 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useEffect, useState } from "react";
 import NavBar from "./nav_bar";
-import { SERVICES_CATEGORIES } from "@/constants/services";
+import {
+  GetServicesParams,
+  IServicesItem,
+} from "@/interfaces/services/data_access";
+import { TopBar } from "./services/top_bar";
+import { BreadCrumbNav } from "./services/breadcrumb_nav";
+import { Contents } from "./services/contents";
+import { GetServices } from "@/utils/data_access/services";
+import Pagination from "./services/contents/pagination"; // Import your Pagination component
 
 export const MainServicePage = () => {
-  const [category, setCategory] = useState(SERVICES_CATEGORIES[0]);
+  const [params, setParams] = useState<GetServicesParams>({
+    pagination: {
+      skip: 0,
+      take: 8,
+    },
+    filter: {
+      category: "Affiliate",
+      isPro: true,
+    },
+    sortBy: "desc",
+  });
+
+  const [data, setData] = useState<IServicesItem[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalItems, setTotalItems] = useState(0); // To keep track of total items
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = GetServices(params);
+      setData(data.items);
+      setTotalItems(data.fullLength); // Set the total length of items for pagination
+    };
+
+    fetchData();
+  }, [params]);
+
+  // Update the pagination state when the current page changes
+  useEffect(() => {
+    setParams((prev) => ({
+      ...prev,
+      pagination: {
+        ...prev.pagination,
+        skip: (currentPage - 1) * prev.pagination.take,
+      },
+    }));
+  }, [currentPage]);
+
   return (
     <>
-      <NavBar currentCategory={category} setCategory={setCategory} />
-      <main className="flex-1 text-primary">{category}</main>
+      <NavBar params={params} setParams={setParams} />
+      <main className="font-inter flex-1 gap-10 flex flex-col text-primary ml-[300px] p-5 px-6">
+        <TopBar params={params} setParams={setParams} />
+        <BreadCrumbNav currentCategory={params.filter?.category} />
+        <Contents
+          unFilteredLength={totalItems}
+          params={params}
+          setParams={setParams}
+          data={data}
+        />
+
+        <Pagination
+          currentPage={currentPage}
+          totalItems={totalItems}
+          itemsPerPage={params.pagination.take}
+          onPageChange={setCurrentPage}
+        />
+      </main>
     </>
   );
 };

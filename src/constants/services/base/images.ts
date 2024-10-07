@@ -5,69 +5,85 @@ import { ServiceImages } from "@/interfaces/services/services.interface";
  */
 //TODO: Populate the images as soon as edrian sends the images
 const SERVICES_GALLERY: Record<string, ServiceImages> = {
-  serviceId1: {
+  service1: {
     images: [],
-    serviceId: "serviceId1",
+    serviceId: "service1",
   },
-  serviceId2: {
+  service2: {
     images: [],
-    serviceId: "serviceId2",
+    serviceId: "service2",
   },
-  serviceId3: {
+  service3: {
     images: [],
-    serviceId: "serviceId3",
+    serviceId: "service3",
   },
-  serviceId4: {
+  service4: {
     images: [],
-    serviceId: "serviceId4",
+    serviceId: "service4",
   },
-  serviceId5: {
+  service5: {
     images: [],
-    serviceId: "serviceId5",
+    serviceId: "service5",
   },
-  serviceId6: {
+  service6: {
     images: [],
-    serviceId: "serviceId6",
+    serviceId: "service6",
   },
-  serviceId7: {
+  service7: {
     images: [],
-    serviceId: "serviceId7",
+    serviceId: "service7",
   },
-  serviceId8: {
+  service8: {
     images: [],
-    serviceId: "serviceId8",
+    serviceId: "service8",
   },
-  serviceId9: {
+  service9: {
     images: [],
-    serviceId: "serviceId9",
+    serviceId: "service9",
   },
-  serviceId10: {
+  service10: {
     images: [],
-    serviceId: "serviceId10",
+    serviceId: "service10",
   },
-  serviceId11: {
+  service11: {
     images: [],
-    serviceId: "serviceId11",
+    serviceId: "service11",
   },
-  serviceId12: {
+  service12: {
     images: [],
-    serviceId: "serviceId12",
+    serviceId: "service12",
   },
-  serviceId13: {
+  service13: {
     images: [],
-    serviceId: "serviceId13",
+    serviceId: "service13",
   },
-  serviceId14: {
+  service14: {
     images: [],
-    serviceId: "serviceId14",
+    serviceId: "service14",
   },
-  serviceId15: {
+  service15: {
     images: [],
-    serviceId: "serviceId15",
+    serviceId: "service15",
   },
-  serviceId16: {
+  service16: {
     images: [],
-    serviceId: "serviceId16",
+    serviceId: "service16",
+  },
+  service17: {
+    images: [],
+    serviceId: "service17",
+  },
+  service18: {
+    images: [],
+    serviceId: "service18",
+  },
+  service19: {
+    images: [],
+    serviceId: "service19",
+  },
+  service20: {
+    images: [],
+    serviceId: "service20",
   },
 };
 export { SERVICES_GALLERY };

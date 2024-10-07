@@ -1,3 +1,6 @@
+/**
+ * TIER 3
+ */
 export type FreeStatusType = "TIER 1" | "TIER 2" | "TIER 3";
 
 export type BadgeType =

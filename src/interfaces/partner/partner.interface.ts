@@ -9,6 +9,7 @@ export interface IPartner {
   overAllRating: number; // Dynamic integer
   projectOnQueue: number; // Dynamic integer where it would check if a project has been finished.
   createdAt: Date;
+  isPro: boolean;
 }
 
 export interface IPartnerProfile {

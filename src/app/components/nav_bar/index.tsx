@@ -8,15 +8,16 @@ import heartIcon from "../../../../public/svg/heart.svg";
 import subscriptionIcon from "../../../../public/svg/subscription.svg";
 import { NavSection } from "./section";
 import { NavCategoriesSection } from "./section/categories_section";
+import { GetServicesParams } from "@/interfaces/services/data_access";
 
 interface props {
-  currentCategory: string;
-  setCategory: Dispatch<SetStateAction<string>>;
+  params: GetServicesParams;
+  setParams: Dispatch<SetStateAction<GetServicesParams>>;
 }
 
-const NavBar = ({ currentCategory, setCategory }: props) => {
+const NavBar = ({ params, setParams }: props) => {
   return (
-    <nav className="flex flex-col gap-5 min-h-full h-fit min-w-[300px] px-5 py-8 bg-white shadow-nav">
+    <nav className="flex flex-col gap-5 h-full min-w-[300px] px-5 py-8 bg-white shadow-nav fixed overflow-y-scroll no-scrollbar">
       <Link href={"/"} className="flex gap-5 items-center cursor-pointer px-4">
         <Image src={logo} alt="Logo" width={40} height={40} />
 
@@ -44,10 +45,7 @@ const NavBar = ({ currentCategory, setCategory }: props) => {
 
       <hr />
 
-      <NavCategoriesSection
-        currentCategory={currentCategory}
-        setCategory={setCategory}
-      />
+      <NavCategoriesSection params={params} setParams={setParams} />
 
       <hr />
 
