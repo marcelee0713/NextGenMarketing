@@ -1,32 +1,54 @@
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { SERVICES_CATEGORIES } from "@/constants/services";
 import { HiSpeakerphone } from "react-icons/hi";
 import { GetServicesParams } from "@/interfaces/services/data_access";
 
 interface props {
+  expandedNav: boolean;
+  setExpandedNav: Dispatch<SetStateAction<boolean>>;
   params: GetServicesParams;
   setParams: Dispatch<SetStateAction<GetServicesParams>>;
 }
 
-export const NavCategoriesSection = ({ params, setParams }: props) => {
+export const NavCategoriesSection = ({
+  expandedNav,
+  setExpandedNav,
+  params,
+  setParams,
+}: props) => {
   const [onExpand, setOnExpand] = useState(true);
 
+  useEffect(() => {
+    if (!expandedNav) setOnExpand(false);
+  }, [expandedNav]);
+
   return (
-    <div className="flex flex-col gap-[10px] w-full">
-      <div className="font-montserrat text-textColorNavSection">CATEGORIES</div>
+    <div className="flex flex-col gap-[10px] w-full no-scrollbar">
+      {expandedNav && (
+        <div className="font-montserrat text-textColorNavSection">
+          CATEGORIES
+        </div>
+      )}
       <div className="flex flex-col w-full text-textColor font-inter font-medium">
         <div
-          onClick={() => setOnExpand(!onExpand)}
+          onClick={() => {
+            setOnExpand(!onExpand);
+            setExpandedNav(true);
+          }}
           className={`flex justify-between items-center cursor-pointer hover:text-primary ${
             params.filter?.category && "text-primary"
           }`}
         >
-          <div className="flex gap-2 w-full p-4 items-center">
+          <div
+            className={`flex gap-2 w-full p-4 items-center ${
+              !expandedNav && "justify-center"
+            }`}
+          >
             <HiSpeakerphone size={20} />
-            <div className="font-medium">Ad Services</div>
+            {expandedNav && <div className="font-medium">Ad Services</div>}
           </div>
-          <RiArrowDropDownLine size={40} />
+          {expandedNav && <RiArrowDropDownLine size={40} />}
         </div>
 
         <div
@@ -49,7 +71,7 @@ export const NavCategoriesSection = ({ params, setParams }: props) => {
                     })
                   }
                   key={index}
-                  className={`pl-5 py-3 rounded-md cursor-pointer hover:bg-accent ${
+                  className={`pl-5 py-3 rounded-md cursor-pointer hover:bg-accent text-[15px] ${
                     selected ? "bg-accent" : "bg-inherit"
                   }`}
                 >

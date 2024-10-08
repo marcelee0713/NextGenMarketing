@@ -2,8 +2,10 @@ import { StaticImageData } from "next/image";
 import React from "react";
 import Image from "next/image";
 import StarRating from "@mil-rlib/reactjs-star-rating";
+import Link from "next/link";
 
 interface props {
+  id: string;
   image: StaticImageData | string;
   pfp: StaticImageData | string;
   parterUsername: string;
@@ -13,6 +15,7 @@ interface props {
 }
 
 export const ServiceItem = ({
+  id,
   image,
   pfp,
   parterUsername,
@@ -21,13 +24,16 @@ export const ServiceItem = ({
   shortDescription,
 }: props) => {
   return (
-    <div className="flex flex-col gap-[10px] h-[300px]">
+    <Link
+      href={`service/${id}`}
+      className="flex flex-col gap-[10px] h-[300px] group "
+    >
       <div className="relative h-full">
         <Image
           src={image}
           alt="banner"
           style={{ objectFit: "cover" }}
-          className="rounded-lg shadow-serviceItem flex-1 h-full"
+          className="rounded-lg shadow-serviceItem flex-1 h-full group-hover:shadow-nav"
           fill
         />
       </div>
@@ -58,6 +64,6 @@ export const ServiceItem = ({
 
         <div className="font-semibold">PHP{ratePerHour}/hr</div>
       </div>
-    </div>
+    </Link>
   );
 };

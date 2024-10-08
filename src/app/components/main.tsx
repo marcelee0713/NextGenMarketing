@@ -12,7 +12,7 @@ import { Contents } from "./services/contents";
 import { GetServices } from "@/utils/data_access/services";
 import Pagination from "./services/contents/pagination"; // Import your Pagination component
 
-export const MainServicePage = () => {
+export const MainServicesPage = () => {
   const [params, setParams] = useState<GetServicesParams>({
     pagination: {
       skip: 0,
@@ -53,7 +53,7 @@ export const MainServicePage = () => {
   return (
     <>
       <NavBar params={params} setParams={setParams} />
-      <main className="font-inter flex-1 gap-10 flex flex-col text-primary ml-[300px] p-5 px-6">
+      <main className="font-inter flex-1 gap-10 flex flex-col text-primary p-5 px-6 no-scrollbar overflow-y-auto">
         <TopBar params={params} setParams={setParams} />
         <BreadCrumbNav currentCategory={params.filter?.category} />
         <Contents

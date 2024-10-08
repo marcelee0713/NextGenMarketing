@@ -14,6 +14,7 @@ export const ServiceItems = ({ data }: props) => {
     <div className="flex-1 grid grid-cols-myGridTemplate gap-[20px] text-sm ">
       {data.map((val) => (
         <ServiceItem
+          id={val.id}
           image={val.banner ?? defaultImage}
           pfp={val.pfp ?? defaultPfp}
           parterUsername={val.username}

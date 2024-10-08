@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Provider } from "./components/context";
 
 const inter = localFont({
   src: [
@@ -75,7 +76,7 @@ export default function RootLayout({
       <body
         className={`w-full h-full ${sora.variable} ${inter.variable} ${montserrat.variable} antialiased bg-secondary`}
       >
-        {children}
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
