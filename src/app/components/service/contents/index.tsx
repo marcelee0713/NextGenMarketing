@@ -1,5 +1,5 @@
 import { ServiceData } from "@/interfaces/services/data_access";
-import React from "react";
+import React, { useState } from "react";
 import defaultBanner from "../../../../../public/images/default.png";
 import defaultPfp from "../../../../../public/images/user (1).png";
 import { ServiceProfileDetails } from "../profile";
@@ -9,12 +9,16 @@ import { ServiceGallery } from "../gallery";
 import { ServiceTabs } from "../service-tabs";
 import { ServiceAMA } from "../ama/service_ata";
 import { ServiceAvailablePackages } from "../packages";
+import { ServiceClassType } from "@/types/services/services.types";
+import { ServiceModal } from "../modal";
 
 interface props {
   data: ServiceData;
 }
 
 export const ServiceContent: React.FC<props> = ({ data }) => {
+  const [modal, setModal] = useState(false);
+  const [currentClass, setClass] = useState<ServiceClassType>("STANDARD");
   return (
     <div className="flex-1 flex gap-[12px] font-inter">
       <div className="flex-1 min-w-[640px] flex flex-col gap-[12px] ">
@@ -45,11 +49,29 @@ export const ServiceContent: React.FC<props> = ({ data }) => {
       </div>
       <div className="relative">
         <ServiceAvailablePackages
-          addOns={data.addOns}
           packages={data.packages}
           likes={data.details.likes.length}
+          currentClass={currentClass}
+          setClass={setClass}
+          setModal={setModal}
         />
       </div>
+
+      {modal && (
+        <ServiceModal
+          setClass={setClass}
+          likes={data.details.likes.length}
+          addOns={data.addOns}
+          pickedClass={currentClass}
+          services={data.packages}
+          setModal={setModal}
+          userDetails={{
+            email: data.userDetails.email,
+            pfp: data.profile.profilePicture ?? defaultPfp,
+            username: data.profile.username,
+          }}
+        />
+      )}
     </div>
   );
 };

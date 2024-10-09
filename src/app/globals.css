@@ -14,6 +14,24 @@
   }
 }
 
+.stylish-y-scroll {
+  /* For Webkit-based browsers (e.g., Chrome, Safari) */
+  &::-webkit-scrollbar {
+    background-color: transparent; /* Thumb color */
+    width: 5px; /* Adjust the width as needed */
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background: transparent; /* Track color */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #3562ff; /* Thumb color */
+    border-radius: 8px; /* Rounded corners for the thumb */
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

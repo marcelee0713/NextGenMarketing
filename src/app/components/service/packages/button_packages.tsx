@@ -1,6 +1,6 @@
 import { Package } from "@/interfaces/services/services.interface";
 import React from "react";
-import { FaCircleCheck } from "react-icons/fa6";
+import { FaCircleCheck, FaRegCircle } from "react-icons/fa6";
 
 interface props {
   packages: Package;
@@ -24,20 +24,19 @@ export const ButtonPackages: React.FC<props> = ({
     >
       <div className="flex justify-between gap-2 w-full">
         <div className="flex gap-3 items-center">
-          <FaCircleCheck
-            className={`${
-              isSelected
-                ? "text-primary"
-                : "text-white border border-[#ABABAB] rounded-full"
-            }`}
-            size={20}
-          />
+          {isSelected ? (
+            <FaCircleCheck className="text-primary" size={20} />
+          ) : (
+            <FaRegCircle className="text-[#ABABAB]" size={20} />
+          )}
           <div className="self-start flex flex-col items-start">
             <div className="font-semibold">
               {packages.class.charAt(0).toUpperCase() +
                 packages.class.slice(1).toLowerCase()}
             </div>
-            <div className="font-medium text-xs">{packages.edge}</div>
+            <div className="font-medium text-xs text-start">
+              {packages.edge}
+            </div>
           </div>
         </div>
         <div className="font-bold">PHP {packages.price}</div>
