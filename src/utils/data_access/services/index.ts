@@ -5,6 +5,7 @@ import { SERVICES_FAQS } from "@/constants/services/base/faqs";
 import { SERVICES_GALLERY } from "@/constants/services/base/images";
 import { SERVICE_QUESTIONS } from "@/constants/services/base/questions";
 import { SERVICES_REVIEWS } from "@/constants/services/base/reviews";
+import { SERVICE_ADD_ONS } from "@/constants/services/transaction/add_ons";
 import { SERVICE_PACKAGES } from "@/constants/services/transaction/packages";
 import {
   GetServicesParams,
@@ -137,6 +138,7 @@ const GetServices = (params: GetServicesParams): ServicesItemData => {
 };
 
 const GetService = async (
+  key: string,
   parnterId: string,
   serviceId: string
 ): Promise<ServiceData | null> => {
@@ -151,11 +153,14 @@ const GetService = async (
 
     const data: ServiceData = {
       details: service,
+      userDetails: PARTNERS[parnterId],
+      profile: PARTNERS_PROFILES[parnterId],
       faqs: SERVICES_FAQS[serviceId],
       gallery: SERVICES_GALLERY[serviceId].images,
       packages: SERVICE_PACKAGES[serviceId],
       questions: SERVICE_QUESTIONS[serviceId],
       reviews: SERVICES_REVIEWS[serviceId],
+      addOns: SERVICE_ADD_ONS[serviceId],
     };
 
     return data;
@@ -190,6 +195,7 @@ const GatherAllServices = (): IServicesItem[] => {
       const deliveryTime = SERVICE_PACKAGES[id].packages.basic.delivery;
 
       const service: IServicesItem = {
+        partnerId: partnerId,
         id,
         badge,
         banner,

@@ -2,6 +2,7 @@ import { BadgeType } from "@/types/partner/partner.types";
 import {
   Reviews,
   Service,
+  ServiceAddOns,
   ServiceFAQs,
   ServicePackages,
   ServiceQuestions,
@@ -11,9 +12,14 @@ import {
   ServiceDeliveryTimeFilterType,
   ServiceProjectQueueFilterType,
 } from "@/types/services/services.types";
+import {
+  IPartner,
+  IPartnerProfile,
+} from "@/interfaces/partner/partner.interface";
 
 export interface IServicesItem {
   id: string;
+  partnerId: string;
   banner: string | null;
   pfp: string | null;
   username: string;
@@ -37,10 +43,13 @@ export interface ServicesItemData {
 
 export interface ServiceData {
   details: Service;
+  userDetails: IPartner;
+  profile: IPartnerProfile;
   gallery: string[];
   faqs: ServiceFAQs[];
   questions: ServiceQuestions[];
   packages: ServicePackages;
+  addOns: ServiceAddOns[];
   reviews: Reviews[];
 }
 

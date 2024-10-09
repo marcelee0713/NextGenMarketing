@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Provider } from "./components/context";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 const inter = localFont({
   src: [
