@@ -45,8 +45,8 @@ export const ReviewBox: React.FC<props> = ({ comment, likesCount, rating }) => {
         </div>
         <div className="h-full border-l-[1px] border-[#DCDCDC]"></div>
         <div className="flex flex-col">
-          <div className="font-medium text-black">Standard</div>
-          <div className="font-medium text-[#999999]">Service Class</div>
+          <div className="font-medium text-black">2 weeks</div>
+          <div className="font-medium text-[#999999]">Project Duration</div>
         </div>
       </div>
     </div>

@@ -16,8 +16,10 @@ import { PromoCode } from "./promo";
 import { formatToCurrency } from "@/utils";
 import { PriceDetails } from "./price_details";
 import { CompletionTime } from "./completion_time";
+import { useGlobalContext } from "../context";
 
 export const MainPaymentPage = () => {
+  const { setExpandNav } = useGlobalContext();
   const [params, setParams] = useState<GetServicesParams>({
     pagination: {
       skip: 0,
@@ -123,12 +125,15 @@ export const MainPaymentPage = () => {
 
             <CompletionTime time={totalCompletionTime} />
 
-            <button
-              onClick={() => {}}
+            <Link
+              onClick={() => {
+                setExpandNav(false);
+              }}
+              href={"/requirements"}
               className="flex items-center justify-center h-[45px]  text-white bg-primary mx-8 rounded-[4px] font-bold text-sm"
             >
               {`Pay (PHP ${formatToCurrency(totalAmount)})`}
-            </button>
+            </Link>
 
             <div className="w-full text-center text-xs font-medium text-[#999999]">
               By clicking, you agree to{" "}
