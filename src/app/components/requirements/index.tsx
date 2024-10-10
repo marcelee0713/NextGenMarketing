@@ -5,14 +5,20 @@ import { GetServicesParams } from "@/interfaces/services/data_access";
 import { RequirementTabs } from "./tabs";
 import { IoChatbubbles } from "react-icons/io5";
 import { RequirementContentHandler } from "./content_handler";
+import { useRouter } from "next/navigation";
+import { useGlobalContext } from "../context";
 
 export const MainRequirementsPage = () => {
+  const { setExpandNav } = useGlobalContext();
+
   const [params, setParams] = useState<GetServicesParams>({
     pagination: {
       skip: 0,
       take: 8,
     },
   });
+
+  const router = useRouter();
 
   const [tab, setTab] = useState<"DETAILS" | "UPLOAD">("DETAILS");
 
@@ -42,7 +48,10 @@ export const MainRequirementsPage = () => {
               Help
             </div>
             <button
-              onClick={() => {}}
+              onClick={() => {
+                router.push("/order-success");
+                setExpandNav(false);
+              }}
               className="flex gap-[6px] items-center justify-center py-3 px-5 font-bold bg-primary text-white rounded-lg"
             >
               Apply Changes
