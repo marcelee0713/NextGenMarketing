@@ -61,20 +61,26 @@ export const CustomerReviews: React.FC<props> = ({ reviews }) => {
         )}
 
         {/* Scrollable reviews */}
-        <div
-          ref={scrollRef}
-          className="h-full w-full flex gap-5 overflow-x-auto no-scrollbar"
-          onScroll={checkArrowsVisibility}
-        >
-          {reviews.map((val, index) => (
-            <ReviewBox
-              key={index}
-              comment={val.comment}
-              likesCount={val.likes.length}
-              rating={val.rating}
-            />
-          ))}
-        </div>
+        {reviews ? (
+          <div
+            ref={scrollRef}
+            className="h-full w-full flex gap-5 overflow-x-auto no-scrollbar"
+            onScroll={checkArrowsVisibility}
+          >
+            {reviews.map((val, index) => (
+              <ReviewBox
+                key={index}
+                comment={val.comment}
+                likesCount={val.likes.length}
+                rating={val.rating}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="h-full w-full flex items-center justify-between">
+            No reviews yet.
+          </div>
+        )}
 
         {/* Right Arrow */}
         {showRightArrow && (

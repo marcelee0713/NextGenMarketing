@@ -8,6 +8,9 @@ import { PackageIndicator } from "./package_indicator";
 import { OtherPackageSection } from "./other_section";
 import { AddOnsContainer } from "./add_ons_container";
 import { IoChatbubbles } from "react-icons/io5";
+import { useRouter } from "next/navigation";
+import { OrderSummary } from "@/interfaces/payment";
+import { useGlobalContext } from "@/app/components/context";
 
 interface props {
   addOns: ServiceAddOns[];
@@ -18,6 +21,7 @@ interface props {
   setModal: Dispatch<SetStateAction<boolean>>;
   receipt: Map<string, number>;
   setReceipt: Dispatch<SetStateAction<Map<string, number>>>;
+  summary: OrderSummary;
 }
 
 export const OrderOptions: React.FC<props> = ({
@@ -29,7 +33,11 @@ export const OrderOptions: React.FC<props> = ({
   setModal,
   receipt,
   setReceipt,
+  summary,
 }) => {
+  const { setExpandNav } = useGlobalContext();
+  const router = useRouter();
+
   return (
     <div className="flex-1 w-full flex flex-col bg-[#F5F7FF] rounded-lg p-3 px-4 gap-[12px]">
       <div className="flex flex-col">
@@ -68,7 +76,15 @@ export const OrderOptions: React.FC<props> = ({
             Cancel
           </button>
           <button
-            onClick={() => {}}
+            onClick={() => {
+              // const parsifiedObj = JSON.stringify(summary);
+
+              // const obj: OrderSummary = JSON.parse(parsifiedObj);
+
+              // console.table(obj);
+              setExpandNav(false);
+              router.push(`/payment?summary=${JSON.stringify(summary)}`);
+            }}
             className="flex gap-[6px] items-center justify-center py-3 px-5 font-bold bg-primary text-white rounded-lg"
           >
             {`Continue (PHP ${formatToCurrency(unitPrice)})`}

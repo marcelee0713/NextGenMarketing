@@ -137,11 +137,11 @@ const GetServices = (params: GetServicesParams): ServicesItemData => {
   }
 };
 
-const GetService = async (
+const GetService = (
   key: string,
   parnterId: string,
   serviceId: string
-): Promise<ServiceData | null> => {
+): ServiceData => {
   try {
     const details = PARTNERS_SERVICES[parnterId];
 

@@ -7,8 +7,10 @@ import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { ServiceAvailablePackages } from "../packages";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { OrderOptions } from "./order_options";
+import { OrderSummary } from "@/interfaces/payment";
 
 interface props {
+  partnerId: string;
   likes: number;
   pickedClass: ServiceClassType;
   setModal: Dispatch<SetStateAction<boolean>>;
@@ -23,6 +25,7 @@ interface props {
 }
 
 export const ServiceModal: React.FC<props> = ({
+  partnerId,
   pickedClass,
   services,
   setClass,
@@ -45,22 +48,28 @@ export const ServiceModal: React.FC<props> = ({
     new Map().set("class", matchedPackage.price)
   );
 
+  const mockReceipt = new Map(receipt);
+  mockReceipt.delete("class");
+  const currentAddOns: string[] = Array.from(mockReceipt.keys());
+
+  const orderSummary: OrderSummary = {
+    partnerId,
+    selectedAddOns: currentAddOns,
+    selectedClass: pickedClass,
+    serviceId: services.serviceId,
+  };
+
   useEffect(() => {
     let sum = 0;
     for (const entry of Array.from(receipt.entries())) {
-      const key = entry[0];
       const value = entry[1];
 
       sum += value;
       setUnitPrice(sum);
-
-      console.log("From map key: " + key);
-      console.log("From map value: " + value);
     }
   }, [receipt]);
 
   useEffect(() => {
-    console.log(matchedPackage);
     setReceipt(new Map(receipt).set("class", matchedPackage.price));
   }, [pickedClass]);
 
@@ -87,6 +96,7 @@ export const ServiceModal: React.FC<props> = ({
           setModal={setModal}
           receipt={receipt}
           setReceipt={setReceipt}
+          summary={orderSummary}
         />
       </div>
     </div>

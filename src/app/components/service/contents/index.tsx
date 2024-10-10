@@ -59,6 +59,7 @@ export const ServiceContent: React.FC<props> = ({ data }) => {
 
       {modal && (
         <ServiceModal
+          partnerId={data.profile.partnerId}
           setClass={setClass}
           likes={data.details.likes.length}
           addOns={data.addOns}

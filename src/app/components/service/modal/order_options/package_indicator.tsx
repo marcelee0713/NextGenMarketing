@@ -5,15 +5,21 @@ interface props {
   price: string;
   currentClass: string;
   edge: string;
+  idkMan?: boolean;
 }
 
 export const PackageIndicator: React.FC<props> = ({
   currentClass,
   edge,
   price,
+  idkMan,
 }) => {
   return (
-    <div className="flex items-center justify-between bg-primary rounded-md p-3 text-white">
+    <div
+      className={`flex items-center justify-between bg-primary  ${
+        idkMan ? "rounded-t-md" : "rounded-md"
+      } p-3 text-white`}
+    >
       <div className="flex items-center gap-2">
         <div className="flex items-center justify-center p-3 bg-white text-[#0B1F65] rounded-md">
           <BsStack size={25} />
