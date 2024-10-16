@@ -19,9 +19,6 @@ import { skipAndTake } from "@/utils";
  * Will make the unfiltered services to be the least shown.
  * It won't be removed but, most likely it will be the last.
  */
-
-//TODO: AFTER SORTING A SPECIFIC FILTER. Make sure to sort them after doing it so.
-//TODO: Delivery Time Functionality
 const GetServices = (params: GetServicesParams): ServicesItemData => {
   try {
     const allItems: IServicesItem[] = GatherAllServices();

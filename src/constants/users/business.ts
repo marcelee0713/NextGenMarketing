@@ -7,86 +7,86 @@ const USER_BUSINESS_PROFILES: Record<string, IUserBusinessProfile> = {
   userId1: {
     ownerId: "userId1",
     businessId: "businessId1",
-    businessName: "Marston Organic Produce",
-    businessEmail: "contact@marstonorganic.com",
-    industry: "Food & Beverage",
-    businessWebsite: "https://marstonorganic.com",
-    location: "Austin, TX",
-    contactNumber: "+1 512-555-0199",
+    businessName: "Bite & Delight",
+    businessEmail: "hello@bitedelight.com",
+    industry: "Food", // Food industry business
+    businessWebsite: "https://bitedelight.com",
+    location: "Los Angeles, CA, USA",
+    contactNumber: "+1 310-555-1234",
     description:
-      "Providing fresh, organic fruits and vegetables directly from our farm to your table.",
-    coverImage: null,
+      "Delicious and healthy meals delivered to your door, catering to foodies and fitness enthusiasts.",
+    coverImage: null, // No cover image for now
     socialMediaLinks: [
-      "https://twitter.com/marstonorganic",
-      "https://instagram.com/marstonorganic",
+      "https://instagram.com/bitedelight",
+      "https://facebook.com/bitedelight",
     ],
   },
   userId3: {
     ownerId: "userId3",
     businessId: "businessId2",
-    businessName: "BrightEdge Solutions",
-    businessEmail: "hello@brightedge.co",
-    industry: "Software Development",
-    businessWebsite: "https://brightedge.co",
-    location: "San Francisco, CA",
-    contactNumber: "+1 415-555-1234",
+    businessName: "Techify X Machinery",
+    businessEmail: "info@techify.com",
+    industry: "Tech/Gadgets", // Tech and Gadgets industry business
+    businessWebsite: "https://techify.com",
+    location: "San Francisco, CA, USA",
+    contactNumber: "+1 415-555-5678",
     description:
-      "Developing custom software and analytics tools for growing businesses.",
-    coverImage: null,
+      "Innovative gadgets designed to simplify your daily life, from smart home tech to portable devices.",
+    coverImage: null, // No cover image for now
     socialMediaLinks: [
-      "https://facebook.com/brightedge",
-      "https://linkedin.com/company/brightedge",
+      "https://twitter.com/techify",
+      "https://instagram.com/techify",
     ],
   },
   userId5: {
     ownerId: "userId5",
     businessId: "businessId3",
-    businessName: "VisualImpact Studios",
-    businessEmail: "info@visualimpact.com",
-    industry: "Graphic Design",
-    businessWebsite: "https://visualimpact.com",
-    location: "Los Angeles, CA",
-    contactNumber: "+1 213-555-0148",
+    businessName: "Thread & Trend",
+    businessEmail: "support@threadandtrend.com",
+    industry: "Clothes", // Clothing and Fashion industry business
+    businessWebsite: "https://threadandtrend.com",
+    location: "New York, NY, USA",
+    contactNumber: "+1 212-555-8765",
     description:
-      "Creating visually stunning designs and branding solutions for companies looking to make a lasting impression.",
-    coverImage: null,
+      "Your go-to brand for stylish, eco-friendly clothing that combines comfort with fashion.",
+    coverImage: null, // No cover image for now
     socialMediaLinks: [
-      "https://instagram.com/visualimpact",
-      "https://dribbble.com/visualimpact",
+      "https://instagram.com/threadandtrend",
+      "https://facebook.com/threadandtrend",
     ],
   },
   userId6: {
     ownerId: "userId6",
     businessId: "businessId4",
-    businessName: "CulinaryCraft Catering",
-    businessEmail: "inquiries@culinarycraft.com",
-    industry: "Food & Beverage",
-    businessWebsite: "https://culinarycraft.com",
-    location: "New York, NY",
-    contactNumber: "+1 646-555-0234",
+    businessName: "PlayWorks",
+    businessEmail: "contact@playworks.com",
+    industry: "Toys", // Toys and Games industry business
+    businessWebsite: "https://playworks.com",
+    location: "Tokyo, Japan",
+    contactNumber: "+81 3-5555-7890",
     description:
-      "Providing bespoke catering services for corporate and private events across New York.",
-    coverImage: null,
+      "Creating fun, safe, and educational toys for kids of all ages to inspire creativity and learning.",
+    coverImage: null, // No cover image for now
     socialMediaLinks: [
-      "https://instagram.com/culinarycraft",
-      "https://facebook.com/culinarycraftcatering",
+      "https://twitter.com/playworks",
+      "https://facebook.com/playworks",
     ],
   },
   userId8: {
     ownerId: "userId8",
     businessId: "businessId5",
-    businessName: "GreenWave Eco Solutions",
-    businessEmail: "support@greenwave.com",
-    industry: "Sustainability Consulting",
-    businessWebsite: "https://greenwave.com",
-    location: "Seattle, WA",
-    contactNumber: "+1 206-555-0976",
+    businessName: "HomeEase",
+    businessEmail: "info@homeease.com",
+    industry: "Appliances", // Home Appliances industry business
+    businessWebsite: "https://homeease.com",
+    location: "Berlin, Germany",
+    contactNumber: "+49 30 555-1234",
     description:
-      "Helping companies implement sustainable practices to reduce environmental impact.",
-    coverImage: null,
+      "Offering smart and energy-efficient home appliances to make household tasks easier and greener.",
+    coverImage: null, // No cover image for now
     socialMediaLinks: [
-      "https://twitter.com/greenwaveeco",
-      "https://linkedin.com/company/greenwaveeco",
+      "https://twitter.com/homeease",
+      "https://instagram.com/homeease",
     ],
   },
 };

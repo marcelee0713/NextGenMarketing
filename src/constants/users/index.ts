@@ -33,7 +33,7 @@ const USERS: Record<string, IUser> = {
     password: "P@ssword123",
     businessProfile: USER_BUSINESS_PROFILES["userId3"], // Linked business profile
     profile: USER_PROFILES["userId3"],
-    subscriptionType: "GROWTH",
+    subscriptionType: "BUSINESS",
     createdAt: new Date(),
   },
   userId4: {
@@ -53,7 +53,7 @@ const USERS: Record<string, IUser> = {
     password: "P@ssword123",
     businessProfile: USER_BUSINESS_PROFILES["userId5"], // Linked business profile
     profile: USER_PROFILES["userId5"],
-    subscriptionType: "BUSINESS",
+    subscriptionType: "ENTERPRISE",
     createdAt: new Date(),
   },
   userId6: {
@@ -83,7 +83,7 @@ const USERS: Record<string, IUser> = {
     password: "P@ssword123",
     businessProfile: USER_BUSINESS_PROFILES["userId8"], // Linked business profile
     profile: USER_PROFILES["userId8"],
-    subscriptionType: "BUSINESS",
+    subscriptionType: "GROWTH",
     createdAt: new Date(),
   },
   userId9: {

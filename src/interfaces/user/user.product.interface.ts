@@ -1,19 +1,26 @@
-import { ProductCategoryType } from "@/types/user/user.product.types";
+import {
+  ProductCategoryType,
+  ShipmentLocationsType,
+} from "@/types/user/user.product.types";
 
 export interface IProduct {
   productId: string;
   businessId: string;
-  ownerId: string; // References the user who owns the product
+  ownerId: string;
   name: string;
   description: string;
+  productIntention: string;
   tags: string[];
-  category: ProductCategoryType; // Define categories like Food, Clothing, Electronics, etc.
+  category: ProductCategoryType;
   price: number;
   discount: number;
   coverImage: string | null;
   images: string[];
-  ratings: number; // Dynamically can be changed whenever someone posted a product evaluation
+  ratings: number;
+  specifications: ProductSpecification[];
+  deliveryLocation: ShipmentLocationsType;
   createdAt: Date;
+  isFeatured: boolean;
 }
 
 export interface IProductEvaluation {
@@ -23,4 +30,9 @@ export interface IProductEvaluation {
   rating: number; // Rating score out of 5
   comment: string;
   createdAt: Date;
+}
+
+export interface ProductSpecification {
+  attribute: string;
+  value: string;
 }

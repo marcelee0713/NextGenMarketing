@@ -1,4 +1,9 @@
+import {
+  ProductCategoryType,
+  ShipmentLocationsType,
+} from "@/types/user/user.product.types";
 import { UserSubscriptionType } from "@/types/user/user.types";
+import { IProduct, IProductEvaluation } from "./user.product.interface";
 
 export interface IUser {
   userId: string;
@@ -36,4 +41,49 @@ export interface IUserBusinessProfile {
   description: string; // Short description of the business
   coverImage: string | null; // Optional cover image for the business profile
   socialMediaLinks: string[]; // Array of links to social media accounts
+}
+
+export interface GetProductsParams {
+  pagination: {
+    skip: number;
+    take: number;
+  };
+  filter?: {
+    category?: ProductCategoryType;
+    deliveryLocations: ShipmentLocationsType;
+    customerRating?: number;
+    priceRange?: {
+      min?: number;
+      max?: number;
+    };
+  };
+  sortBy?: "desc" | "popular" | "trending";
+}
+
+export interface ProductsItemData {
+  fullLength: number;
+  filteredLength: number;
+  featuredItems: IProductItem[];
+  items: IProductItem[];
+}
+
+export interface ProductItemData {
+  businessProfile: IUserBusinessProfile;
+  data: IProduct;
+  reviews: IProductEvaluation[];
+}
+
+export interface IProductItem {
+  productId: string;
+  businessId: string;
+  ownerId: string;
+  productName: string;
+  tags: string[];
+  productIntention: string;
+  price: string;
+  discountedPrice: string;
+  gallery: {
+    coverImage: string | null;
+    images: string[];
+  };
 }
