@@ -65,7 +65,6 @@ export const CustomerReviews: React.FC<props> = ({ reviews }) => {
           <div
             ref={scrollRef}
             className="h-full w-full flex gap-5 overflow-x-auto no-scrollbar"
-            onScroll={checkArrowsVisibility}
           >
             {reviews.map((val, index) => (
               <ReviewBox

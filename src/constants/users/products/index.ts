@@ -81,7 +81,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       price: 17099, // 299.99 USD converted to PHP (random value)
       discount: 0.1, // 10% discount expressed as a decimal
       coverImage:
-        "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981467/my-uploads/nextgen/featured/ballie/banner_xvuvch.jpg",
+        "https://res.cloudinary.com/dop8qsdej/image/upload/v1729079618/my-uploads/nextgen/featured/ballie/samsung-balli-bildquelle-youtubesamsung-newsroom_6270029_ekiujx.jpg",
       images: [
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981467/my-uploads/nextgen/featured/ballie/Samsung_Ballie_CES-2024-11_keezfm.jpg",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981467/my-uploads/nextgen/featured/ballie/Jan_SamsugnBAllie-1024x576_mxqxbd.jpg",
@@ -111,7 +111,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       price: 7399, // 129.99 USD converted to PHP (random value)
       discount: 0.2, // 20% discount expressed as a decimal
       coverImage:
-        "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981470/my-uploads/nextgen/featured/rabbit/banner_rabbit_d8qkae.jpg",
+        "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981470/my-uploads/nextgen/featured/rabbitr1/banner_hd3jze.png",
       images: [
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981470/my-uploads/nextgen/featured/rabbitr1/Rabbit-R1_vazadm.jpg",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981470/my-uploads/nextgen/featured/rabbitr1/gear-rabbit_r1_back_v0cjut.png",
@@ -585,7 +585,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         { attribute: "Modes", value: "6 blending modes" },
       ],
       createdAt: new Date(),
-      isFeatured: true,
+      isFeatured: false,
       deliveryLocation: "Overseas",
       productIntention:
         "Ease-E is aimed at health enthusiasts and busy individuals who need a smart, powerful blender to make meal preparation easier and more efficient.",

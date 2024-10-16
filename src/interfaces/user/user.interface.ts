@@ -50,7 +50,7 @@ export interface GetProductsParams {
   };
   filter?: {
     category?: ProductCategoryType;
-    deliveryLocations: ShipmentLocationsType;
+    deliveryLocations?: ShipmentLocationsType;
     customerRating?: number;
     priceRange?: {
       min?: number;
@@ -63,8 +63,8 @@ export interface GetProductsParams {
 export interface ProductsItemData {
   fullLength: number;
   filteredLength: number;
-  featuredItems: IProductItem[];
-  items: IProductItem[];
+  featuredItems: IProduct[];
+  items: IProduct[];
 }
 
 export interface ProductItemData {
