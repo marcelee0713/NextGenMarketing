@@ -6,3 +6,9 @@ export interface OrderSummary {
   selectedClass: ServiceClassType;
   selectedAddOns: string[];
 }
+
+export interface OrderSummaryProduct {
+  userId: string;
+  productId: string;
+  selectedAddOns: string[];
+}

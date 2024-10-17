@@ -8,6 +8,7 @@ import { ProductTabs } from "../product_tabs";
 import { ServiceAMA } from "../../service/ama/service_ata";
 import { ServiceGallery } from "../../service/gallery";
 import { ProductSideInfo } from "../side_info";
+import { ProductModal } from "../modal";
 
 interface props {
   data: ProductItemData;
@@ -15,6 +16,8 @@ interface props {
 
 export const ProductContents: React.FC<props> = ({ data }) => {
   const [modal, setModal] = useState(false);
+  const discounted = data.data.price * data.data.discount;
+  const discountedPrice = data.data.price - discounted;
 
   return (
     <div className="flex-1 flex gap-[12px] font-inter">
@@ -53,6 +56,21 @@ export const ProductContents: React.FC<props> = ({ data }) => {
           />
         </div>
       </div>
+
+      {modal && (
+        <ProductModal
+          addOns={data.data.addOns}
+          businessName={data.businessProfile.businessName}
+          originalPrice={data.data.price}
+          discountedPrice={discountedPrice}
+          productName={data.data.name}
+          setModal={setModal}
+          images={[data.data.coverImage ?? "", ...data.data.images]}
+          overAllRating={data.data.ratings}
+          productId={data.data.productId}
+          userId={data.businessProfile.ownerId}
+        />
+      )}
     </div>
   );
 };

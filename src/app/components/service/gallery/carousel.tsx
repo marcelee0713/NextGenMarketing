@@ -4,9 +4,16 @@ import { useState, useEffect } from "react";
 interface CarouselProps {
   images: string[];
   autoPlayTime?: number; // optional prop to set the autoplay interval time
+  removeDots?: boolean;
+  removeButtons?: boolean;
 }
 
-const Carousel: React.FC<CarouselProps> = ({ images, autoPlayTime = 3000 }) => {
+const Carousel: React.FC<CarouselProps> = ({
+  images,
+  autoPlayTime = 3000,
+  removeDots,
+  removeButtons,
+}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrevious = () => {
@@ -55,35 +62,41 @@ const Carousel: React.FC<CarouselProps> = ({ images, autoPlayTime = 3000 }) => {
           ))}
         </div>
 
-        {/* Previous Button */}
-        <button
-          onClick={goToPrevious}
-          className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 hover:bg-opacity-75"
-        >
-          &#10094;
-        </button>
+        {!removeButtons && (
+          <>
+            <button
+              onClick={goToPrevious}
+              className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 hover:bg-opacity-75"
+            >
+              &#10094;
+            </button>
 
-        {/* Next Button */}
-        <button
-          onClick={goToNext}
-          className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 hover:bg-opacity-75"
-        >
-          &#10095;
-        </button>
+            {/* Next Button */}
+            <button
+              onClick={goToNext}
+              className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 hover:bg-opacity-75"
+            >
+              &#10095;
+            </button>
+          </>
+        )}
+        {/* Previous Button */}
       </div>
 
       {/* Dots Indicator */}
-      <div className="flex justify-center gap-3 mt-4">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            className={`w-3 h-3 rounded-full ${
-              index === currentIndex ? "bg-primary" : "bg-gray-400"
-            }`}
-            onClick={() => setCurrentIndex(index)}
-          />
-        ))}
-      </div>
+      {!removeDots && (
+        <div className="flex justify-center gap-3 mt-4">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              className={`w-3 h-3 rounded-full ${
+                index === currentIndex ? "bg-primary" : "bg-gray-400"
+              }`}
+              onClick={() => setCurrentIndex(index)}
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
