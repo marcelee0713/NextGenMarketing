@@ -35,6 +35,73 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       deliveryLocation: "Metro Manila",
       productIntention:
         "This burger is sent out for testing to gauge consumer response to a new flavor profile aimed at fast food chains and gourmet burger joints.",
+      faqs: [
+        {
+          productId: "productId9",
+          questions: "What type of beef is used in Bugerinator?",
+          answer:
+            "Bugerinator uses 100% all-natural beef, sourced locally to ensure freshness and quality in every bite.",
+        },
+        {
+          productId: "productId9",
+          questions: "Does Bugerinator offer vegetarian options?",
+          answer:
+            "Yes, Bugerinator includes a veggie version with a plant-based patty made from a blend of vegetables and legumes.",
+        },
+        {
+          productId: "productId9",
+          questions: "What sauces are included with the Bugerinator?",
+          answer:
+            "Bugerinator features our signature tangy house sauce, along with options for classic ketchup and mustard.",
+        },
+        {
+          productId: "productId9",
+          questions:
+            "Is Bugerinator available for delivery outside Metro Manila?",
+          answer:
+            "Currently, Bugerinator is only available for delivery within Metro Manila. Expansion to other areas is planned soon.",
+        },
+        {
+          productId: "productId9",
+          questions: "Does Bugerinator contain allergens?",
+          answer:
+            "Yes, Bugerinator contains dairy and gluten, so please be cautious if you have allergies to these ingredients.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId9",
+          header: "Extra Cheese",
+          description:
+            "Add an extra layer of melted cheese to your Bugerinator for that creamy goodness.",
+          price: 30,
+        },
+        {
+          productId: "productId9",
+          header: "Bacon Upgrade",
+          description: "Add crispy bacon strips for an extra savory crunch.",
+          price: 40,
+        },
+        {
+          productId: "productId9",
+          header: "Double Patty",
+          description:
+            "Make your Bugerinator even heartier with an additional beef patty.",
+          price: 60,
+        },
+        {
+          productId: "productId9",
+          header: "Spicy Sauce",
+          description: "Switch to our spicy sauce for an extra kick of flavor.",
+          price: 15,
+        },
+        {
+          productId: "productId9",
+          header: "Side of Fries",
+          description: "Enjoy a side of crispy fries with your Bugerinator.",
+          price: 50,
+        },
+      ],
     },
     {
       productId: "productId10",
@@ -66,6 +133,76 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       deliveryLocation: "Metro Manila",
       productIntention:
         "This hotdog is being tested to assess its appeal as a quick, premium snack option for both casual meals and events.",
+      faqs: [
+        {
+          productId: "productId10",
+          questions: "What types of meat are used in HakDogs?",
+          answer:
+            "HakDogs are made from a blend of premium pork and beef, carefully seasoned for maximum flavor.",
+        },
+        {
+          productId: "productId10",
+          questions: "Can HakDogs be grilled or only steamed?",
+          answer:
+            "HakDogs can be prepared both grilled or steamed, offering flexibility for different tastes and preferences.",
+        },
+        {
+          productId: "productId10",
+          questions: "Are there any allergens in HakDogs?",
+          answer:
+            "HakDogs do not contain common allergens like dairy or gluten, making them a safe option for most consumers.",
+        },
+        {
+          productId: "productId10",
+          questions:
+            "Is HakDogs available for delivery outside of Metro Manila?",
+          answer:
+            "Currently, HakDogs are only available for delivery within Metro Manila. Future plans may expand the delivery area.",
+        },
+        {
+          productId: "productId10",
+          questions: "What is the recommended way to serve HakDogs?",
+          answer:
+            "HakDogs are best served with traditional condiments like mustard and ketchup, but they also pair well with various sauces and toppings.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId10",
+          header: "Extra Toppings",
+          description:
+            "Add your choice of toppings: onions, jalapeños, or relish for a burst of flavor.",
+          price: 20,
+        },
+        {
+          productId: "productId10",
+          header: "Cheese Sauce",
+          description:
+            "Top your HakDog with creamy cheese sauce for an extra indulgent treat.",
+          price: 25,
+        },
+        {
+          productId: "productId10",
+          header: "Combo with Fries",
+          description:
+            "Pair your HakDog with a side of crispy fries for a complete meal.",
+          price: 75,
+        },
+        {
+          productId: "productId10",
+          header: "Grilled Option",
+          description:
+            "Choose a grilled HakDog for a smoky flavor and charred finish.",
+          price: 10,
+        },
+        {
+          productId: "productId10",
+          header: "Ketchup & Mustard Pack",
+          description:
+            "Get a pack of our premium ketchup and mustard to enhance your hotdog experience.",
+          price: 15,
+        },
+      ],
     },
   ],
   businessId2: [
@@ -96,6 +233,61 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: true, // New property
       deliveryLocation: "North Luzon",
+      faqs: [
+        {
+          productId: "productId1",
+          questions: "What makes Roball different from other pet toys?",
+          answer:
+            "Roball uses advanced sensors and AI technology to interact with your pet, providing a more engaging play experience compared to traditional toys.",
+        },
+        {
+          productId: "productId1",
+          questions: "Is Roball suitable for all dog breeds?",
+          answer:
+            "Yes, Roball is designed to be safe and enjoyable for dogs of all breeds and sizes, although smaller pets may have more fun with it.",
+        },
+        {
+          productId: "productId1",
+          questions: "How does Roball charge?",
+          answer:
+            "Roball comes with a USB charging cable and can be easily charged by connecting it to any USB power source.",
+        },
+        {
+          productId: "productId1",
+          questions: "Can I customize the play settings on Roball?",
+          answer:
+            "Yes, Roball offers customizable settings through its app, allowing you to adjust the sensitivity and response levels based on your pet's preferences.",
+        },
+        {
+          productId: "productId1",
+          questions: "Is Roball waterproof?",
+          answer:
+            "Roball is splash-resistant, but it is not fully waterproof. It's best to keep it away from water to ensure longevity.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId1",
+          header: "Extra Charging Cable",
+          description:
+            "Keep your Roball charged and ready to go with an extra USB charging cable.",
+          price: 499,
+        },
+        {
+          productId: "productId1",
+          header: "Pet Treats",
+          description:
+            "A selection of healthy treats to reward your pet while they play with Roball.",
+          price: 299,
+        },
+        {
+          productId: "productId1",
+          header: "Protective Case",
+          description:
+            "A durable case to keep your Roball safe during playtime and travel.",
+          price: 799,
+        },
+      ],
       productIntention:
         "Roball is currently being tested as a smart pet companion designed to enhance the play and exercise experience for pets, while offering pet owners a reliable gadget to keep their furry friends entertained.",
     },
@@ -127,8 +319,56 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: true, // New property
       deliveryLocation: "North Luzon",
+      faqs: [
+        {
+          productId: "productidIdontfuckingknow",
+          questions: "What age group is BunnyR1 suitable for?",
+          answer: "BunnyR1 is designed for children aged 5 and above.",
+        },
+        {
+          productId: "productidIdontfuckingknow",
+          questions: "How does BunnyR1 respond to commands?",
+          answer:
+            "BunnyR1 uses voice recognition technology to respond to simple voice commands.",
+        },
+        {
+          productId: "productidIdontfuckingknow",
+          questions: "What is the battery life of BunnyR1?",
+          answer:
+            "BunnyR1 has a battery life of up to 10 hours on a full charge.",
+        },
+        {
+          productId: "productidIdontfuckingknow",
+          questions: "Is BunnyR1 safe for children?",
+          answer:
+            "Yes, BunnyR1 is made from non-toxic materials and is designed with safety in mind.",
+        },
+      ],
       productIntention:
         "BunnyR1 is being tested to gauge its effectiveness as a playful robot companion for children, aimed at enhancing interactive play and learning in the tech-toy market.",
+      addOns: [
+        {
+          productId: "productidIdontfuckingknow",
+          header: "Voice Command Training",
+          description:
+            "Enhance your BunnyR1's capabilities with advanced voice command training sessions.",
+          price: 1499,
+        },
+        {
+          productId: "productidIdontfuckingknow",
+          header: "Rechargeable Batteries",
+          description:
+            "Spare rechargeable batteries to keep BunnyR1 powered for hours of fun.",
+          price: 899,
+        },
+        {
+          productId: "productidIdontfuckingknow",
+          header: "Accessory Pack",
+          description:
+            "A fun pack of accessories to customize your BunnyR1's appearance.",
+          price: 599,
+        },
+      ],
     },
     {
       productId: "productId3",
@@ -157,13 +397,75 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: true, // New property
       deliveryLocation: "Visayas",
+      faqs: [
+        {
+          productId: "productId3",
+          questions: "What features does the LightPhone offer?",
+          answer:
+            "The LightPhone offers essential communication features like calls and texts, without the distractions of a smartphone.",
+        },
+        {
+          productId: "productId3",
+          questions: "Is the LightPhone suitable for children?",
+          answer:
+            "Yes, the LightPhone is a great choice for children who need a phone for communication without the distractions of apps and games.",
+        },
+        {
+          productId: "productId3",
+          questions: "How long does the battery last on the LightPhone?",
+          answer:
+            "The LightPhone has a battery life of up to 3000 mAh, lasting a full day on average use.",
+        },
+        {
+          productId: "productId3",
+          questions: "Can I use the LightPhone for emergency calls?",
+          answer:
+            "Yes, the LightPhone can be used for emergency calls, just like any other mobile phone.",
+        },
+        {
+          productId: "productId3",
+          questions: "What is the warranty period for the LightPhone?",
+          answer:
+            "The LightPhone comes with a one-year warranty covering manufacturing defects.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId3",
+          header: "Screen Protector",
+          description:
+            "Protect your LightPhone's screen with a durable, high-quality screen protector.",
+          price: 300,
+        },
+        {
+          productId: "productId3",
+          header: "Charging Dock",
+          description:
+            "A sleek charging dock for convenient charging and display of your LightPhone.",
+          price: 1200,
+        },
+        {
+          productId: "productId3",
+          header: "Customized Skin",
+          description:
+            "Personalize your LightPhone with a customized skin for a unique look.",
+          price: 600,
+        },
+        {
+          productId: "productId3",
+          header: "Bluetooth Headset",
+          description:
+            "Wireless Bluetooth headset for hands-free calling and music enjoyment.",
+          price: 1500,
+        },
+      ],
       productIntention:
         "LightPhone is being tested to understand its appeal among users seeking a minimalist approach to mobile technology, catering to those who prioritize disconnection from constant notifications.",
     },
     {
       productId: "productId4",
       businessId: "businessId2",
-      ownerId: "userId2",
+      ownerId: "userId3",
       name: "MyPettyPlant",
       description:
         "MyPettyPlant is an innovative high-tech pot that takes plant care to the next level. Equipped with smart sensors, it monitors soil moisture, light, and temperature to ensure your plant thrives in its environment. With its user-friendly app, you can receive alerts and guidance, making plant parenting easy and enjoyable, so you can cultivate your green thumb with confidence.",
@@ -187,6 +489,61 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: true, // New property
       deliveryLocation: "Visayas",
+      faqs: [
+        {
+          productId: "productId4",
+          questions: "What makes MyPettyPlant different from regular pots?",
+          answer:
+            "MyPettyPlant is equipped with smart sensors that monitor soil moisture, light, and temperature, ensuring optimal plant care.",
+        },
+        {
+          productId: "productId4",
+          questions: "How does the MyPettyPlant app work?",
+          answer:
+            "The app provides alerts and guidance based on the environmental conditions, helping you take care of your plant effortlessly.",
+        },
+        {
+          productId: "productId4",
+          questions: "What type of plants can I use with MyPettyPlant?",
+          answer:
+            "You can use MyPettyPlant with a variety of indoor plants that thrive in monitored conditions.",
+        },
+        {
+          productId: "productId4",
+          questions: "Is MyPettyPlant easy to set up?",
+          answer:
+            "Yes, MyPettyPlant is designed for easy setup, and the app guides you through the process.",
+        },
+        {
+          productId: "productId4",
+          questions: "What are the dimensions of MyPettyPlant?",
+          answer:
+            "MyPettyPlant measures 30cm x 30cm, making it suitable for various indoor spaces.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId4",
+          header: "Plant Care Kit",
+          description:
+            "A comprehensive kit with fertilizers and tools to ensure your plants thrive.",
+          price: 750,
+        },
+        {
+          productId: "productId4",
+          header: "Smart App Subscription",
+          description:
+            "Unlock premium features in the app for advanced plant care insights.",
+          price: 500,
+        },
+        {
+          productId: "productId4",
+          header: "Additional Sensor Module",
+          description:
+            "Expand monitoring capabilities with an extra sensor module for humidity tracking.",
+          price: 1200,
+        },
+      ],
       productIntention:
         "MyPettyPlant is being tested as a smart planter solution for tech-savvy plant enthusiasts, aiming to simplify plant care with smart features that monitor environmental conditions.",
     },
@@ -217,6 +574,61 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false, // New property
       deliveryLocation: "Mindanao",
+      faqs: [
+        {
+          productId: "productIdWatch6",
+          questions: "What health features does the Watch6 offer?",
+          answer:
+            "The Watch6 provides heart rate monitoring, sleep tracking, and fitness activity tracking.",
+        },
+        {
+          productId: "productIdWatch6",
+          questions: "Is the Watch6 compatible with both Android and iOS?",
+          answer:
+            "Yes, the Watch6 can be paired with both Android and iOS devices for notifications and syncing.",
+        },
+        {
+          productId: "productIdWatch6",
+          questions: "What is the battery life of the Watch6?",
+          answer:
+            "The Watch6 has a battery life of up to 40 hours on a single charge.",
+        },
+        {
+          productId: "productIdWatch6",
+          questions: "Can the Watch6 withstand water?",
+          answer:
+            "Yes, the Watch6 is rated IP68 for water resistance, making it suitable for swimming.",
+        },
+        {
+          productId: "productIdWatch6",
+          questions: "Does the Watch6 have customizable watch faces?",
+          answer:
+            "Yes, you can customize watch faces according to your style and preferences.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productIdWatch6",
+          header: "Sport Strap",
+          description:
+            "A durable sport strap for your Watch6, perfect for workouts and outdoor activities.",
+          price: 600,
+        },
+        {
+          productId: "productIdWatch6",
+          header: "Wireless Charger",
+          description:
+            "Convenient wireless charger for hassle-free charging of your Watch6.",
+          price: 800,
+        },
+        {
+          productId: "productIdWatch6",
+          header: "Screen Protector",
+          description:
+            "High-quality screen protector to keep your Watch6 display scratch-free.",
+          price: 300,
+        },
+      ],
       productIntention:
         "Watch6 is being tested as an advanced health and fitness companion with stylish design and cutting-edge features, targeting users who seek both connectivity and wellness monitoring.",
     },
@@ -247,6 +659,62 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Mindanao",
+      faqs: [
+        {
+          productId: "productId11",
+          questions: "What is the charging capacity of the PowerBanker?",
+          answer:
+            "The PowerBanker has a capacity of 20,000 mAh, allowing multiple charges for your devices.",
+        },
+        {
+          productId: "productId11",
+          questions:
+            "How many devices can the PowerBanker charge simultaneously?",
+          answer:
+            "The PowerBanker can charge up to three devices at the same time with its multiple output ports.",
+        },
+        {
+          productId: "productId11",
+          questions: "Is the PowerBanker lightweight?",
+          answer:
+            "Yes, it is designed for portability and is lightweight enough to carry easily.",
+        },
+        {
+          productId: "productId11",
+          questions: "What types of devices can I charge with the PowerBanker?",
+          answer:
+            "You can charge smartphones, tablets, and other USB-powered devices using the PowerBanker.",
+        },
+        {
+          productId: "productId11",
+          questions: "Does the PowerBanker come with a warranty?",
+          answer:
+            "Yes, the PowerBanker comes with a one-year warranty covering manufacturing defects.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId11",
+          header: "Extra USB-C Cable",
+          description:
+            "High-speed USB-C cable for efficient charging and data transfer.",
+          price: 300,
+        },
+        {
+          productId: "productId11",
+          header: "Travel Pouch",
+          description:
+            "Compact travel pouch for carrying your PowerBanker and accessories.",
+          price: 250,
+        },
+        {
+          productId: "productId11",
+          header: "LED Flashlight Attachment",
+          description:
+            "Attachable LED flashlight for added convenience in low-light situations.",
+          price: 400,
+        },
+      ],
       productIntention:
         "PowerBanker is currently in testing as a sleek, high-capacity power bank, designed for efficient portable charging with fast-charge capabilities.",
     },
@@ -277,6 +745,61 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "South Luzon",
+      faqs: [
+        {
+          productId: "productId12",
+          questions: "How bright is the Flashlite?",
+          answer:
+            "The Flashlite offers a brightness of up to 500 lumens, suitable for various situations.",
+        },
+        {
+          productId: "productId12",
+          questions: "Is the Flashlite rechargeable?",
+          answer:
+            "Yes, the Flashlite features a rechargeable battery for convenience.",
+        },
+        {
+          productId: "productId12",
+          questions: "What is the main material of the Flashlite?",
+          answer:
+            "The Flashlite is made of durable aluminum, ensuring longevity and resilience.",
+        },
+        {
+          productId: "productId12",
+          questions: "Can the Flashlite be used outdoors?",
+          answer:
+            "Yes, the Flashlite is designed for outdoor use, making it perfect for camping and emergencies.",
+        },
+        {
+          productId: "productId12",
+          questions: "Does the Flashlite come with a warranty?",
+          answer:
+            "Yes, it includes a one-year warranty against manufacturing defects.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId12",
+          header: "Extra Battery Pack",
+          description:
+            "Rechargeable battery pack for extended use of your Flashlite.",
+          price: 500,
+        },
+        {
+          productId: "productId12",
+          header: "Carrying Case",
+          description:
+            "Durable carrying case for safe transport of your Flashlite.",
+          price: 350,
+        },
+        {
+          productId: "productId12",
+          header: "Lantern Base",
+          description:
+            "Convert your Flashlite into a lantern with this easy-to-use base.",
+          price: 600,
+        },
+      ],
       productIntention:
         "Flashlite is being tested for its dual functionality as a flashlight and lamp, appealing to users who require reliable and versatile illumination in various scenarios.",
     },
@@ -307,6 +830,64 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "South Luzon",
+      faqs: [
+        {
+          productId: "productId13",
+          questions:
+            "What voltage does the Bosch Cordless ScrewDriver operate at?",
+          answer:
+            "The Bosch Cordless ScrewDriver operates at a voltage of 3.6V.",
+        },
+        {
+          productId: "productId13",
+          questions:
+            "Is the Bosch Cordless ScrewDriver suitable for heavy-duty use?",
+          answer:
+            "While it's compact, it is designed for DIY projects and light to medium tasks.",
+        },
+        {
+          productId: "productId13",
+          questions:
+            "How much torque does the Bosch Cordless ScrewDriver provide?",
+          answer:
+            "The tool provides a torque of 5.5 Nm, making it effective for various screws.",
+        },
+        {
+          productId: "productId13",
+          questions: "What is the weight of the Bosch Cordless ScrewDriver?",
+          answer:
+            "The Bosch Cordless ScrewDriver weighs approximately 0.6 kg, making it easy to handle.",
+        },
+        {
+          productId: "productId13",
+          questions: "Does the Bosch Cordless ScrewDriver have a warranty?",
+          answer:
+            "Yes, it comes with a one-year warranty covering manufacturing defects.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId13",
+          header: "Extra Bit Set",
+          description:
+            "Versatile bit set compatible with the Bosch Cordless ScrewDriver for various tasks.",
+          price: 400,
+        },
+        {
+          productId: "productId13",
+          header: "Magnetic Holder",
+          description:
+            "Magnetic bit holder to keep your bits organized and accessible.",
+          price: 200,
+        },
+        {
+          productId: "productId13",
+          header: "Tool Bag",
+          description:
+            "Sturdy tool bag to store your Bosch Cordless ScrewDriver and accessories.",
+          price: 800,
+        },
+      ],
       productIntention:
         "The Bosch Cordless ScrewDriver is being evaluated as a durable, compact tool designed for DIY enthusiasts and professionals, offering ease of use in tight spaces.",
     },
@@ -337,6 +918,61 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Overseas",
+      faqs: [
+        {
+          productId: "productId14",
+          questions: "What material is the Groovy Plier Tool made of?",
+          answer:
+            "The Groovy Plier Tool is made of high-quality steel for durability.",
+        },
+        {
+          productId: "productId14",
+          questions: "How long is the Groovy Plier Tool?",
+          answer:
+            "The Groovy Plier Tool measures 10 inches in length, making it suitable for various tasks.",
+        },
+        {
+          productId: "productId14",
+          questions: "Is the Groovy Plier Tool comfortable to use?",
+          answer:
+            "Yes, it features a comfortable grip designed for prolonged use.",
+        },
+        {
+          productId: "productId14",
+          questions: "Can the Groovy Plier Tool be used for electrical work?",
+          answer:
+            "Yes, it is versatile enough to handle a range of tasks, including electrical work.",
+        },
+        {
+          productId: "productId14",
+          questions: "Does the Groovy Plier Tool come with a warranty?",
+          answer:
+            "Yes, it includes a one-year warranty against defects in materials and workmanship.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId14",
+          header: "Tool Organizer",
+          description:
+            "Efficient organizer to keep your tools neatly stored and accessible.",
+          price: 600,
+        },
+        {
+          productId: "productId14",
+          header: "Safety Glasses",
+          description:
+            "Durable safety glasses for eye protection during projects.",
+          price: 350,
+        },
+        {
+          productId: "productId14",
+          header: "Multi-Function Tool",
+          description:
+            "A versatile multi-tool for added functionality in various tasks.",
+          price: 800,
+        },
+      ],
       productIntention:
         "Groovy Plier Tool is being tested for its versatility and comfort, aiming to become an essential addition to any toolbox for various repair and construction tasks.",
     },
@@ -370,6 +1006,61 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Overseas",
+      faqs: [
+        {
+          productId: "productIdMyGlasses",
+          questions: "What technology is integrated into MyGlasses?",
+          answer:
+            "MyGlasses feature built-in audio and display capabilities, allowing seamless connectivity while on the go.",
+        },
+        {
+          productId: "productIdMyGlasses",
+          questions: "Are MyGlasses suitable for everyday use?",
+          answer:
+            "Yes, MyGlasses are designed for everyday wear, combining style and functionality.",
+        },
+        {
+          productId: "productIdMyGlasses",
+          questions: "How long does the battery last?",
+          answer:
+            "MyGlasses have a battery life of approximately 10 hours with standard use.",
+        },
+        {
+          productId: "productIdMyGlasses",
+          questions: "Can I use MyGlasses for phone calls?",
+          answer:
+            "Yes, MyGlasses can be used to make and receive phone calls seamlessly.",
+        },
+        {
+          productId: "productIdMyGlasses",
+          questions: "What styles are available for MyGlasses?",
+          answer:
+            "MyGlasses come in various styles to suit different fashion preferences.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productIdMyGlasses",
+          header: "Lens Cleaning Kit",
+          description:
+            "A complete kit for keeping your smart glasses clean and scratch-free.",
+          price: 450,
+        },
+        {
+          productId: "productIdMyGlasses",
+          header: "Protective Case",
+          description:
+            "Stylish case to keep your smart glasses safe when not in use.",
+          price: 700,
+        },
+        {
+          productId: "productIdMyGlasses",
+          header: "Screen Protector",
+          description:
+            "Durable screen protector to prevent scratches and damage.",
+          price: 300,
+        },
+      ],
       productIntention:
         "MyGlasses are released to explore the fusion of technology and fashion, targeting tech-savvy consumers who desire both style and functionality in their accessories.",
     },
@@ -400,6 +1091,59 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Domestic",
+      faqs: [
+        {
+          productId: "productIdsleevey",
+          questions: "What is the material of Sleevey?",
+          answer:
+            "Sleevey is made from high-quality cotton for comfort and durability.",
+        },
+        {
+          productId: "productIdsleevey",
+          questions: "What sizes are available for Sleevey?",
+          answer: "Sleevey is available in sizes S, M, L, and XL.",
+        },
+        {
+          productId: "productIdsleevey",
+          questions: "Is Sleevey suitable for casual wear?",
+          answer:
+            "Yes, Sleevey is perfect for casual occasions and everyday wear.",
+        },
+        {
+          productId: "productIdsleevey",
+          questions: "How do I care for Sleevey?",
+          answer:
+            "Sleevey can be machine washed on a gentle cycle and should be tumble dried on low heat.",
+        },
+        {
+          productId: "productIdsleevey",
+          questions: "Are there different color options for Sleevey?",
+          answer:
+            "Yes, Sleevey is available in various colors to match your style.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productIdsleevey",
+          header: "Custom Embroidery",
+          description:
+            "Add a personalized touch with custom embroidery on your polo shirt.",
+          price: 200,
+        },
+        {
+          productId: "productIdsleevey",
+          header: "Gift Wrapping Service",
+          description:
+            "Make it special with our premium gift wrapping service.",
+          price: 150,
+        },
+        {
+          productId: "productIdsleevey",
+          header: "Extra Color Option",
+          description: "Get a second color option for your Sleevey polo shirt.",
+          price: 100,
+        },
+      ],
       productIntention:
         "Sleevey is aimed at casual fashion wearers who are looking for simple, versatile polo shirts, offering comfortable yet stylish clothing for both work and leisure.",
     },
@@ -430,6 +1174,60 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Domestic",
+      faqs: [
+        {
+          productId: "productId5",
+          questions: "What is the design philosophy behind Minimaly?",
+          answer:
+            "Minimaly focuses on simplicity and clean lines, perfect for those who appreciate minimalist fashion.",
+        },
+        {
+          productId: "productId5",
+          questions: "What materials are used in Minimaly shirts?",
+          answer:
+            "Minimaly shirts are made from high-quality polyester for comfort and breathability.",
+        },
+        {
+          productId: "productId5",
+          questions: "Are Minimaly shirts available in different colors?",
+          answer:
+            "Yes, Minimaly shirts are available in white and black color options.",
+        },
+        {
+          productId: "productId5",
+          questions: "What sizes does Minimaly offer?",
+          answer: "Minimaly is available in sizes M, L, and XL.",
+        },
+        {
+          productId: "productId5",
+          questions:
+            "Is Minimaly suitable for both casual and formal occasions?",
+          answer:
+            "Yes, Minimaly can be styled for both casual and formal settings.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId5",
+          header: "Sustainable Packaging",
+          description: "Choose eco-friendly packaging for your Minimaly shirt.",
+          price: 50,
+        },
+        {
+          productId: "productId5",
+          header: "Fabric Care Kit",
+          description:
+            "A kit to help you maintain the quality of your polyester shirts.",
+          price: 250,
+        },
+        {
+          productId: "productId5",
+          header: "Fashion Lookbook",
+          description:
+            "Get a lookbook with style inspirations on how to wear Minimaly.",
+          price: 100,
+        },
+      ],
       productIntention:
         "Minimaly is introduced as a minimalist fashion staple, catering to customers who prefer clean designs with a focus on simplicity, available in neutral colors for everyday wear.",
     },
@@ -462,6 +1260,60 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Overseas",
+      faqs: [
+        {
+          productId: "productId15",
+          questions: "What is Anki Vector?",
+          answer:
+            "Anki Vector is a friendly robot companion that combines technology and play, responding to commands and recognizing faces.",
+        },
+        {
+          productId: "productId15",
+          questions: "How long does the battery last for Anki Vector?",
+          answer: "Anki Vector has a battery life of approximately 1 hour.",
+        },
+        {
+          productId: "productId15",
+          questions: "Is Anki Vector compatible with mobile devices?",
+          answer:
+            "Yes, Anki Vector is compatible with both iOS and Android devices.",
+        },
+        {
+          productId: "productId15",
+          questions: "What age group is Anki Vector suitable for?",
+          answer:
+            "Anki Vector is suitable for both kids and adults, making it an educational and playful companion.",
+        },
+        {
+          productId: "productId15",
+          questions: "What features does Anki Vector have?",
+          answer:
+            "Anki Vector includes advanced AI, voice recognition, and interactive features to engage users.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId15",
+          header: "Charging Dock",
+          description:
+            "A convenient charging dock to keep your Anki Vector powered up.",
+          price: 500,
+        },
+        {
+          productId: "productId15",
+          header: "Additional Face Recognition Feature",
+          description:
+            "Enhance Vector's abilities with an additional face recognition upgrade.",
+          price: 800,
+        },
+        {
+          productId: "productId15",
+          header: "Custom Voice Commands",
+          description:
+            "Personalize your Anki Vector with custom voice commands.",
+          price: 300,
+        },
+      ],
       productIntention:
         "Anki Vector is introduced as an educational and playful companion, aimed at blending fun with learning through AI technology, making robotics accessible for both kids and adults.",
     },
@@ -492,6 +1344,60 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Overseas",
+      faqs: [
+        {
+          productId: "productId16",
+          questions: "What is Baw-wow Dog?",
+          answer:
+            "Baw-wow Dog is a high-tech robotic toy that mimics real dog behaviors and responds to touch and voice.",
+        },
+        {
+          productId: "productId16",
+          questions: "How long does the battery last for Baw-wow Dog?",
+          answer: "Baw-wow Dog has a battery life of approximately 2 hours.",
+        },
+        {
+          productId: "productId16",
+          questions: "What sensors does Baw-wow Dog have?",
+          answer:
+            "Baw-wow Dog features touch and voice sensors for interactive play.",
+        },
+        {
+          productId: "productId16",
+          questions: "What age group is Baw-wow Dog suitable for?",
+          answer:
+            "Baw-wow Dog is designed for children, providing a fun and interactive experience.",
+        },
+        {
+          productId: "productId16",
+          questions: "What behaviors can Baw-wow Dog mimic?",
+          answer:
+            "Baw-wow Dog mimics real dog behaviors, making it a realistic companion for kids.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId16",
+          header: "Interactive Play Mat",
+          description:
+            "A special play mat designed to enhance your Baw-wow Dog's interactive play.",
+          price: 400,
+        },
+        {
+          productId: "productId16",
+          header: "Extra Battery Pack",
+          description:
+            "Keep the fun going with an additional battery pack for longer playtime.",
+          price: 350,
+        },
+        {
+          productId: "productId16",
+          header: "Training Guide",
+          description:
+            "A comprehensive training guide to teach your Baw-wow Dog new tricks.",
+          price: 250,
+        },
+      ],
       productIntention:
         "Baw-wow Dog is targeted at children who seek interactive play with lifelike robotic pets, offering a fun, high-tech experience through responsive behavior.",
     },
@@ -524,6 +1430,48 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: true, // New property
       deliveryLocation: "Overseas",
+      faqs: [
+        {
+          productId: "productIdJuicero",
+          questions: "What is Juicero?",
+          answer:
+            "Juicero is a premium juice press that allows users to extract juice from specially designed juice packs, making healthy living convenient.",
+        },
+        {
+          productId: "productIdJuicero",
+          questions: "How does Juicero work?",
+          answer:
+            "Juicero uses advanced technology to press juice from proprietary packs, ensuring fresh, cold-pressed juice at home.",
+        },
+        {
+          productId: "productIdJuicero",
+          questions: "Is Juicero easy to clean?",
+          answer:
+            "Yes, Juicero is designed for easy cleaning with removable parts that can be washed separately.",
+        },
+        {
+          productId: "productIdJuicero",
+          questions: "Where can I buy Juicero juice packs?",
+          answer:
+            "Juicero juice packs can be purchased online through various retailers and the official Juicero website.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productIdJuicero",
+          header: "Juice Pack Subscription",
+          description:
+            "Monthly subscription for Juicero juice packs, ensuring you never run out of fresh juice.",
+          price: 1500,
+        },
+        {
+          productId: "productIdJuicero",
+          header: "Cleaning Kit",
+          description:
+            "Specialized cleaning kit to keep your Juicero in pristine condition.",
+          price: 800,
+        },
+      ],
       productIntention:
         "Juicero is marketed as a luxury juicing appliance, appealing to health-conscious consumers who value convenience, style, and cutting-edge technology in their kitchen.",
     },
@@ -556,6 +1504,55 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Overseas",
+      faqs: [
+        {
+          productId: "productIdBreezeE",
+          questions: "What is Breeze-E?",
+          answer:
+            "Breeze-E is a revolutionary airless fan designed to provide optimal airflow without traditional fan blades.",
+        },
+        {
+          productId: "productIdBreezeE",
+          questions: "How does Breeze-E work?",
+          answer:
+            "Breeze-E uses innovative technology to circulate air quietly and efficiently, making it ideal for homes and offices.",
+        },
+        {
+          productId: "productIdBreezeE",
+          questions: "Is Breeze-E suitable for large rooms?",
+          answer:
+            "Yes, Breeze-E is designed to efficiently circulate air in both small and large spaces.",
+        },
+        {
+          productId: "productIdBreezeE",
+          questions: "How noisy is Breeze-E during operation?",
+          answer:
+            "Breeze-E operates at a noise level of just 30 dB, making it one of the quietest fans available.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productIdBreezeE",
+          header: "Air Quality Monitor",
+          description:
+            "Keep track of your air quality with this smart monitor, ensuring a healthier living environment.",
+          price: 1200,
+        },
+        {
+          productId: "productIdBreezeE",
+          header: "Remote Control",
+          description:
+            "Convenient remote control for easy operation of your Breeze-E fan from anywhere in the room.",
+          price: 600,
+        },
+        {
+          productId: "productIdBreezeE",
+          header: "Replacement Filter",
+          description:
+            "A high-quality replacement filter to maintain optimal performance and air quality.",
+          price: 400,
+        },
+      ],
       productIntention:
         "Breeze-E targets customers looking for a modern and quiet cooling solution, offering an innovative airless fan design that delivers efficient airflow with a sleek, minimalist look.",
     },
@@ -589,6 +1586,55 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       deliveryLocation: "Overseas",
       productIntention:
         "Ease-E is aimed at health enthusiasts and busy individuals who need a smart, powerful blender to make meal preparation easier and more efficient.",
+      faqs: [
+        {
+          productId: "productIdEaseE",
+          questions: "What is Ease-E?",
+          answer:
+            "Ease-E is a high-tech smart blender designed to simplify meal preparation with its powerful motor and smart technology.",
+        },
+        {
+          productId: "productIdEaseE",
+          questions: "What types of foods can I prepare with Ease-E?",
+          answer:
+            "You can use Ease-E for making smoothies, soups, sauces, and more with its multiple blending modes.",
+        },
+        {
+          productId: "productIdEaseE",
+          questions: "Is Ease-E easy to clean?",
+          answer:
+            "Yes, Ease-E features a detachable blending jar that makes cleaning convenient.",
+        },
+        {
+          productId: "productIdEaseE",
+          questions: "How powerful is the motor of Ease-E?",
+          answer:
+            "Ease-E is equipped with a powerful 1200W motor for efficient blending.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productIdEaseE",
+          header: "Blender Travel Jar",
+          description:
+            "Convenient travel jar for on-the-go smoothies, compatible with your Ease-E blender.",
+          price: 900,
+        },
+        {
+          productId: "productIdEaseE",
+          header: "Recipe Book",
+          description:
+            "Explore delicious recipes specifically designed for your Ease-E smart blender.",
+          price: 600,
+        },
+        {
+          productId: "productIdEaseE",
+          header: "Cleaning Brush Set",
+          description:
+            "A set of brushes designed to easily clean your blender's hard-to-reach areas.",
+          price: 350,
+        },
+      ],
     },
     {
       productId: "productId7",
@@ -618,6 +1664,55 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Overseas",
+      faqs: [
+        {
+          productId: "productId7",
+          questions: "What is CookwaresSaucyPan?",
+          answer:
+            "CookwaresSaucyPan is a high-quality frying pan designed for everyday cooking with even heat distribution.",
+        },
+        {
+          productId: "productId7",
+          questions: "What material is the CookwaresSaucyPan made of?",
+          answer:
+            "It is made from aluminum, which ensures durability and efficient heat distribution.",
+        },
+        {
+          productId: "productId7",
+          questions: "Is the CookwaresSaucyPan non-stick?",
+          answer:
+            "Yes, the CookwaresSaucyPan features a non-stick surface for easy cooking and cleaning.",
+        },
+        {
+          productId: "productId7",
+          questions: "What size is the CookwaresSaucyPan?",
+          answer:
+            "The CookwaresSaucyPan has a size of 30 cm, making it ideal for various cooking tasks.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId7",
+          header: "Silicone Spatula Set",
+          description:
+            "A set of high-quality silicone spatulas perfect for non-stick cookware.",
+          price: 400,
+        },
+        {
+          productId: "productId7",
+          header: "Cookware Protector Liners",
+          description:
+            "Protect your pans with these durable, non-stick liners that keep your cookware scratch-free.",
+          price: 300,
+        },
+        {
+          productId: "productId7",
+          header: "Cookbook for Everyday Meals",
+          description:
+            "A cookbook filled with delicious and easy recipes tailored for your frying pan.",
+          price: 500,
+        },
+      ],
       productIntention:
         "CookwaresSaucyPan is intended for everyday cooks looking for a reliable, non-stick frying pan that combines affordability with high-quality materials and heat distribution.",
     },
@@ -645,6 +1740,55 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         { attribute: "Type", value: "Versatile Cookware Set" },
         { attribute: "Oven Safe", value: "Yes" },
         { attribute: "Weight", value: "1.5 kg" },
+      ],
+      faqs: [
+        {
+          productId: "productId8",
+          questions: "What is CookwareBelle?",
+          answer:
+            "CookwareBelle is a collection of high-quality pots and pans designed for versatile cooking needs.",
+        },
+        {
+          productId: "productId8",
+          questions: "What materials are used in CookwareBelle products?",
+          answer:
+            "CookwareBelle items are made from durable materials such as stainless steel and aluminum.",
+        },
+        {
+          productId: "productId8",
+          questions: "Are CookwareBelle products dishwasher safe?",
+          answer:
+            "Yes, most CookwareBelle products are dishwasher safe for easy cleaning.",
+        },
+        {
+          productId: "productId8",
+          questions: "Can CookwareBelle be used on induction cooktops?",
+          answer:
+            "Yes, many CookwareBelle pots and pans are compatible with induction cooktops.",
+        },
+      ],
+      addOns: [
+        {
+          productId: "productId8",
+          header: "Cookware Set Cover",
+          description:
+            "A protective cover designed to fit your CookwareBelle set, keeping it dust-free and pristine.",
+          price: 600,
+        },
+        {
+          productId: "productId8",
+          header: "Heat-Resistant Cooking Gloves",
+          description:
+            "Protect your hands while cooking with these stylish and durable heat-resistant gloves.",
+          price: 350,
+        },
+        {
+          productId: "productId8",
+          header: "Multi-Purpose Cutting Board",
+          description:
+            "A sturdy cutting board perfect for all your chopping and slicing needs, compatible with all CookwareBelle products.",
+          price: 450,
+        },
       ],
       createdAt: new Date(),
       isFeatured: false,

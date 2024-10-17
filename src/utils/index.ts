@@ -53,3 +53,29 @@ export {
   calculateAverageRating,
   formatToCurrency,
 };
+
+export const getRandomInt = (min: number, max: number): number => {
+  return Math.floor(Math.random() * (max - min + 1)) + min; // Generates a random integer between min and max (inclusive)
+};
+
+export const generateRandomMixedIds = (
+  minCount: number,
+  maxCount: number,
+  minRange: number,
+  maxRange: number
+): string[] => {
+  const ids = new Set<string>(); // Use a Set to ensure uniqueness
+  const count = getRandomInt(minCount, maxCount); // Random count of IDs to generate
+  const range = getRandomInt(minRange, maxRange); // Random range for the numeric part
+
+  const prefixes: string[] = ["userId", "partnerId"]; // Array of prefixes
+
+  while (ids.size < count) {
+    const randomNumber = getRandomInt(1, range); // Generate a random number based on the selected range
+    const randomPrefix = prefixes[getRandomInt(0, prefixes.length - 1)]; // Randomly select a prefix
+    const id = `${randomPrefix}${randomNumber}`;
+    ids.add(id); // Add to the set to ensure uniqueness
+  }
+
+  return Array.from(ids); // Convert Set back to Array
+};

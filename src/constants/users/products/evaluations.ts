@@ -10,6 +10,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "The Bugerinator is absolutely delicious! The patties are juicy and flavorful. A must-try for any burger lover!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -19,6 +20,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great burger! I loved the fresh vegetables and the sauce. However, I found it a bit too salty for my taste.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -28,6 +30,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Very tasty and satisfying! The portion is perfect for a quick meal. I will definitely order again!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -37,6 +40,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "The burger was good, but I expected more from the sauces. They could be more unique or flavorful.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId10: [
@@ -48,6 +52,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "HakDogs are fantastic! The flavors are amazing, and they're perfect for barbecues!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval6",
@@ -57,6 +62,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Very tasty hotdogs! I love how they're seasoned. Would be great with some more toppings.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval7",
@@ -66,6 +72,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Perfect for a quick meal! I enjoyed them grilled. A little ketchup and mustard, and you're good to go!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval8",
@@ -75,6 +82,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "They were okay. The flavor was nice, but I found them a bit greasy.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId1: [
@@ -86,6 +94,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "My dog loves Roball! It's so engaging and keeps him active for hours. Highly recommended for pet owners!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -95,6 +104,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great toy for my cat! She enjoys chasing it around, but I wish it had more features to keep her interested longer.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -104,6 +114,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Very innovative product! My pets are entertained, but it could use a longer battery life.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -113,6 +124,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "It was fun for a while, but my dog lost interest after a few days. Needs more interactive features.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productidIdontfuckingknow: [
@@ -124,6 +136,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "BunnyR1 has been a hit with my kids! They love interacting with it and it has sparked their creativity.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -133,6 +146,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "It's a fun and interactive toy! My children enjoy playing with it, but the voice recognition could be improved.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -142,6 +156,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great robot companion! My son loves it, but I wish it had more playful features and actions.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -151,6 +166,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Fun toy for a while, but my kids lost interest after a few days. Needs more engaging activities.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId3: [
@@ -162,6 +178,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "The LightPhone has transformed the way I communicate. It helps me stay focused and less distracted throughout the day.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -171,6 +188,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "I love the minimalist design! It's refreshing to have a phone that doesn't bombard me with notifications.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -180,6 +198,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "A great phone for simplifying life! However, I wish it had a few more features for texting.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -189,6 +208,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "It's nice for avoiding distractions, but sometimes I miss having more connectivity options.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId4: [
@@ -200,6 +220,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "MyPettyPlant has made taking care of my plants so easy! The app notifications are super helpful.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -209,6 +230,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great product! It monitors everything well, but I wish the water capacity was a bit larger.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -218,6 +240,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "The sensors are really accurate, and my plants look happier than ever! A must-have for plant lovers.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -227,6 +250,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "It works well, but the app can be a bit glitchy at times. Still, I love the concept!",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productIdWatch6: [
@@ -238,6 +262,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "The Watch6 is fantastic! The health tracking features are accurate, and it looks stylish on my wrist.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -247,6 +272,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great smart watch! I love the battery life, but the app could use some improvements.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -256,6 +282,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Impressive features for fitness tracking. It keeps me motivated to stay active!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -265,6 +292,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Nice watch, but I expected more customization options for the watch faces.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId11: [
@@ -276,6 +304,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "PowerBanker is a lifesaver! I can charge my phone multiple times on a single charge. Highly recommend!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -285,6 +314,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great power bank! It charges quickly and is compact enough to fit in my bag, but it could be a bit lighter.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -294,6 +324,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "The design is sleek, and the fast charging feature is impressive. Perfect for my travels!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -303,6 +334,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "It's a good power bank, but I wish it had more output ports for charging multiple devices at once.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId12: [
@@ -314,6 +346,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Flashlite is incredibly bright and versatile! I love using it while camping; it lights up the entire area!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -323,6 +356,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Very handy flashlight that easily transforms into a lamp. Perfect for power outages, but the battery life could be improved.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -332,6 +366,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Compact and lightweight, making it easy to carry. Brightness is impressive for such a small device!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -341,6 +376,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "It works well, but I expected a longer battery life. Great for short-term use, though.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId13: [
@@ -352,6 +388,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "This screwdriver is a game changer for my DIY projects! Compact and powerful, it gets the job done effortlessly.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -361,6 +398,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great performance and easy to handle. I just wish it came with more bits for different screws.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -370,6 +408,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "I love how lightweight it is! Makes it easy to work in tight spaces. Very handy for quick tasks.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -379,6 +418,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Works well for light projects, but not powerful enough for heavy-duty tasks. Good for home use.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId14: [
@@ -390,6 +430,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Absolutely love this plier! It's durable and the grip is super comfortable. A must-have for any DIYer!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -399,6 +440,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great tool for the price. It's versatile and has handled all my tasks with ease. Would recommend it!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -408,6 +450,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Good quality and very handy. I just wish the jaws opened a bit wider for larger tasks.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -417,6 +460,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Decent plier, but I've had better ones. Still, it's good for small jobs around the house.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productIdMyGlasses: [
@@ -428,6 +472,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "I love these glasses! The audio quality is fantastic, and they look great. Perfect for my daily commute!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -437,6 +482,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Very innovative! The smart features are amazing, though I wish they were a bit more comfortable for all-day wear.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -446,6 +492,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "These glasses have a sleek design and work well. Battery life is decent, but I expected a bit more.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -455,6 +502,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Good overall, but the sound can be a bit quiet in noisy environments. Still, a cool gadget!",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productIdsleevey: [
@@ -466,6 +514,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great quality for the price! The material feels soft and breathable, perfect for everyday wear.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -475,6 +524,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "I really like the fit and comfort of these shirts. They look good, but I'd love more color options!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -484,6 +534,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Good basic polo shirts. They hold up well after several washes, but I wish they had a more tailored fit.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -493,6 +544,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Decent quality, but the sizing runs a bit large. I recommend sizing down if you want a snug fit.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId5: [
@@ -504,6 +556,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Absolutely love this t-shirt! The material is soft, and the minimalist design is perfect for my style.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -513,6 +566,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great quality and fit! It's my go-to shirt for casual outings. Would definitely recommend.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -522,6 +576,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Very comfortable and stylish! The only downside is that it tends to wrinkle easily.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -531,6 +586,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Good shirt, but I expected it to be a bit thicker. Still, the design is nice.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId15: [
@@ -542,6 +598,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Anki Vector is an amazing little robot! My kids love interacting with him, and he responds so well to commands.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -551,6 +608,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great toy! The AI is impressive, and it’s fun to see how he reacts to different situations. Would love longer battery life!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -560,6 +618,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "This little guy is a blast! He makes learning about robotics fun and engaging.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -569,6 +628,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Really cool toy, but it can be a bit pricey. Still worth it for the educational value!",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId16: [
@@ -580,6 +640,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "My kids love this robot dog! It's so realistic and interacts well. Great choice for any child!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval6",
@@ -589,6 +650,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Very entertaining! The sensors work well, but I wish the battery lasted longer.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval7",
@@ -598,6 +660,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Cute and interactive toy! My daughter enjoys playing with it, but it can get a bit noisy.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval8",
@@ -607,6 +670,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "An excellent companion for my son! The features are impressive for the price.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productIdJuicero: [
@@ -618,6 +682,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Absolutely love this juicer! It makes the best cold-pressed juice and is super easy to use.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -627,6 +692,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great product, but I wish it had a larger capacity. Overall, a solid investment for health enthusiasts.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -636,6 +702,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Very sleek design and easy to clean. The juice quality is top-notch!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -645,6 +712,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "This juicer has transformed my morning routine! The juice is delicious and fresh every time.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productIdBreezeE: [
@@ -656,6 +724,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Absolutely love the Breeze-E! It circulates air quietly and effectively. Best purchase for the summer!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval2",
@@ -665,6 +734,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great fan! Very sleek design, but I wish it had more speed settings.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval3",
@@ -674,6 +744,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "It's very quiet and fits perfectly in my office. I recommend it for anyone looking for a stylish fan.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval4",
@@ -683,6 +754,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "This airless fan is a game changer! It works beautifully and looks amazing in my living room.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productIdEaseE: [
@@ -694,6 +766,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "This blender has changed my meal prep game! The smart features are incredibly useful.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval10",
@@ -703,6 +776,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Really good blender! It blends smoothies perfectly, but it's a bit noisy.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval11",
@@ -712,6 +786,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great performance and easy to clean. I love the multiple blending modes!",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval12",
@@ -721,6 +796,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Fantastic blender! I can make everything from smoothies to soups effortlessly.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId7: [
@@ -732,6 +808,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great frying pan! Non-stick surface works well for eggs and pancakes.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval14",
@@ -741,6 +818,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Very lightweight and easy to handle. Perfect for everyday cooking.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval15",
@@ -749,6 +827,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       rating: 3,
       comment: "It's good, but I expected better heat distribution.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval16",
@@ -757,6 +836,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       rating: 4,
       comment: "Nice pan for the price! The non-stick feature is a big plus.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
   productId8: [
@@ -768,6 +848,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Absolutely love this cookware set! It's stylish and cooks evenly.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval18",
@@ -777,6 +858,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       comment:
         "Great quality for the price. They heat up quickly and clean easily.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval19",
@@ -785,6 +867,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       rating: 4,
       comment: "Durable and functional. I use them daily without any issues.",
       createdAt: new Date(),
+      likes: [],
     },
     {
       evaluationId: "eval20",
@@ -793,6 +876,7 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
       rating: 3,
       comment: "Nice cookware, but I wish they were a bit heavier.",
       createdAt: new Date(),
+      likes: [],
     },
   ],
 };

@@ -16,7 +16,7 @@ export const ProductsContainer: React.FC<props> = ({ data }) => {
       {data.map((val, index) => {
         return (
           <Link
-            href={`/products/${val.productId}`}
+            href={`/products/${val.ownerId}/${val.productId}`}
             className="flex flex-col gap-[2px] h-[260px] bg-white rounded-lg"
             key={index}
           >

@@ -83,7 +83,11 @@ const GetProducts = (params: GetProductsParams): ProductsItemData => {
   };
 };
 
-const GetProduct = (productId: string, ownerId: string): ProductItemData => {
+const GetProduct = (
+  key: string,
+  productId: string,
+  ownerId: string
+): ProductItemData => {
   const businessProfile = USER_BUSINESS_PROFILES[ownerId];
   const products = BUSINESS_PRODUCTS[businessProfile.businessId];
 

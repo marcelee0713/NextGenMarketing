@@ -143,7 +143,7 @@ export const FeaturedProducts: React.FC<props> = ({ products }) => {
                 price={val.price}
                 productIntention={val.productIntention}
                 productName={val.name}
-                route={`/products/${val.productId}`}
+                route={`/products/${val.ownerId}/${val.productId}`}
                 tags={val.tags}
               />
             ))}
