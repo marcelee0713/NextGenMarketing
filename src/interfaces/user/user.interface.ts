@@ -27,6 +27,21 @@ export interface IUserProfile {
   bio: string;
   profilePicture: string | null;
   coverImage: string | null;
+  addresses: IUserAdress[];
+}
+
+export interface IUserAdress {
+  fullName: string;
+  phoneNumber: string;
+  fullAddress: {
+    houseNoStreetNo: string;
+    region: string;
+    province: string;
+    city: string;
+    barangay: string;
+  };
+  postalCode: number;
+  labelAs: "HOME" | "WORK" | "LODGING";
 }
 
 export interface IUserBusinessProfile {

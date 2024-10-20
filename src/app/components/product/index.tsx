@@ -16,6 +16,7 @@ export const MainProductPage = () => {
       take: 8,
     },
   });
+
   const pathname = usePathname();
 
   const arrayOfRoutes = pathname.split("/");
@@ -45,7 +46,7 @@ export const MainProductPage = () => {
     <>
       <NavBarProducts params={params} setParams={setParams} />
       <main className="font-inter flex-1 gap-10 flex flex-col text-primary p-5 px-6 overflow-x-auto">
-        <TopBarProducts />
+        <TopBarProducts enableSearchInput />
         <BreadCrumbNav
           currentCategory={params.filter?.category}
           currentProfileName={data?.data.name}

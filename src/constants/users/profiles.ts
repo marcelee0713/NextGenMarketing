@@ -15,6 +15,34 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Marston",
     },
     profilePicture: null,
+    addresses: [
+      {
+        fullName: "John Marston",
+        labelAs: "HOME",
+        phoneNumber: "09945174624",
+        fullAddress: {
+          houseNoStreetNo: "596 Cancino Store",
+          barangay: "Leet",
+          city: "Santa Barbara",
+          province: "Pangasinan",
+          region: "Region I",
+        },
+        postalCode: 2000,
+      },
+      {
+        fullName: "John Marston",
+        labelAs: "HOME",
+        phoneNumber: "09945174624",
+        fullAddress: {
+          houseNoStreetNo: "588",
+          barangay: "Landville",
+          city: "Calasiao",
+          province: "Pangasinan",
+          region: "Region I",
+        },
+        postalCode: 2001,
+      },
+    ],
   },
   userId2: {
     userId: "userId2",
@@ -27,6 +55,7 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Williams",
     },
     profilePicture: null,
+    addresses: [],
   },
   userId3: {
     userId: "userId3",
@@ -39,6 +68,7 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Hughes",
     },
     profilePicture: null,
+    addresses: [],
   },
   userId4: {
     userId: "userId4",
@@ -51,6 +81,7 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Khan",
     },
     profilePicture: null,
+    addresses: [],
   },
   userId5: {
     userId: "userId5",
@@ -63,6 +94,7 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Miller",
     },
     profilePicture: null,
+    addresses: [],
   },
   userId6: {
     userId: "userId6",
@@ -75,6 +107,7 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Stone",
     },
     profilePicture: null,
+    addresses: [],
   },
   userId7: {
     userId: "userId7",
@@ -87,6 +120,7 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Green",
     },
     profilePicture: null,
+    addresses: [],
   },
   userId8: {
     userId: "userId8",
@@ -99,6 +133,7 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Clark",
     },
     profilePicture: null,
+    addresses: [],
   },
   userId9: {
     userId: "userId9",
@@ -111,6 +146,7 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Brown",
     },
     profilePicture: null,
+    addresses: [],
   },
   userId10: {
     userId: "userId10",
@@ -123,6 +159,7 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Hall",
     },
     profilePicture: null,
+    addresses: [],
   },
 };
 

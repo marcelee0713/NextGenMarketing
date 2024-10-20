@@ -3,11 +3,6 @@ import { createContext, ReactNode, useContext, useState } from "react";
 
 export type UserData = {
   userId: string;
-  fullName: {
-    firstName: string;
-    middleName?: string;
-    lastName: string;
-  };
 } | null;
 
 interface props {
@@ -31,7 +26,9 @@ export const Context = createContext<ProviderData>({
 });
 
 export const Provider: React.FC<props> = ({ children }) => {
-  const [user, setUser] = useState<UserData>(null);
+  const [user, setUser] = useState<UserData>({
+    userId: "userId1",
+  });
   const [expandNav, setExpandNav] = useState<boolean>(true);
 
   return (
