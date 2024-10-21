@@ -30,6 +30,51 @@ export interface IUserProfile {
   addresses: IUserAdress[];
 }
 
+export interface IUserProductOrders {
+  orderId: string;
+  users: {
+    buyer: {
+      userId: string;
+      addressIndex: number;
+    };
+    seller: {
+      userId: string;
+      businessId: string;
+    };
+  };
+  productDetails: {
+    productId: string;
+    addOnsIndexes: number[];
+    promoCode: string | null;
+  };
+  details: {
+    progress: Record<ShipmentProgressType, ProductShipmentProgress>;
+    isCompleted: boolean;
+    hasWrittenAReview: boolean;
+    ratedQualities: OrderRatedProductQuality[];
+  };
+  createdAt: Date;
+}
+
+export interface OrderRatedProductQuality {
+  productQualitiesIndex: number;
+  createdAt: Date;
+  updatedAt: Date | null;
+  thoughtsSelectedThoughtsValue: number | null;
+  suggestions: number | null;
+}
+
+export interface ProductShipmentProgress {
+  type: ShipmentProgressType;
+  date: Date | null;
+}
+
+export type ShipmentProgressType =
+  | "ORDER_PLACED"
+  | "PAYMENT_CONFIRMED"
+  | "SHIPPED_OUT"
+  | "RECEIVED"
+  | "COMPLETED";
 export interface IUserAdress {
   fullName: string;
   phoneNumber: string;

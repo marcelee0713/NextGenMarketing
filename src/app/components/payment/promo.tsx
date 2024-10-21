@@ -4,9 +4,14 @@ import React, { Dispatch, SetStateAction, useState } from "react";
 interface props {
   receipt: Map<string, number>;
   setReceipt: Dispatch<SetStateAction<Map<string, number>>>;
+  onChange?: Dispatch<SetStateAction<string | null>>;
 }
 
-export const PromoCode: React.FC<props> = ({ receipt, setReceipt }) => {
+export const PromoCode: React.FC<props> = ({
+  receipt,
+  setReceipt,
+  onChange,
+}) => {
   const [value, setValue] = useState("");
 
   const handleInputChange = (e: React.FormEvent<HTMLInputElement>) => {
@@ -17,6 +22,8 @@ export const PromoCode: React.FC<props> = ({ receipt, setReceipt }) => {
 
   const handleOnClick = () => {
     const result = AFFLIATE_CODES[value ?? ""];
+
+    if (onChange) onChange(value ?? null);
 
     if (!result) {
       const mockReceipt = receipt;

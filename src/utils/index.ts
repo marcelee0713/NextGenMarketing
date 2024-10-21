@@ -9,6 +9,12 @@ const calculateAverageRating = (ratings: number[]): number => {
   return parseFloat(average.toFixed(2));
 };
 
+export const generateOrderId = (): string => {
+  const timestamp = Date.now().toString(); // Current timestamp
+  const randomNum = Math.floor(Math.random() * 10000); // Random number between 0 and 9999
+  return `${timestamp}${randomNum}`;
+};
+
 const skipArr = <T>(arr: T[], n: number): T[] => {
   if (n < 0) {
     return arr;

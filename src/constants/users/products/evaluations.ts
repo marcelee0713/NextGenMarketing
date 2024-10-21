@@ -1,3 +1,7 @@
+import {
+  ShipmentProgressType,
+  ProductShipmentProgress,
+} from "@/interfaces/user/user.interface";
 import { IProductEvaluation } from "@/interfaces/user/user.product.interface";
 
 const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
@@ -881,4 +885,30 @@ const PRODUCT_EVALUATIONS: Record<string, IProductEvaluation[]> = {
   ],
 };
 
-export { PRODUCT_EVALUATIONS };
+const DEFAULT_ORDER_PROGRESS: Record<
+  ShipmentProgressType,
+  ProductShipmentProgress
+> = {
+  ORDER_PLACED: {
+    type: "ORDER_PLACED",
+    date: null,
+  },
+  PAYMENT_CONFIRMED: {
+    type: "PAYMENT_CONFIRMED",
+    date: null,
+  },
+  SHIPPED_OUT: {
+    type: "SHIPPED_OUT",
+    date: null,
+  },
+  RECEIVED: {
+    type: "RECEIVED",
+    date: null,
+  },
+  COMPLETED: {
+    type: "COMPLETED",
+    date: null,
+  },
+};
+
+export { PRODUCT_EVALUATIONS, DEFAULT_ORDER_PROGRESS };

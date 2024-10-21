@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../context";
-import { GetProductsParams } from "@/interfaces/user/user.interface";
-import { useSearchParams } from "next/navigation";
+import {
+  GetProductsParams,
+  IUserProductOrders,
+} from "@/interfaces/user/user.interface";
+import { useRouter, useSearchParams } from "next/navigation";
 import { OrderSummaryProduct } from "@/interfaces/payment";
 import { GetProduct } from "@/utils/data_access/users";
 import { ProductAddOns } from "@/interfaces/user/user.product.interface";
@@ -10,20 +13,31 @@ import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io";
 import { CiLock } from "react-icons/ci";
 import { PromoCode } from "../payment/promo";
-import { formatToCurrency } from "@/utils";
+import { formatToCurrency, generateOrderId } from "@/utils";
 import { ProductAddOnInfo } from "./packages_add_on_info_product";
 import { PriceDetails } from "../payment/price_details";
 import { CreditCardAddressInfo } from "./creditcard_address_info";
 import USER_PROFILES from "@/constants/users/profiles";
+import { SuccessModal } from "./modal";
+import { USER_PRODUCT_ORDERS } from "@/constants/users/orders";
+import { DEFAULT_ORDER_PROGRESS } from "@/constants/users/products/evaluations";
 
 export const MainProductPaymentPage = () => {
+  const [orderId, setOrderId] = useState("orderId1");
+
+  const [expand, setExpand] = useState(false);
+
   const { user, setExpandNav } = useGlobalContext();
+
+  const router = useRouter();
 
   const [addressIndex, setAddressIndex] = useState<number>(0);
 
   const userId = user?.userId ?? "userId1";
 
   const userData = USER_PROFILES[userId];
+
+  const [promoCode, setPromoCode] = useState<string | null>(null);
 
   const [params, setParams] = useState<GetProductsParams>({
     pagination: {
@@ -90,6 +104,14 @@ export const MainProductPaymentPage = () => {
     setTotalAmount(sum);
   }, [receipt]);
 
+  const houseNo = userData.addresses[addressIndex].fullAddress.houseNoStreetNo;
+  const barangay = userData.addresses[addressIndex].fullAddress.barangay;
+  const city = userData.addresses[addressIndex].fullAddress.city;
+  const province = userData.addresses[addressIndex].fullAddress.province;
+  const region = userData.addresses[addressIndex].fullAddress.region;
+
+  const currentAddress = `${houseNo}, ${barangay}, ${city}, ${province}, ${region}`;
+
   return (
     <>
       <NavBarProducts params={params} setParams={setParams} />
@@ -124,19 +146,59 @@ export const MainProductPaymentPage = () => {
               originalPrice={product.data.price}
               productName={product.data.name}
             />
-            <PromoCode receipt={receipt} setReceipt={setReceipt} />
+            <PromoCode
+              receipt={receipt}
+              setReceipt={setReceipt}
+              onChange={setPromoCode}
+            />
 
             <PriceDetails receipt={receipt} totalAmount={totalAmount} />
 
-            <Link
+            <button
               onClick={() => {
-                setExpandNav(false);
+                const orderId = generateOrderId();
+
+                setOrderId(orderId);
+
+                const order: IUserProductOrders = {
+                  orderId: orderId,
+                  users: {
+                    buyer: {
+                      addressIndex: addressIndex,
+                      userId: userData.userId,
+                    },
+                    seller: {
+                      businessId: product.businessProfile.businessId,
+                      userId: product.data.ownerId,
+                    },
+                  },
+                  details: {
+                    progress: DEFAULT_ORDER_PROGRESS,
+                    ratedQualities: [],
+                    isCompleted: false,
+                    hasWrittenAReview: false,
+                  },
+                  productDetails: {
+                    addOnsIndexes: summary.selectedAddOns.map((val) =>
+                      parseInt(val)
+                    ),
+                    productId: product.data.productId,
+                    promoCode: promoCode,
+                  },
+                  createdAt: new Date(),
+                };
+
+                USER_PRODUCT_ORDERS.set(orderId, order);
+
+                setExpand(true);
+
+                console.table(USER_PRODUCT_ORDERS.get(orderId));
+                console.table(USER_PRODUCT_ORDERS);
               }}
-              href={"/requirements"}
               className="flex items-center justify-center h-[45px]  text-white bg-primary mx-8 rounded-[4px] font-bold text-sm"
             >
               {`Pay (PHP ${formatToCurrency(totalAmount)})`}
-            </Link>
+            </button>
 
             <div className="w-full text-center text-xs font-medium text-[#999999]">
               By clicking, you agree to{" "}
@@ -147,6 +209,21 @@ export const MainProductPaymentPage = () => {
           </div>
         </div>
       </main>
+      {expand && (
+        <SuccessModal
+          businessName={product.businessProfile.businessName}
+          fullAddress={currentAddress}
+          productName={product.data.name}
+          onHome={() => {
+            setExpandNav(false);
+            router.push("/products");
+          }}
+          onProceed={() => {
+            setExpandNav(false);
+            router.push(`/orders/product/${orderId}`);
+          }}
+        />
+      )}
     </>
   );
 };

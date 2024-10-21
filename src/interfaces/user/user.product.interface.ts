@@ -21,8 +21,21 @@ export interface IProduct {
   faqs: ProductFAQs[];
   addOns: ProductAddOns[];
   deliveryLocation: ShipmentLocationsType;
+  qualities: ProductQualities[];
+  deliveryTime: string;
   createdAt: Date;
   isFeatured: boolean;
+}
+
+export interface ProductQualities {
+  name: string;
+  subtext?: string;
+  thoughts: ProductThoughts[];
+}
+
+export interface ProductThoughts {
+  name: string;
+  value: number;
 }
 
 export interface IProductEvaluation {

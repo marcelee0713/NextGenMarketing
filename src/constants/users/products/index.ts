@@ -4,6 +4,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
   businessId1: [
     {
       productId: "productId9",
+      deliveryTime: "30 minutes",
       businessId: "businessId1", // Food Industry
       ownerId: "userId1",
       name: "Bugerinator",
@@ -102,9 +103,113 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 50,
         },
       ],
+      qualities: [
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            {
+              name: "Expensive",
+              value: 5,
+            },
+            {
+              name: "Pricey",
+              value: 4,
+            },
+            {
+              name: "Reasonable",
+              value: 3,
+            },
+            {
+              name: "Affordable",
+              value: 2,
+            },
+            {
+              name: "Cheap",
+              value: 1,
+            },
+          ],
+        },
+        {
+          name: "Taste",
+          thoughts: [
+            {
+              name: "Scrumptious",
+              value: 5,
+            },
+            {
+              name: "Delicious",
+              value: 4,
+            },
+            {
+              name: "Okay",
+              value: 3,
+            },
+            {
+              name: "Tolerable",
+              value: 2,
+            },
+            {
+              name: "Bad",
+              value: 1,
+            },
+          ],
+        },
+        {
+          name: "Texture",
+          thoughts: [
+            {
+              name: "Smooth & Tender",
+              value: 5,
+            },
+            {
+              name: "Juicy",
+              value: 4,
+            },
+            {
+              name: "Firm",
+              value: 3,
+            },
+            {
+              name: "Grainy",
+              value: 2,
+            },
+            {
+              name: "Dry",
+              value: 1,
+            },
+          ],
+        },
+        {
+          name: "Presentation",
+          thoughts: [
+            {
+              name: "Superb",
+              value: 5,
+            },
+            {
+              name: "Exceptional",
+              value: 4,
+            },
+            {
+              name: "Fine",
+              value: 3,
+            },
+            {
+              name: "Tolerable",
+              value: 2,
+            },
+            {
+              name: "Poor",
+              value: 1,
+            },
+          ],
+        },
+      ],
     },
     {
       productId: "productId10",
+      deliveryTime: "30 minutes",
       businessId: "businessId1", // Food Industry
       ownerId: "userId1",
       name: "HakDogs",
@@ -122,6 +227,49 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981463/my-uploads/nextgen/commons/food/2/Air-Fryer-Hot-Dog-square_mmr5mo.jpg",
       ],
       ratings: 4.5,
+      qualities: [
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+        {
+          name: "Taste",
+          thoughts: [
+            { name: "Scrumptious", value: 5 },
+            { name: "Delicious", value: 4 },
+            { name: "Okay", value: 3 },
+            { name: "Tolerable", value: 2 },
+            { name: "Bad", value: 1 },
+          ],
+        },
+        {
+          name: "Texture",
+          thoughts: [
+            { name: "Smooth & Tender", value: 5 },
+            { name: "Juicy", value: 4 },
+            { name: "Firm", value: 3 },
+            { name: "Grainy", value: 2 },
+            { name: "Dry", value: 1 },
+          ],
+        },
+        {
+          name: "Presentation",
+          thoughts: [
+            { name: "Superb", value: 5 },
+            { name: "Exceptional", value: 4 },
+            { name: "Fine", value: 3 },
+            { name: "Tolerable", value: 2 },
+            { name: "Poor", value: 1 },
+          ],
+        },
+      ],
       specifications: [
         { attribute: "Ingredients", value: "Pork, Beef, Spices" },
         { attribute: "Serving Size", value: "1 Hotdog" },
@@ -209,6 +357,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
     {
       productId: "productId1",
       businessId: "businessId2",
+      deliveryTime: "2 - 7 days",
       ownerId: "userId3",
       name: "Roball",
       description:
@@ -288,6 +437,63 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 799,
         },
       ],
+      qualities: [
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+        {
+          name: "Durability",
+          subtext: "Ability to Withstand Frequent Use",
+          thoughts: [
+            { name: "Extremely Durable", value: 5 },
+            { name: "Very Durable", value: 4 },
+            { name: "Moderately Durable", value: 3 },
+            { name: "Fragile", value: 2 },
+            { name: "Breaks Easily", value: 1 },
+          ],
+        },
+        {
+          name: "Performance",
+          subtext: "Efficiency & Response to Pet Interactions",
+          thoughts: [
+            { name: "Exceptional", value: 5 },
+            { name: "Very Good", value: 4 },
+            { name: "Adequate", value: 3 },
+            { name: "Inconsistent", value: 2 },
+            { name: "Poor", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendliness for Both Pets & Owners",
+          thoughts: [
+            { name: "Extremely User-Friendly", value: 5 },
+            { name: "Very Easy to Use", value: 4 },
+            { name: "Average", value: 3 },
+            { name: "Difficult to Use", value: 2 },
+            { name: "Complicated", value: 1 },
+          ],
+        },
+        {
+          name: "Battery Life",
+          subtext: "Duration of Play Before Needing a Charge",
+          thoughts: [
+            { name: "Long-Lasting", value: 5 },
+            { name: "Above Average", value: 4 },
+            { name: "Moderate", value: 3 },
+            { name: "Short-Lived", value: 2 },
+            { name: "Needs Constant Charging", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "Roball is currently being tested as a smart pet companion designed to enhance the play and exercise experience for pets, while offering pet owners a reliable gadget to keep their furry friends entertained.",
     },
@@ -300,6 +506,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "BunnyR1 is an engaging robotic companion designed to provide endless fun and entertainment for children. With its interactive features, BunnyR1 can respond to voice commands and perform playful actions, making it a perfect playmate. This robot not only promotes creativity and imagination but also helps kids develop social skills through interactive play, creating memorable experiences for young users.",
       tags: ["robot", "interactive", "toy"],
       category: "Gadgets",
+      deliveryTime: "2 - 7 days",
       price: 7399, // 129.99 USD converted to PHP (random value)
       discount: 0.2, // 20% discount expressed as a decimal
       coverImage:
@@ -344,6 +551,63 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
             "Yes, BunnyR1 is made from non-toxic materials and is designed with safety in mind.",
         },
       ],
+      qualities: [
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+        {
+          name: "Durability",
+          subtext: "Ability to Withstand Frequent Use by Children",
+          thoughts: [
+            { name: "Extremely Durable", value: 5 },
+            { name: "Very Durable", value: 4 },
+            { name: "Moderately Durable", value: 3 },
+            { name: "Fragile", value: 2 },
+            { name: "Breaks Easily", value: 1 },
+          ],
+        },
+        {
+          name: "Interactivity",
+          subtext: "Responsiveness to Commands & Play",
+          thoughts: [
+            { name: "Highly Interactive", value: 5 },
+            { name: "Very Interactive", value: 4 },
+            { name: "Moderately Interactive", value: 3 },
+            { name: "Limited Interaction", value: 2 },
+            { name: "Barely Interactive", value: 1 },
+          ],
+        },
+        {
+          name: "Battery Life",
+          subtext: "Duration of Use Before Needing a Recharge",
+          thoughts: [
+            { name: "Long-Lasting", value: 5 },
+            { name: "Above Average", value: 4 },
+            { name: "Moderate", value: 3 },
+            { name: "Short-Lived", value: 2 },
+            { name: "Needs Constant Charging", value: 1 },
+          ],
+        },
+        {
+          name: "Innovation",
+          subtext: "Creativity and Novelty of Features",
+          thoughts: [
+            { name: "Highly Innovative", value: 5 },
+            { name: "Very Innovative", value: 4 },
+            { name: "Moderately Innovative", value: 3 },
+            { name: "Somewhat Innovative", value: 2 },
+            { name: "Not Innovative", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "BunnyR1 is being tested to gauge its effectiveness as a playful robot companion for children, aimed at enhancing interactive play and learning in the tech-toy market.",
       addOns: [
@@ -379,6 +643,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "The LightPhone is designed for those who want to simplify their lives and disconnect from constant notifications. With its minimalist design and essential features, this phone encourages users to embrace the moment without distractions. Enjoy the freedom of communication without the overwhelming presence of a smartphone, making it a perfect companion for anyone seeking a more mindful lifestyle.",
       tags: ["minimalist", "phone", "technology"],
       category: "Gadgets",
+      deliveryTime: "2 - 7 days",
       price: 11399, // 199.99 USD converted to PHP (random value)
       discount: 0.05, // 5% discount expressed as a decimal
       coverImage:
@@ -459,6 +724,63 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 1500,
         },
       ],
+      qualities: [
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+        {
+          name: "Simplicity",
+          subtext: "Ease of Use and Minimalist Design",
+          thoughts: [
+            { name: "Extremely Simple", value: 5 },
+            { name: "Very Simple", value: 4 },
+            { name: "Moderately Simple", value: 3 },
+            { name: "Somewhat Complex", value: 2 },
+            { name: "Very Complex", value: 1 },
+          ],
+        },
+        {
+          name: "Battery Life",
+          subtext: "Duration of Use Before Needing a Recharge",
+          thoughts: [
+            { name: "Long-Lasting", value: 5 },
+            { name: "Above Average", value: 4 },
+            { name: "Moderate", value: 3 },
+            { name: "Short-Lived", value: 2 },
+            { name: "Needs Constant Charging", value: 1 },
+          ],
+        },
+        {
+          name: "Innovation",
+          subtext: "Creativity and Novelty of Features",
+          thoughts: [
+            { name: "Highly Innovative", value: 5 },
+            { name: "Very Innovative", value: 4 },
+            { name: "Moderately Innovative", value: 3 },
+            { name: "Somewhat Innovative", value: 2 },
+            { name: "Not Innovative", value: 1 },
+          ],
+        },
+        {
+          name: "Usability",
+          subtext: "User-Friendliness and Accessibility",
+          thoughts: [
+            { name: "Extremely Usable", value: 5 },
+            { name: "Very Usable", value: 4 },
+            { name: "Moderately Usable", value: 3 },
+            { name: "Somewhat Usable", value: 2 },
+            { name: "Not Usable", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "LightPhone is being tested to understand its appeal among users seeking a minimalist approach to mobile technology, catering to those who prioritize disconnection from constant notifications.",
     },
@@ -471,6 +793,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "MyPettyPlant is an innovative high-tech pot that takes plant care to the next level. Equipped with smart sensors, it monitors soil moisture, light, and temperature to ensure your plant thrives in its environment. With its user-friendly app, you can receive alerts and guidance, making plant parenting easy and enjoyable, so you can cultivate your green thumb with confidence.",
       tags: ["plant", "technology", "smart"],
       category: "Gadgets",
+      deliveryTime: "2 - 7 days",
       price: 8499, // 149.99 USD converted to PHP (random value)
       discount: 0.1, // 10% discount expressed as a decimal
       coverImage:
@@ -544,6 +867,63 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 1200,
         },
       ],
+      qualities: [
+        {
+          name: "Innovation",
+          subtext: "Creativity and Novelty of Features",
+          thoughts: [
+            { name: "Highly Innovative", value: 5 },
+            { name: "Very Innovative", value: 4 },
+            { name: "Moderately Innovative", value: 3 },
+            { name: "Somewhat Innovative", value: 2 },
+            { name: "Not Innovative", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly Design and App Integration",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Effectiveness in Plant Care and Monitoring",
+          thoughts: [
+            { name: "Highly Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Aesthetic Appeal and Practicality",
+          thoughts: [
+            { name: "Beautiful Design", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Appealing", value: 3 },
+            { name: "Somewhat Unappealing", value: 2 },
+            { name: "Poor Design", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "MyPettyPlant is being tested as a smart planter solution for tech-savvy plant enthusiasts, aiming to simplify plant care with smart features that monitor environmental conditions.",
     },
@@ -556,6 +936,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "The Watch6 is a smart watch from Samsung that combines style with advanced health and fitness tracking features. With its sleek design and cutting-edge technology, it's perfect for anyone looking to monitor their health and stay connected throughout the day.",
       tags: ["smart watch", "Samsung", "technology"],
       category: "Gadgets",
+      deliveryTime: "2 - 7 days",
       price: 19949, // 349.99 USD converted to PHP (random value)
       discount: 0.15, // 15% discount expressed as a decimal
       coverImage:
@@ -629,6 +1010,63 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 300,
         },
       ],
+      qualities: [
+        {
+          name: "Innovation",
+          subtext: "Advanced Health and Fitness Tracking Features",
+          thoughts: [
+            { name: "Highly Innovative", value: 5 },
+            { name: "Very Innovative", value: 4 },
+            { name: "Moderately Innovative", value: 3 },
+            { name: "Somewhat Innovative", value: 2 },
+            { name: "Not Innovative", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Stylish and Modern Aesthetic",
+          thoughts: [
+            { name: "Beautiful Design", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Appealing", value: 3 },
+            { name: "Somewhat Unappealing", value: 2 },
+            { name: "Poor Design", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Effectiveness in Health Monitoring and Connectivity",
+          thoughts: [
+            { name: "Highly Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly Interface and Compatibility",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "Watch6 is being tested as an advanced health and fitness companion with stylish design and cutting-edge features, targeting users who seek both connectivity and wellness monitoring.",
     },
@@ -641,6 +1079,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "PowerBanker is a high-tech power bank designed for efficiency and portability. It features fast charging capabilities to keep your devices powered up on the go. With a sleek design and a robust battery, this power bank is an essential accessory for anyone who needs reliable power.",
       tags: ["power bank", "tech", "gadget"],
       category: "Gadgets",
+      deliveryTime: "2 - 7 days",
       price: 800, // 30 USD converted to PHP
       discount: 0.15, // 5% discount in decimal
       coverImage:
@@ -715,6 +1154,63 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 400,
         },
       ],
+      qualities: [
+        {
+          name: "Battery Life",
+          subtext: "Long-Lasting Performance with 20,000 mAh Capacity",
+          thoughts: [
+            { name: "Exceptional Battery Life", value: 5 },
+            { name: "Very Good Battery Life", value: 4 },
+            { name: "Moderate Battery Life", value: 3 },
+            { name: "Somewhat Short Battery Life", value: 2 },
+            { name: "Poor Battery Life", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Sleek and Portable Aesthetic",
+          thoughts: [
+            { name: "Beautiful Design", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Appealing", value: 3 },
+            { name: "Somewhat Unappealing", value: 2 },
+            { name: "Poor Design", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Effectiveness in Charging Multiple Devices",
+          thoughts: [
+            { name: "Highly Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly and Convenient",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "PowerBanker is currently in testing as a sleek, high-capacity power bank, designed for efficient portable charging with fast-charge capabilities.",
     },
@@ -727,6 +1223,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "Flashlite is a versatile flashlight that can easily transform into a lamp. With powerful LED technology, it provides bright illumination for any situation, whether you're camping or during power outages. Its compact design makes it easy to carry, ensuring you have light wherever you go.",
       tags: ["flashlight", "lamp", "tech"],
       category: "Gadgets",
+      deliveryTime: "2 - 7 days",
       price: 1000, // 30 USD converted to PHP
       discount: 0.3, // 10% discount in decimal
       coverImage:
@@ -800,6 +1297,74 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 600,
         },
       ],
+      qualities: [
+        {
+          name: "Brightness",
+          subtext: "High Lumens Output for Clear Visibility",
+          thoughts: [
+            { name: "Exceptional Brightness", value: 5 },
+            { name: "Very Bright", value: 4 },
+            { name: "Moderately Bright", value: 3 },
+            { name: "Somewhat Dim", value: 2 },
+            { name: "Poor Brightness", value: 1 },
+          ],
+        },
+        {
+          name: "Battery Life",
+          subtext: "Duration of Use on a Single Charge",
+          thoughts: [
+            { name: "Outstanding Battery Life", value: 5 },
+            { name: "Very Good Battery Life", value: 4 },
+            { name: "Moderate Battery Life", value: 3 },
+            { name: "Somewhat Short Battery Life", value: 2 },
+            { name: "Poor Battery Life", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Compact and Versatile for Easy Use",
+          thoughts: [
+            { name: "Excellent Design", value: 5 },
+            { name: "Very Good Design", value: 4 },
+            { name: "Moderate Design", value: 3 },
+            { name: "Somewhat Unappealing", value: 2 },
+            { name: "Poor Design", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Dual Use as Flashlight and Lamp",
+          thoughts: [
+            { name: "Highly Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly Features for Convenience",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "Flashlite is being tested for its dual functionality as a flashlight and lamp, appealing to users who require reliable and versatile illumination in various scenarios.",
     },
@@ -812,6 +1377,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "The Bosch Cordless ScrewDriver is perfect for all your DIY projects. With its compact design and powerful motor, it allows for easy maneuverability in tight spaces. This tool is built for durability and performance, making it a must-have for any toolkit.",
       tags: ["screwdriver", "tools", "Bosch"],
       category: "Tools",
+      deliveryTime: "2 - 7 days",
       price: 1230, // 30 USD converted to PHP
       discount: 0.2, // 20% discount in decimal
       coverImage:
@@ -888,6 +1454,63 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 800,
         },
       ],
+      qualities: [
+        {
+          name: "Battery Life",
+          subtext: "Rechargeable with Sufficient Runtime",
+          thoughts: [
+            { name: "Excellent Battery Life", value: 5 },
+            { name: "Very Good Battery Life", value: 4 },
+            { name: "Moderate Battery Life", value: 3 },
+            { name: "Somewhat Short Battery Life", value: 2 },
+            { name: "Poor Battery Life", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Compact and Ergonomic Structure",
+          thoughts: [
+            { name: "Beautiful Design", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Appealing", value: 3 },
+            { name: "Somewhat Unappealing", value: 2 },
+            { name: "Poor Design", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Efficiency in DIY Projects",
+          thoughts: [
+            { name: "Highly Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly and Convenient Operation",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "The Bosch Cordless ScrewDriver is being evaluated as a durable, compact tool designed for DIY enthusiasts and professionals, offering ease of use in tight spaces.",
     },
@@ -900,6 +1523,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "The Groovy Plier Tool is designed for versatility and ease of use. Featuring a durable construction and a comfortable grip, it's perfect for tackling a wide range of tasks. This tool is an essential addition to any toolbox, making repairs and projects simpler.",
       tags: ["pliers", "tools", "groove joint"],
       category: "Tools",
+      deliveryTime: "2 - 7 days",
       price: 2500, // 30 USD converted to PHP
       discount: 0.25, // 15% discount in decimal
       coverImage:
@@ -973,6 +1597,63 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 800,
         },
       ],
+      qualities: [
+        {
+          name: "Durability",
+          subtext: "High-Quality Construction for Longevity",
+          thoughts: [
+            { name: "Exceptional Durability", value: 5 },
+            { name: "Very Durable", value: 4 },
+            { name: "Moderately Durable", value: 3 },
+            { name: "Somewhat Durable", value: 2 },
+            { name: "Not Durable", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Ergonomic and Functional Design",
+          thoughts: [
+            { name: "Beautiful Design", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Appealing", value: 3 },
+            { name: "Somewhat Unappealing", value: 2 },
+            { name: "Poor Design", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Versatility for Various Tasks",
+          thoughts: [
+            { name: "Highly Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly for Prolonged Use",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "Groovy Plier Tool is being tested for its versatility and comfort, aiming to become an essential addition to any toolbox for various repair and construction tasks.",
     },
@@ -987,6 +1668,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "MyGlasses are stylish and functional eyewear that blends technology with fashion. These smart glasses provide a seamless experience with built-in audio and display features, allowing users to stay connected while on the go. Perfect for anyone looking to enhance their daily activities with a touch of innovation.",
       tags: ["smart", "accessories", "technology"],
       category: "Accessories",
+      deliveryTime: "2 - 7 days",
       price: 14249.43, // Price in PHP
       discount: 0.1, // Discount as a decimal
       coverImage:
@@ -1061,6 +1743,64 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 300,
         },
       ],
+      qualities: [
+        {
+          name: "Innovation",
+          subtext: "Integration of Audio and Display Technology",
+          thoughts: [
+            { name: "Highly Innovative", value: 5 },
+            { name: "Very Innovative", value: 4 },
+            { name: "Moderately Innovative", value: 3 },
+            { name: "Somewhat Innovative", value: 2 },
+            { name: "Not Innovative", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Stylish and Modern Aesthetic",
+          thoughts: [
+            { name: "Beautiful Design", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Appealing", value: 3 },
+            { name: "Somewhat Unappealing", value: 2 },
+            { name: "Poor Design", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Versatile Features for Daily Use",
+          thoughts: [
+            { name: "Highly Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly Interface and Features",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "MyGlasses are released to explore the fusion of technology and fashion, targeting tech-savvy consumers who desire both style and functionality in their accessories.",
     },
@@ -1072,6 +1812,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       description: "Just some plain polo shirts",
       tags: ["polo", "shirt", "clothing", "fashion"],
       category: "Clothes",
+      deliveryTime: "2 - 5 days",
       price: 860, // Random PHP price
       discount: 0.15, // 15% discount
       coverImage:
@@ -1087,6 +1828,52 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         { attribute: "Fit", value: "Regular" },
         { attribute: "Color", value: "Various" },
         { attribute: "Sizes", value: "S, M, L, XL" },
+      ],
+      qualities: [
+        {
+          name: "Design",
+          subtext: "Simple and Versatile Aesthetic",
+          thoughts: [
+            { name: "Beautiful Design", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Appealing", value: 3 },
+            { name: "Somewhat Unappealing", value: 2 },
+            { name: "Poor Design", value: 1 },
+          ],
+        },
+        {
+          name: "Comfort",
+          subtext: "Comfortable and Practical for Everyday Wear",
+          thoughts: [
+            { name: "Highly Comfortable", value: 5 },
+            { name: "Very Comfortable", value: 4 },
+            { name: "Moderately Comfortable", value: 3 },
+            { name: "Somewhat Uncomfortable", value: 2 },
+            { name: "Very Uncomfortable", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly and Convenient",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
       ],
       createdAt: new Date(),
       isFeatured: false,
@@ -1152,6 +1939,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       businessId: "businessId3", // Clothing industry
       ownerId: "userId5", // User ID for clothing industry
       name: "Minimaly",
+      deliveryTime: "2 - 5 days",
       description: "Just some Minimalist Tshirt",
       tags: ["tshirt", "minimalist", "clothing", "fashion"],
       category: "Clothes",
@@ -1228,6 +2016,52 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 100,
         },
       ],
+      qualities: [
+        {
+          name: "Design",
+          subtext: "Simple and Versatile Aesthetic",
+          thoughts: [
+            { name: "Beautiful Design", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Appealing", value: 3 },
+            { name: "Somewhat Unappealing", value: 2 },
+            { name: "Poor Design", value: 1 },
+          ],
+        },
+        {
+          name: "Comfort",
+          subtext: "Comfortable and Practical for Everyday Wear",
+          thoughts: [
+            { name: "Highly Comfortable", value: 5 },
+            { name: "Very Comfortable", value: 4 },
+            { name: "Moderately Comfortable", value: 3 },
+            { name: "Somewhat Uncomfortable", value: 2 },
+            { name: "Very Uncomfortable", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly and Convenient",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "Minimaly is introduced as a minimalist fashion staple, catering to customers who prefer clean designs with a focus on simplicity, available in neutral colors for everyday wear.",
     },
@@ -1242,6 +2076,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "Meet Anki Vector, the friendly robot companion that brings technology and play together. With advanced AI and interactive features, Vector responds to your commands and can even recognize your face. It's a fun and engaging way to explore robotics and programming.",
       tags: ["robot", "toy", "AI"],
       category: "Toys",
+      deliveryTime: "2 - 5 days",
       price: 3000, // 299 USD converted to PHP
       discount: 0.3, // 10% discount in decimal
       coverImage:
@@ -1291,6 +2126,53 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
             "Anki Vector includes advanced AI, voice recognition, and interactive features to engage users.",
         },
       ],
+      qualities: [
+        {
+          name: "Innovation",
+          subtext: "Cutting-edge Technology and Features",
+          thoughts: [
+            { name: "Highly Innovative", value: 5 },
+            { name: "Very Innovative", value: 4 },
+            { name: "Moderately Innovative", value: 3 },
+            { name: "Somewhat Innovative", value: 2 },
+            { name: "Not Innovative", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Robust and Engaging Features",
+          thoughts: [
+            { name: "Extremely Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly and Intuitive",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       addOns: [
         {
           productId: "productId15",
@@ -1326,6 +2208,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "Baw-wow Dog is a high-tech robot toy that mimics real dog behaviors. With advanced sensors and interactive features, it responds to your touch and voice, making it a perfect companion for kids. This playful pet is designed to provide hours of entertainment.",
       tags: ["robot", "toy", "dog"],
       category: "Toys",
+      deliveryTime: "2 - 5 days",
       price: 2199, // 299 USD converted to PHP
       discount: 0.4, // 15% discount in decimal
       coverImage:
@@ -1398,6 +2281,53 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 250,
         },
       ],
+      qualities: [
+        {
+          name: "Innovation",
+          subtext: "Advanced Robotics and Interactive Features",
+          thoughts: [
+            { name: "Highly Innovative", value: 5 },
+            { name: "Very Innovative", value: 4 },
+            { name: "Moderately Innovative", value: 3 },
+            { name: "Somewhat Innovative", value: 2 },
+            { name: "Not Innovative", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Interactive and Engaging Play Experience",
+          thoughts: [
+            { name: "Extremely Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly and Intuitive Controls",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "Baw-wow Dog is targeted at children who seek interactive play with lifelike robotic pets, offering a fun, high-tech experience through responsive behavior.",
     },
@@ -1412,6 +2342,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "Juicero is a premium juice press that uses advanced technology to deliver fresh, cold-pressed juice at home. With a sleek design and smart features, it allows users to easily extract juice from specially designed juice packs, making healthy living convenient and enjoyable. Experience the future of juicing with Juicero.",
       tags: ["juicer", "technology", "health"],
       category: "Gadgets",
+      deliveryTime: "2 - 7 days",
       price: 16999, // 299.99 USD converted to PHP (random value)
       discount: 0.1, // 10% discount expressed as a decimal
       coverImage:
@@ -1472,6 +2403,52 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 800,
         },
       ],
+      qualities: [
+        {
+          name: "Innovation",
+          subtext: "Cutting-Edge Technology for Home Juicing",
+          thoughts: [
+            { name: "Highly Innovative", value: 5 },
+            { name: "Very Innovative", value: 4 },
+            { name: "Moderately Innovative", value: 3 },
+            { name: "Somewhat Innovative", value: 2 },
+            { name: "Not Innovative", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Convenient and Easy Juice Extraction",
+          thoughts: [
+            { name: "Extremely Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Ease of Use",
+          subtext: "User-Friendly Design for Smooth Operation",
+          thoughts: [
+            { name: "Extremely Easy", value: 5 },
+            { name: "Very Easy", value: 4 },
+            { name: "Moderately Easy", value: 3 },
+            { name: "Somewhat Difficult", value: 2 },
+            { name: "Very Difficult", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "Juicero is marketed as a luxury juicing appliance, appealing to health-conscious consumers who value convenience, style, and cutting-edge technology in their kitchen.",
     },
@@ -1485,6 +2462,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "Breeze-E is a revolutionary airless fan designed for optimal airflow without the traditional fan blades. Its innovative technology circulates air quietly and efficiently, making it perfect for homes and offices. Experience comfort like never before with this sleek and modern appliance.",
       tags: ["fan", "airless", "appliance"],
       category: "Appliances",
+      deliveryTime: "2 - 5 days",
       price: 8999.43, // Price in PHP (approx. 157 USD)
       discount: 0.15, // Discount as a decimal (15%)
       coverImage:
@@ -1553,6 +2531,52 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 400,
         },
       ],
+      qualities: [
+        {
+          name: "Innovation",
+          subtext: "Revolutionary Airless Design",
+          thoughts: [
+            { name: "Highly Innovative", value: 5 },
+            { name: "Very Innovative", value: 4 },
+            { name: "Moderately Innovative", value: 3 },
+            { name: "Somewhat Innovative", value: 2 },
+            { name: "Not Innovative", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Quiet and Efficient Air Circulation",
+          thoughts: [
+            { name: "Extremely Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Sleek and Modern Appearance",
+          thoughts: [
+            { name: "Extremely Attractive", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Attractive", value: 3 },
+            { name: "Somewhat Unattractive", value: 2 },
+            { name: "Very Unattractive", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "Breeze-E targets customers looking for a modern and quiet cooling solution, offering an innovative airless fan design that delivers efficient airflow with a sleek, minimalist look.",
     },
@@ -1565,6 +2589,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "Ease-E is a high-tech smart blender that takes the hassle out of meal preparation. With its powerful motor and smart technology, it offers multiple blending modes to ensure perfect consistency every time. Ideal for smoothies, soups, and sauces, this blender makes healthy living effortless.",
       tags: ["blender", "smart", "appliance"],
       category: "Appliances",
+      deliveryTime: "2 - 5 days",
       price: 10499.43, // Price in PHP (approx. 184 USD)
       discount: 0.2, // Discount as a decimal (20%)
       coverImage:
@@ -1635,6 +2660,52 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 350,
         },
       ],
+      qualities: [
+        {
+          name: "Innovation",
+          subtext: "Smart Technology for Effortless Blending",
+          thoughts: [
+            { name: "Highly Innovative", value: 5 },
+            { name: "Very Innovative", value: 4 },
+            { name: "Moderately Innovative", value: 3 },
+            { name: "Somewhat Innovative", value: 2 },
+            { name: "Not Innovative", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Multiple Blending Modes for Versatility",
+          thoughts: [
+            { name: "Extremely Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Sleek and Modern Appearance",
+          thoughts: [
+            { name: "Extremely Attractive", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Attractive", value: 3 },
+            { name: "Somewhat Unattractive", value: 2 },
+            { name: "Very Unattractive", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
     },
     {
       productId: "productId7",
@@ -1645,6 +2716,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "The CookwaresSaucyPan is perfect for your everyday cooking needs. Made with high-quality materials, this flat frying pan ensures even heat distribution. Whether you're frying eggs or sautéing vegetables, this pan makes cooking effortless.",
       tags: ["frying pan", "cookware", "non-stick"],
       category: "Cookware",
+      deliveryTime: "2 - 5 days",
       price: 800, // 299 USD converted to PHP
       discount: 0.1, // 10% discount in decimal
       coverImage:
@@ -1713,6 +2785,52 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 500,
         },
       ],
+      qualities: [
+        {
+          name: "Durability",
+          subtext: "High-Quality Aluminum Construction",
+          thoughts: [
+            { name: "Extremely Durable", value: 5 },
+            { name: "Very Durable", value: 4 },
+            { name: "Moderately Durable", value: 3 },
+            { name: "Somewhat Durable", value: 2 },
+            { name: "Not Durable", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Non-Stick Surface for Easy Cooking",
+          thoughts: [
+            { name: "Extremely Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Ergonomic and Practical Design",
+          thoughts: [
+            { name: "Extremely Attractive", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Attractive", value: 3 },
+            { name: "Somewhat Unattractive", value: 2 },
+            { name: "Very Unattractive", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
+        },
+      ],
       productIntention:
         "CookwaresSaucyPan is intended for everyday cooks looking for a reliable, non-stick frying pan that combines affordability with high-quality materials and heat distribution.",
     },
@@ -1721,6 +2839,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       businessId: "businessId5", // Appliances Industry
       ownerId: "userId8",
       name: "CookwareBelle",
+      deliveryTime: "2 - 5 days",
       description:
         "CookwareBelle offers a variety of pots and pans designed for home cooks. Each piece is crafted to provide optimal heat retention and durability. Upgrade your kitchen essentials with these stylish and functional cookware options.",
       tags: ["cookware", "pots", "pans"],
@@ -1765,6 +2884,52 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           questions: "Can CookwareBelle be used on induction cooktops?",
           answer:
             "Yes, many CookwareBelle pots and pans are compatible with induction cooktops.",
+        },
+      ],
+      qualities: [
+        {
+          name: "Durability",
+          subtext: "High-Quality Stainless Steel Construction",
+          thoughts: [
+            { name: "Extremely Durable", value: 5 },
+            { name: "Very Durable", value: 4 },
+            { name: "Moderately Durable", value: 3 },
+            { name: "Somewhat Durable", value: 2 },
+            { name: "Not Durable", value: 1 },
+          ],
+        },
+        {
+          name: "Functionality",
+          subtext: "Versatile Cookware for Various Cooking Needs",
+          thoughts: [
+            { name: "Extremely Functional", value: 5 },
+            { name: "Very Functional", value: 4 },
+            { name: "Moderately Functional", value: 3 },
+            { name: "Somewhat Functional", value: 2 },
+            { name: "Not Functional", value: 1 },
+          ],
+        },
+        {
+          name: "Design",
+          subtext: "Stylish and Modern Look",
+          thoughts: [
+            { name: "Extremely Attractive", value: 5 },
+            { name: "Very Attractive", value: 4 },
+            { name: "Moderately Attractive", value: 3 },
+            { name: "Somewhat Unattractive", value: 2 },
+            { name: "Very Unattractive", value: 1 },
+          ],
+        },
+        {
+          name: "Affordability",
+          subtext: "Impacts Availability & Continuation",
+          thoughts: [
+            { name: "Expensive", value: 5 },
+            { name: "Pricey", value: 4 },
+            { name: "Reasonable", value: 3 },
+            { name: "Affordable", value: 2 },
+            { name: "Cheap", value: 1 },
+          ],
         },
       ],
       addOns: [
