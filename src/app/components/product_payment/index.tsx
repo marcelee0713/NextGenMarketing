@@ -174,9 +174,9 @@ export const MainProductPaymentPage = () => {
                   },
                   details: {
                     progress: DEFAULT_ORDER_PROGRESS,
-                    ratedQualities: [],
-                    isCompleted: false,
-                    hasWrittenAReview: false,
+                    ratedQualities: new Map(),
+                    isCompleted: true,
+                    review: undefined,
                   },
                   productDetails: {
                     addOnsIndexes: summary.selectedAddOns.map((val) =>

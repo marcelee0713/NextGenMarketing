@@ -95,12 +95,12 @@ const GetProduct = (
 
   if (!product) throw new Error("Something went wrong!");
 
-  const evaluations = PRODUCT_EVALUATIONS[product.productId];
+  const evaluations = PRODUCT_EVALUATIONS.get(product.productId);
 
   return {
     businessProfile,
     data: product,
-    reviews: evaluations,
+    reviews: evaluations ?? [],
   };
 };
 

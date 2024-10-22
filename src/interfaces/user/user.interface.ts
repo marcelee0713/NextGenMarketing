@@ -30,6 +30,11 @@ export interface IUserProfile {
   addresses: IUserAdress[];
 }
 
+export interface IUserData {
+  details: IUser;
+  profile: IUserProfile;
+}
+
 export interface IUserProductOrders {
   orderId: string;
   users: {
@@ -50,8 +55,12 @@ export interface IUserProductOrders {
   details: {
     progress: Record<ShipmentProgressType, ProductShipmentProgress>;
     isCompleted: boolean;
-    hasWrittenAReview: boolean;
-    ratedQualities: OrderRatedProductQuality[];
+    review?: {
+      reviewId: string;
+      createdAt: Date;
+      updatedAt: Date | null;
+    };
+    ratedQualities: Map<string, OrderRatedProductQuality>;
   };
   createdAt: Date;
 }
@@ -60,11 +69,13 @@ export interface OrderRatedProductQuality {
   productQualitiesIndex: number;
   createdAt: Date;
   updatedAt: Date | null;
-  thoughtsSelectedThoughtsValue: number | null;
-  suggestions: number | null;
+  thoughtSelectedIndex: number;
+  suggestions: string | null;
 }
 
 export interface ProductShipmentProgress {
+  index: number;
+  name: string;
   type: ShipmentProgressType;
   date: Date | null;
 }

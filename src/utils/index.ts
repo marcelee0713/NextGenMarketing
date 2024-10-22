@@ -85,3 +85,11 @@ export const generateRandomMixedIds = (
 
   return Array.from(ids); // Convert Set back to Array
 };
+
+export const formatDate = (date: Date): string => {
+  return date.toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
+};
