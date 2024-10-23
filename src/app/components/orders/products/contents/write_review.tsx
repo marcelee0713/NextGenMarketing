@@ -163,7 +163,7 @@ export const WriteReview: React.FC<props> = ({ order, setOrder }) => {
       <div className="flex flex-col gap-1">
         <textarea
           value={value}
-          disabled={canNotLongerReview}
+          disabled={canNotLongerReview || !canReview}
           onChange={onChangeInput}
           name="review-input"
           id="review-input"
@@ -181,7 +181,7 @@ export const WriteReview: React.FC<props> = ({ order, setOrder }) => {
               activeStars={stars}
               totalStars={5}
               onClick={(starCount) => setStars(starCount)}
-              disabled={canNotLongerReview}
+              disabled={canNotLongerReview || !canReview}
               inActiveStarStyle={{
                 color: "#383838",
               }}
@@ -210,7 +210,7 @@ export const WriteReview: React.FC<props> = ({ order, setOrder }) => {
             )}
 
             <button
-              disabled={canNotLongerReview}
+              disabled={canNotLongerReview || !canReview}
               onClick={onSubmit}
               className={`flex gap-[6px] items-center justify-center py-1 px-3 font-semibold bg-primary text-white rounded-lg text-sm ${
                 canNotLongerReview && "cursor-not-allowed"

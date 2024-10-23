@@ -18,6 +18,8 @@ const PROJECTS: Record<string, IProject[]> = {
       endDate: null,
       status: "STARTED",
       class: "STANDARD",
+      addOnsIndex: [0, 1],
+      promoCode: null,
       userId: "userId1",
       partnerId: "partnerId1",
       reviewStatus: {
@@ -34,7 +36,9 @@ const PROJECTS: Record<string, IProject[]> = {
       endDate: new Date("2024-08-15"),
       status: "CANCELLED",
       class: "BASIC",
-      userId: "userId2",
+      addOnsIndex: [0, 1, 2],
+      promoCode: null,
+      userId: "userId1",
       partnerId: "partnerId2",
       reviewStatus: {
         reviewed: false,
@@ -50,7 +54,9 @@ const PROJECTS: Record<string, IProject[]> = {
       endDate: null,
       status: "ON-GOING",
       class: "PREMIUM",
-      userId: "userId3",
+      addOnsIndex: [0, 1, 2, 3, 4],
+      promoCode: "SUP3RD0WN",
+      userId: "userId1",
       partnerId: "partnerId6",
       reviewStatus: {
         reviewed: false,
@@ -66,8 +72,10 @@ const PROJECTS: Record<string, IProject[]> = {
       endDate: new Date("2024-08-01"),
       status: "FINISHED",
       class: "STANDARD",
-      userId: "userId4",
-      partnerId: "partnerId4",
+      addOnsIndex: [],
+      promoCode: "D0WNLAND3R",
+      userId: "userId1",
+      partnerId: "partnerId7",
       reviewStatus: {
         reviewed: false,
         serviceReviewsId: null,

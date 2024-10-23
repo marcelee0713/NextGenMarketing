@@ -22,7 +22,7 @@ export const RateProductRowItem: React.FC<props> = ({
   quality,
   setOrder,
 }) => {
-  //TODO: FIX Bugs
+  const canRate = order.orderData.details.isCompleted;
 
   const alreadySubmits = order.orderData.details.ratedQualities.has(
     quality.name
@@ -53,7 +53,7 @@ export const RateProductRowItem: React.FC<props> = ({
   };
 
   const onSubmit = () => {
-    if (!thought) return;
+    if (!thought && suggestion === currentObj?.suggestions) return;
 
     const obj: OrderRatedProductQuality = {
       createdAt: new Date(),
@@ -64,7 +64,11 @@ export const RateProductRowItem: React.FC<props> = ({
     };
 
     if (currentObj) {
-      if (currentObj.thoughtSelectedIndex === thoughtIndex) return;
+      if (
+        currentObj.thoughtSelectedIndex === thoughtIndex &&
+        suggestion === currentObj.suggestions
+      )
+        return;
 
       obj.thoughtSelectedIndex = thoughtIndex ?? 0;
 
@@ -116,13 +120,13 @@ export const RateProductRowItem: React.FC<props> = ({
           onSelect={(index) => {
             setThoughtIndex(index);
           }}
-          disabled={!updatable}
+          disabled={!updatable || !canRate}
         />
       </td>
       <td className="px-6 py-4">
         <input
           type="text"
-          disabled={!updatable}
+          disabled={!updatable || !canRate}
           value={suggestion ?? ""}
           onChange={onSuggestionChange}
           placeholder="Your suggestions for improvement"
@@ -131,7 +135,7 @@ export const RateProductRowItem: React.FC<props> = ({
       </td>
       <td className="px-6 py-4 relative group">
         <button
-          disabled={!updatable}
+          disabled={!updatable || !canRate}
           onClick={onSubmit}
           className="font-medium text-blue-600 dark:text-blue-500 hover:underline disabled:cursor-not-allowed"
         >

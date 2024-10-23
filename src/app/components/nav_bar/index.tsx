@@ -12,6 +12,7 @@ import { NavCategoriesSection } from "./section/categories_section";
 import { GetServicesParams } from "@/interfaces/services/data_access";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { useGlobalContext } from "../context";
+import { usePathname } from "next/navigation";
 
 interface props {
   params: GetServicesParams;
@@ -19,6 +20,10 @@ interface props {
 }
 
 const NavBar = ({ params, setParams }: props) => {
+  const pathname = usePathname().split("/");
+
+  console.log(pathname);
+
   const { expandNav, setExpandNav } = useGlobalContext();
   const [expand, setExpand] = useState(expandNav);
 
@@ -61,6 +66,7 @@ const NavBar = ({ params, setParams }: props) => {
         <NavSection
           sectionName="MAIN"
           expanded={expand}
+          currentRoute={pathname[1]}
           tabs={[
             {
               icon: dashboardIcon,
@@ -88,6 +94,7 @@ const NavBar = ({ params, setParams }: props) => {
         <NavSection
           sectionName="PERSONAL"
           expanded={expand}
+          currentRoute={pathname[1]}
           tabs={[
             {
               icon: checklist,

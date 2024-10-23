@@ -8,6 +8,8 @@ export interface IProject {
   endDate: Date | null;
   status: ProjectStatus; // If the status is FINISHED, the user can leave now a review.
   class: ServiceClassType;
+  addOnsIndex: number[];
+  promoCode: string | null;
   userId: string; // Business owner
   partnerId: string; // Marketer
   reviewStatus: IProjectReviewStatus;

@@ -974,4 +974,81 @@ const DEFAULT_ORDER_PROGRESS: Record<
   },
 };
 
-export { PRODUCT_EVALUATIONS, DEFAULT_ORDER_PROGRESS };
+const DEFAULT_ORDER_PROGRESS_SHIPPED_OUT: Record<
+  ShipmentProgressType,
+  ProductShipmentProgress
+> = {
+  ORDER_PLACED: {
+    index: 0,
+    name: "Order Placed",
+    type: "ORDER_PLACED",
+    date: new Date(),
+  },
+  PAYMENT_CONFIRMED: {
+    index: 1,
+    name: "Payment Confirmed",
+    type: "PAYMENT_CONFIRMED",
+    date: new Date(),
+  },
+  SHIPPED_OUT: {
+    index: 2,
+    name: "Order Shipped Out",
+    type: "SHIPPED_OUT",
+    date: new Date(),
+  },
+  RECEIVED: {
+    index: 3,
+    name: "Order Received",
+    type: "RECEIVED",
+    date: null,
+  },
+  COMPLETED: {
+    index: 4,
+    name: "Order Completed",
+    type: "COMPLETED",
+    date: null,
+  },
+};
+
+const DEFAULT_ORDER_PROGRESS_ORDER_PLACED: Record<
+  ShipmentProgressType,
+  ProductShipmentProgress
+> = {
+  ORDER_PLACED: {
+    index: 0,
+    name: "Order Placed",
+    type: "ORDER_PLACED",
+    date: new Date(),
+  },
+  PAYMENT_CONFIRMED: {
+    index: 1,
+    name: "Payment Confirmed",
+    type: "PAYMENT_CONFIRMED",
+    date: null,
+  },
+  SHIPPED_OUT: {
+    index: 2,
+    name: "Order Shipped Out",
+    type: "SHIPPED_OUT",
+    date: null,
+  },
+  RECEIVED: {
+    index: 3,
+    name: "Order Received",
+    type: "RECEIVED",
+    date: null,
+  },
+  COMPLETED: {
+    index: 4,
+    name: "Order Completed",
+    type: "COMPLETED",
+    date: null,
+  },
+};
+
+export {
+  PRODUCT_EVALUATIONS,
+  DEFAULT_ORDER_PROGRESS,
+  DEFAULT_ORDER_PROGRESS_SHIPPED_OUT,
+  DEFAULT_ORDER_PROGRESS_ORDER_PLACED,
+};
