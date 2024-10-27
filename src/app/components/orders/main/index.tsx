@@ -1,12 +1,13 @@
 "use client";
 import { GetServicesParams } from "@/interfaces/services/data_access";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "../../nav_bar";
 import { BreadCrumbNav } from "../../services/breadcrumb_nav";
 import { TopBar } from "../../services/top_bar";
 import { GetOrders } from "@/utils/data_access/orders";
-import { GetOrdersParams } from "@/interfaces/orders/product";
+import { GetOrdersParams, OrderItem } from "@/interfaces/orders/product";
 import { OrdersContents } from "./contents";
+import { AnalyzedProductData } from "@/utils/data_access/users";
 
 export const MainOrdersPage = () => {
   const [params, setParams] = useState<GetServicesParams>({
@@ -20,12 +21,17 @@ export const MainOrdersPage = () => {
     userId: "userId1",
   });
 
-  const orders = GetOrders(orderParams);
+  const [orders, setOrders] = useState<OrderItem[]>([]);
 
-  console.table(orders);
+  useEffect(() => {
+    setOrders(GetOrders(orderParams));
 
-  console.log("Params");
-  console.table(orderParams);
+    console.table(AnalyzedProductData("userId1", "productId9"));
+  }, []);
+
+  useEffect(() => {
+    setOrders(GetOrders(orderParams));
+  }, [orderParams]);
 
   return (
     <>

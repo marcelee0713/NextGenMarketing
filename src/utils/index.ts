@@ -64,6 +64,17 @@ export const getRandomInt = (min: number, max: number): number => {
   return Math.floor(Math.random() * (max - min + 1)) + min; // Generates a random integer between min and max (inclusive)
 };
 
+export const generateRandomId = (length: number = 10): string => {
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let result = "";
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    result += characters[randomIndex];
+  }
+  return result;
+};
+
 export const generateRandomMixedIds = (
   minCount: number,
   maxCount: number,
@@ -92,4 +103,26 @@ export const formatDate = (date: Date): string => {
     month: "long",
     day: "numeric",
   });
+};
+
+export const formatDateToString = (date: Date): string => {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0"); // Months are zero-indexed
+  const day = String(date.getDate()).padStart(2, "0");
+
+  return `${year}-${month}-${day}`;
+};
+
+export const getColorForRating = (rating: number): string => {
+  if (rating >= 4) {
+    return "#008000"; // Green
+  } else if (rating >= 3 && rating < 4) {
+    return "#9ACD32"; // Yellow Green (more green)
+  } else if (rating >= 2 && rating < 3) {
+    return "#FFD700"; // Yellow
+  } else if (rating >= 1 && rating < 2) {
+    return "#FFA500"; // Orange
+  } else {
+    return "#FF0000"; // Red
+  }
 };

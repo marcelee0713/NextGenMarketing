@@ -1,8 +1,9 @@
-import React, { Dispatch, SetStateAction, useEffect, useState } from "react";
+import React, { Dispatch, SetStateAction, useEffect } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { HiSpeakerphone } from "react-icons/hi";
 import { PRODUCT_CATEGORIES } from "@/types/user/user.product.types";
 import { GetProductsParams } from "@/interfaces/user/user.interface";
+import { useGlobalContext } from "@/app/components/context";
 
 interface props {
   expandedNav: boolean;
@@ -17,10 +18,10 @@ export const NavCategoriesSectionProducts = ({
   params,
   setParams,
 }: props) => {
-  const [onExpand, setOnExpand] = useState(true);
+  const { expandNavCategories, setExpandCategories } = useGlobalContext();
 
   useEffect(() => {
-    if (!expandedNav) setOnExpand(false);
+    if (!expandedNav) setExpandCategories(false);
   }, [expandedNav]);
 
   return (
@@ -33,7 +34,7 @@ export const NavCategoriesSectionProducts = ({
       <div className="flex flex-col w-full text-textColor font-inter font-medium">
         <div
           onClick={() => {
-            setOnExpand(!onExpand);
+            setExpandCategories(!expandNavCategories);
             setExpandedNav(true);
           }}
           className={`flex justify-between items-center cursor-pointer hover:text-primary ${
@@ -52,7 +53,9 @@ export const NavCategoriesSectionProducts = ({
         </div>
 
         <div
-          className={`flex gap-5 pl-6 w-full ${onExpand ? "block" : "hidden"}`}
+          className={`flex gap-5 pl-6 w-full ${
+            expandNavCategories ? "block" : "hidden"
+          }`}
         >
           <div className="border-l-[1px] border-solid h-auto"></div>
           <div className="flex-1 flex flex-col gap-1">

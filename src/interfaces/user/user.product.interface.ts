@@ -25,6 +25,20 @@ export interface IProduct {
   deliveryTime: string;
   createdAt: Date;
   isFeatured: boolean;
+  salesAndEngagement: CombinedSalesEngagementData[];
+}
+
+export interface CombinedSalesEngagementData {
+  date: Date;
+  unitsSold: number;
+  totalRevenue: number;
+  engagementMetrics: EngagementMetrics;
+}
+
+export interface EngagementMetrics {
+  views: number; // Total views of the product
+  addsToCart: number; // Total adds to cart
+  favorites: number; // Total times favorited
 }
 
 export interface ProductQualities {
@@ -64,4 +78,81 @@ export interface ProductAddOns {
   header: string;
   description: string;
   price: number;
+}
+
+export interface SalesRechartData {
+  totalUnitsSold: number;
+  totalRevenue: number;
+  totalRevenueByDiscount: number;
+  date: string;
+}
+
+export interface EngagementRechartData {
+  views: number; // Total views of the product
+  addsToCart: number; // Total adds to cart
+  favorites: number; // Total times favorited
+  date: string;
+}
+
+export interface ProductAnalyzedData {
+  marketValueRating: MarketValueRating;
+  salesAndEngagement: OverAllCombinedSalesAndEngagement;
+  ordersByProvince: OrdersByProvince[];
+  userSuggestions: Map<number, ProductQualityUserSuggestions[]>;
+  productQualityMonthlyAverage: Map<number, ProductQualityMonthlyAverage[]>;
+  userId: string;
+  businessId: string;
+  productId: string;
+}
+
+export interface QualityRawDataMonth {
+  dateStr: string;
+  value: number;
+  thoughtSelectedIndex: number;
+  qualityIndex: number;
+}
+
+export interface ProductQualityMonthlyAverage {
+  qualityName: string;
+  qualityIndex: number;
+  date: string;
+  createdAt: Date;
+  average: number;
+}
+
+export interface ProductQualityUserSuggestions {
+  qualityName: string;
+  qualityIndex: number;
+  rating: number;
+  suggestion: string;
+  name: string;
+  createdAt: Date;
+}
+
+export interface OverAllCombinedSalesAndEngagement {
+  totalUnitsSold: number;
+  totalRevenue: number;
+  engagement: {
+    totalViews: number;
+    totalAddToCarts: number;
+    totalFavorites: number;
+  };
+  salesAndEngagement: CombinedSalesEngagementData[];
+}
+
+export interface MarketValueRating {
+  qualities: QualitiesAverageRatings[];
+  average: number;
+  totalResponses: number;
+}
+
+export interface QualitiesAverageRatings {
+  name: string;
+  totalAverage: number;
+  totalUserRespondents: number;
+}
+
+export interface OrdersByProvince {
+  province: string;
+  amountOfSales: number;
 }

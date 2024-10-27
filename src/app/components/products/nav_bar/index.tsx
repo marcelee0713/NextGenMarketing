@@ -5,6 +5,7 @@ import logo from "../../../../../public/images/logo.png";
 import dashboardIcon from "../../../../../public/svg/dashboard-svgrepo-com.svg";
 import fireIcon from "../../../../../public/svg/fire.svg";
 import heartIcon from "../../../../../public/svg/heart.svg";
+import analytics from "../../../../../public/svg/analytics.svg";
 import checklist from "../../../../../public/images/checklist.png";
 import subscriptionIcon from "../../../../../public/svg/subscription.svg";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -12,6 +13,7 @@ import { useGlobalContext } from "../../context";
 import { NavSectionProducts } from "./section";
 import { NavCategoriesSectionProducts } from "./section/categories_section";
 import { GetProductsParams } from "@/interfaces/user/user.interface";
+import { usePathname } from "next/navigation";
 
 interface props {
   params: GetProductsParams;
@@ -19,7 +21,9 @@ interface props {
 }
 
 const NavBarProducts = ({ params, setParams }: props) => {
-  const { expandNav, setExpandNav } = useGlobalContext();
+  const pathname = usePathname().split("/");
+
+  const { expandNav, setExpandNav, mode } = useGlobalContext();
   const [expand, setExpand] = useState(expandNav);
 
   useEffect(() => {
@@ -33,7 +37,10 @@ const NavBarProducts = ({ params, setParams }: props) => {
       } px-5 py-8 bg-white shadow-nav overflow-visible`}
     >
       <div className="relative px-4">
-        <Link href={"/"} className="flex gap-5 items-center">
+        <Link
+          href={mode === "PRODUCT" ? "/products" : "/"}
+          className="flex gap-5 items-center"
+        >
           <Image src={logo} alt="Logo" width={40} height={40} />
 
           {expand && (
@@ -61,15 +68,18 @@ const NavBarProducts = ({ params, setParams }: props) => {
         <NavSectionProducts
           sectionName="MAIN"
           expanded={expand}
+          currentRoute={pathname[1]}
           tabs={[
             {
               icon: dashboardIcon,
               name: "Dashboard",
+              route: "#",
             },
 
             {
               icon: fireIcon,
               name: "Popular Now",
+              route: "#",
             },
           ]}
         />
@@ -88,18 +98,27 @@ const NavBarProducts = ({ params, setParams }: props) => {
         <NavSectionProducts
           sectionName="PERSONAL"
           expanded={expand}
+          currentRoute={pathname[1]}
           tabs={[
             {
               icon: checklist,
               name: "Orders",
+              route: "/orders",
+            },
+            {
+              icon: analytics,
+              name: "Analytics",
+              route: "/analytics/userId1/productId9",
             },
             {
               icon: subscriptionIcon,
               name: "Subscriptions",
+              route: "#",
             },
             {
               icon: heartIcon,
               name: "Favorites",
+              route: "#",
             },
           ]}
         />

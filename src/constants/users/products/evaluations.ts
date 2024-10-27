@@ -131,11 +131,11 @@ const PRODUCT_EVALUATIONS = new Map<string, IProductEvaluation[]>([
     ],
   ],
   [
-    "productidIdontfuckingknow",
+    "productIdBunnyR1",
     [
       {
         evaluationId: "eval1",
-        productId: "productidIdontfuckingknow",
+        productId: "productIdBunnyR1",
         reviewerId: "userId4",
         rating: 5,
         comment:
@@ -145,7 +145,7 @@ const PRODUCT_EVALUATIONS = new Map<string, IProductEvaluation[]>([
       },
       {
         evaluationId: "eval2",
-        productId: "productidIdontfuckingknow",
+        productId: "productIdBunnyR1",
         reviewerId: "partner2",
         rating: 4,
         comment:
@@ -155,7 +155,7 @@ const PRODUCT_EVALUATIONS = new Map<string, IProductEvaluation[]>([
       },
       {
         evaluationId: "eval3",
-        productId: "productidIdontfuckingknow",
+        productId: "productIdBunnyR1",
         reviewerId: "userId5",
         rating: 4,
         comment:
@@ -165,7 +165,7 @@ const PRODUCT_EVALUATIONS = new Map<string, IProductEvaluation[]>([
       },
       {
         evaluationId: "eval4",
-        productId: "productidIdontfuckingknow",
+        productId: "productIdBunnyR1",
         reviewerId: "userId6",
         rating: 3,
         comment:

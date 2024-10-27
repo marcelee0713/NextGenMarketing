@@ -1,6 +1,7 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface props {
   sectionName: string;
@@ -8,6 +9,7 @@ interface props {
   tabs: {
     icon: string | StaticImport;
     name: string;
+    route: string;
   }[];
 
   currentRoute: string;
@@ -32,7 +34,8 @@ export const NavSection = ({
             currentRoute.toLowerCase() === val.name.toLocaleLowerCase();
 
           return (
-            <div
+            <Link
+              href={val.route}
               key={index}
               className={`flex gap-2 w-full p-4 cursor-pointer ${
                 onTheSameRoute && " bg-accent rounded-md "
@@ -40,7 +43,7 @@ export const NavSection = ({
             >
               <Image src={val.icon} alt="Logo" width={20} height={20} />
               {expanded && <div className="font-medium">{val.name}</div>}
-            </div>
+            </Link>
           );
         })}
       </div>

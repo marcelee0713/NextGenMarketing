@@ -5,6 +5,7 @@ import logo from "../../../../public/images/logo.png";
 import dashboardIcon from "../../../../public/svg/dashboard-svgrepo-com.svg";
 import fireIcon from "../../../../public/svg/fire.svg";
 import heartIcon from "../../../../public/svg/heart.svg";
+import analytics from "../../../../public/svg/analytics.svg";
 import checklist from "../../../../public/images/checklist.png";
 import subscriptionIcon from "../../../../public/svg/subscription.svg";
 import { NavSection } from "./section";
@@ -24,7 +25,7 @@ const NavBar = ({ params, setParams }: props) => {
 
   console.log(pathname);
 
-  const { expandNav, setExpandNav } = useGlobalContext();
+  const { expandNav, setExpandNav, mode } = useGlobalContext();
   const [expand, setExpand] = useState(expandNav);
 
   useEffect(() => {
@@ -38,7 +39,10 @@ const NavBar = ({ params, setParams }: props) => {
       } px-5 py-8 bg-white shadow-nav overflow-visible`}
     >
       <div className="relative px-4">
-        <Link href={"/"} className="flex gap-5 items-center">
+        <Link
+          href={mode === "PRODUCT" ? "/products" : "/"}
+          className="flex gap-5 items-center"
+        >
           <Image src={logo} alt="Logo" width={40} height={40} />
 
           {expand && (
@@ -71,11 +75,13 @@ const NavBar = ({ params, setParams }: props) => {
             {
               icon: dashboardIcon,
               name: "Dashboard",
+              route: "#",
             },
 
             {
               icon: fireIcon,
               name: "Popular Now",
+              route: "#",
             },
           ]}
         />
@@ -99,14 +105,22 @@ const NavBar = ({ params, setParams }: props) => {
             {
               icon: checklist,
               name: "Orders",
+              route: "/orders",
+            },
+            {
+              icon: analytics,
+              name: "Analytics",
+              route: "/analytics/userId1/productId9",
             },
             {
               icon: subscriptionIcon,
               name: "Subscriptions",
+              route: "#",
             },
             {
               icon: heartIcon,
               name: "Favorites",
+              route: "#",
             },
           ]}
         />

@@ -24,7 +24,7 @@ export interface OrderItem {
 
 export interface GetOrdersParams {
   userId: string;
-  type?: "SERVICE" | "PRODUCT";
+  type?: "SERVICE" | "PRODUCT" | "ON-GOING";
   projectProgress?: string;
   sortBy?: "asc" | "desc";
 }

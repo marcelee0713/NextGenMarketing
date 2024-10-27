@@ -55,7 +55,34 @@ const USER_PROFILES: Record<string, IUserProfile> = {
       lastName: "Williams",
     },
     profilePicture: null,
-    addresses: [],
+    addresses: [
+      {
+        fullName: "Steven Williams",
+        labelAs: "HOME",
+        phoneNumber: "09945174624",
+        fullAddress: {
+          houseNoStreetNo: "596 Basadre Store",
+          barangay: "Balzo",
+          city: "Lingayen",
+          province: "Pangasinan",
+          region: "Region I",
+        },
+        postalCode: 2000,
+      },
+      {
+        fullName: "Steven Williams",
+        labelAs: "HOME",
+        phoneNumber: "099451746234",
+        fullAddress: {
+          houseNoStreetNo: "452",
+          barangay: "Landering",
+          city: "Binmaley",
+          province: "Pangasinan",
+          region: "Region I",
+        },
+        postalCode: 2001,
+      },
+    ],
   },
   userId3: {
     userId: "userId3",

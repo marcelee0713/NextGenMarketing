@@ -206,6 +206,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           ],
         },
       ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 95,
+          totalRevenue: 19000,
+          engagementMetrics: {
+            views: 178,
+            addsToCart: 81,
+            favorites: 27,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 122,
+          totalRevenue: 24400,
+          engagementMetrics: {
+            views: 360,
+            addsToCart: 86,
+            favorites: 34,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 68,
+          totalRevenue: 13600,
+          engagementMetrics: {
+            views: 381,
+            addsToCart: 52,
+            favorites: 18,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 149,
+          totalRevenue: 29800,
+          engagementMetrics: {
+            views: 312,
+            addsToCart: 32,
+            favorites: 49,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 141,
+          totalRevenue: 28200,
+          engagementMetrics: {
+            views: 375,
+            addsToCart: 74,
+            favorites: 39,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 174,
+          totalRevenue: 34800,
+          engagementMetrics: {
+            views: 228,
+            addsToCart: 53,
+            favorites: 28,
+          },
+        },
+      ],
     },
     {
       productId: "productId10",
@@ -225,6 +287,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981463/my-uploads/nextgen/commons/food/2/thumb_720_450_dreamstime_xl_34122178-Custom_uup6g4.jpg",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981463/my-uploads/nextgen/commons/food/2/l-intro-1675120855_vyv9hj.jpg",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981463/my-uploads/nextgen/commons/food/2/Air-Fryer-Hot-Dog-square_mmr5mo.jpg",
+      ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 95,
+          totalRevenue: 14250, // 95 units * price of 150 PHP
+          engagementMetrics: {
+            views: 178,
+            addsToCart: 81,
+            favorites: 27,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 122,
+          totalRevenue: 18300, // 122 units * price of 150 PHP
+          engagementMetrics: {
+            views: 360,
+            addsToCart: 86,
+            favorites: 34,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 68,
+          totalRevenue: 10200, // 68 units * price of 150 PHP
+          engagementMetrics: {
+            views: 381,
+            addsToCart: 52,
+            favorites: 18,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 149,
+          totalRevenue: 22350, // 149 units * price of 150 PHP
+          engagementMetrics: {
+            views: 312,
+            addsToCart: 32,
+            favorites: 49,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 141,
+          totalRevenue: 21150, // 141 units * price of 150 PHP
+          engagementMetrics: {
+            views: 375,
+            addsToCart: 74,
+            favorites: 39,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 174,
+          totalRevenue: 26100, // 174 units * price of 150 PHP
+          engagementMetrics: {
+            views: 228,
+            addsToCart: 53,
+            favorites: 28,
+          },
+        },
       ],
       ratings: 4.5,
       qualities: [
@@ -379,9 +503,72 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         { attribute: "Material", value: "Plastic" },
         { attribute: "Color", value: "Blue" },
       ],
+
       createdAt: new Date(),
       isFeatured: true, // New property
       deliveryLocation: "North Luzon",
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 150,
+          totalRevenue: 2564850, // 150 units * price of 17099 PHP
+          engagementMetrics: {
+            views: 240,
+            addsToCart: 100,
+            favorites: 35,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 180,
+          totalRevenue: 3077820, // 180 units * price of 17099 PHP
+          engagementMetrics: {
+            views: 420,
+            addsToCart: 120,
+            favorites: 45,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 130,
+          totalRevenue: 2222870, // 130 units * price of 17099 PHP
+          engagementMetrics: {
+            views: 370,
+            addsToCart: 70,
+            favorites: 25,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 200,
+          totalRevenue: 3419800, // 200 units * price of 17099 PHP
+          engagementMetrics: {
+            views: 310,
+            addsToCart: 50,
+            favorites: 55,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 160,
+          totalRevenue: 2735840, // 160 units * price of 17099 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 80,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 190,
+          totalRevenue: 3248810, // 190 units * price of 17099 PHP
+          engagementMetrics: {
+            views: 290,
+            addsToCart: 60,
+            favorites: 20,
+          },
+        },
+      ],
       faqs: [
         {
           productId: "productId1",
@@ -498,7 +685,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "Roball is currently being tested as a smart pet companion designed to enhance the play and exercise experience for pets, while offering pet owners a reliable gadget to keep their furry friends entertained.",
     },
     {
-      productId: "productidIdontfuckingknow",
+      productId: "productIdBunnyR1",
       businessId: "businessId2",
       ownerId: "userId3",
       name: "BunnyR1",
@@ -633,6 +820,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           price: 599,
         },
       ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 150,
+          totalRevenue: 1109850, // 150 units * price of 7399 PHP
+          engagementMetrics: {
+            views: 240,
+            addsToCart: 100,
+            favorites: 35,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 180,
+          totalRevenue: 1331820, // 180 units * price of 7399 PHP
+          engagementMetrics: {
+            views: 420,
+            addsToCart: 120,
+            favorites: 45,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 130,
+          totalRevenue: 961370, // 130 units * price of 7399 PHP
+          engagementMetrics: {
+            views: 370,
+            addsToCart: 70,
+            favorites: 25,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 200,
+          totalRevenue: 1479800, // 200 units * price of 7399 PHP
+          engagementMetrics: {
+            views: 310,
+            addsToCart: 50,
+            favorites: 55,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 160,
+          totalRevenue: 1183840, // 160 units * price of 7399 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 80,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 190,
+          totalRevenue: 1405810, // 190 units * price of 7399 PHP
+          engagementMetrics: {
+            views: 290,
+            addsToCart: 60,
+            favorites: 20,
+          },
+        },
+      ],
     },
     {
       productId: "productId3",
@@ -652,6 +901,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981468/my-uploads/nextgen/featured/lightphone/07JmB1KpE7lo7H6Wx2zynsA-17_xcht8o.png",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981469/my-uploads/nextgen/featured/lightphone/lightphone-3-1621854986_vudxqv.png",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981470/my-uploads/nextgen/featured/lightphone/redcover2_ycodxw.png",
+      ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 120,
+          totalRevenue: 1367880, // 120 units * price of 11399 PHP
+          engagementMetrics: {
+            views: 320,
+            addsToCart: 140,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 150,
+          totalRevenue: 1709850, // 150 units * price of 11399 PHP
+          engagementMetrics: {
+            views: 450,
+            addsToCart: 180,
+            favorites: 65,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 90,
+          totalRevenue: 1025910, // 90 units * price of 11399 PHP
+          engagementMetrics: {
+            views: 290,
+            addsToCart: 90,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 110,
+          totalRevenue: 1253890, // 110 units * price of 11399 PHP
+          engagementMetrics: {
+            views: 370,
+            addsToCart: 110,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 130,
+          totalRevenue: 1471870, // 130 units * price of 11399 PHP
+          engagementMetrics: {
+            views: 410,
+            addsToCart: 130,
+            favorites: 35,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 80,
+          totalRevenue: 911920, // 80 units * price of 11399 PHP
+          engagementMetrics: {
+            views: 230,
+            addsToCart: 50,
+            favorites: 20,
+          },
+        },
       ],
       ratings: 4.7,
       specifications: [
@@ -803,6 +1114,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981469/my-uploads/nextgen/featured/plantsio/kf8igcjb0fkgfplydjhb_ioegpr.png",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981469/my-uploads/nextgen/featured/plantsio/51pGPmIyIcL._AC_UF1000_1000_QL80__m0mrrd.jpg",
       ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 120,
+          totalRevenue: 1019880, // 120 units * price of 8499 PHP
+          engagementMetrics: {
+            views: 250,
+            addsToCart: 90,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 140,
+          totalRevenue: 1189860, // 140 units * price of 8499 PHP
+          engagementMetrics: {
+            views: 370,
+            addsToCart: 110,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 90,
+          totalRevenue: 764910, // 90 units * price of 8499 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 60,
+            favorites: 20,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 200,
+          totalRevenue: 1699800, // 200 units * price of 8499 PHP
+          engagementMetrics: {
+            views: 450,
+            addsToCart: 120,
+            favorites: 70,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 160,
+          totalRevenue: 1359840, // 160 units * price of 8499 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 80,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 180,
+          totalRevenue: 1523820, // 180 units * price of 8499 PHP
+          engagementMetrics: {
+            views: 310,
+            addsToCart: 70,
+            favorites: 25,
+          },
+        },
+      ],
       ratings: 4.2,
       specifications: [
         { attribute: "Dimensions", value: "30cm x 30cm" },
@@ -945,6 +1318,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981459/my-uploads/nextgen/commons/accessories/2/watch6_1_dncsbs.jpg",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981459/my-uploads/nextgen/commons/accessories/2/watch6_2_auzcvf.jpg",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981459/my-uploads/nextgen/commons/accessories/2/watch6_3_b7ax6d.jpg",
+      ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 120, // Example value for units sold
+          totalRevenue: 2393880, // 120 units * price of 19949 PHP
+          engagementMetrics: {
+            views: 250,
+            addsToCart: 90,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 140,
+          totalRevenue: 2797860, // 140 units * price of 19949 PHP
+          engagementMetrics: {
+            views: 370,
+            addsToCart: 110,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 90,
+          totalRevenue: 1795440, // 90 units * price of 19949 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 60,
+            favorites: 20,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 200,
+          totalRevenue: 3989800, // 200 units * price of 19949 PHP
+          engagementMetrics: {
+            views: 450,
+            addsToCart: 120,
+            favorites: 70,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 160,
+          totalRevenue: 3191840, // 160 units * price of 19949 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 80,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 180,
+          totalRevenue: 3596820, // 180 units * price of 19949 PHP
+          engagementMetrics: {
+            views: 310,
+            addsToCart: 70,
+            favorites: 25,
+          },
+        },
       ],
       ratings: 4.8,
       specifications: [
@@ -1095,6 +1530,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         { attribute: "Input", value: "Type-C, Micro USB" },
         { attribute: "Output", value: "USB-A, USB-C" },
       ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 100,
+          totalRevenue: 80000, // 100 units * price of 800 PHP
+          engagementMetrics: {
+            views: 200,
+            addsToCart: 70,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 120,
+          totalRevenue: 96000, // 120 units * price of 800 PHP
+          engagementMetrics: {
+            views: 320,
+            addsToCart: 85,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 90,
+          totalRevenue: 72000, // 90 units * price of 800 PHP
+          engagementMetrics: {
+            views: 250,
+            addsToCart: 60,
+            favorites: 20,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 150,
+          totalRevenue: 120000, // 150 units * price of 800 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 100,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 110,
+          totalRevenue: 88000, // 110 units * price of 800 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 90,
+            favorites: 35,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 130,
+          totalRevenue: 104000, // 130 units * price of 800 PHP
+          engagementMetrics: {
+            views: 350,
+            addsToCart: 80,
+            favorites: 45,
+          },
+        },
+      ],
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Mindanao",
@@ -1239,6 +1736,69 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         { attribute: "Battery", value: "Rechargeable" },
         { attribute: "Material", value: "Aluminum" },
       ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 100,
+          totalRevenue: 100000, // 100 units * price of 1000 PHP
+          engagementMetrics: {
+            views: 200,
+            addsToCart: 70,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 120,
+          totalRevenue: 120000, // 120 units * price of 1000 PHP
+          engagementMetrics: {
+            views: 320,
+            addsToCart: 85,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 90,
+          totalRevenue: 90000, // 90 units * price of 1000 PHP
+          engagementMetrics: {
+            views: 250,
+            addsToCart: 60,
+            favorites: 20,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 150,
+          totalRevenue: 150000, // 150 units * price of 1000 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 100,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 110,
+          totalRevenue: 110000, // 110 units * price of 1000 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 90,
+            favorites: 35,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 130,
+          totalRevenue: 130000, // 130 units * price of 1000 PHP
+          engagementMetrics: {
+            views: 350,
+            addsToCart: 80,
+            favorites: 45,
+          },
+        },
+      ],
+
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "South Luzon",
@@ -1387,6 +1947,69 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981465/my-uploads/nextgen/commons/tools/1/o390117v54_GO_3_dyn_qnlr36.webp",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981464/my-uploads/nextgen/commons/tools/1/bosch-06019h2170-go-3.6v-cordless-screwdriver-a1_wrvzju.jpg",
       ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 100,
+          totalRevenue: 80000, // 100 units * price of 800 PHP
+          engagementMetrics: {
+            views: 200,
+            addsToCart: 70,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 120,
+          totalRevenue: 96000, // 120 units * price of 800 PHP
+          engagementMetrics: {
+            views: 320,
+            addsToCart: 85,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 90,
+          totalRevenue: 72000, // 90 units * price of 800 PHP
+          engagementMetrics: {
+            views: 250,
+            addsToCart: 60,
+            favorites: 20,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 150,
+          totalRevenue: 120000, // 150 units * price of 800 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 100,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 110,
+          totalRevenue: 88000, // 110 units * price of 800 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 90,
+            favorites: 35,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 130,
+          totalRevenue: 104000, // 130 units * price of 800 PHP
+          engagementMetrics: {
+            views: 350,
+            addsToCart: 80,
+            favorites: 45,
+          },
+        },
+      ],
+
       ratings: 4.8,
       specifications: [
         { attribute: "Voltage", value: "3.6V" },
@@ -1532,6 +2155,69 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981465/my-uploads/nextgen/commons/tools/2/H9414674f22d04364bb5fd1023bfe56dbI.jpg_720x720q50_behi9d.png",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981465/my-uploads/nextgen/commons/tools/2/MB416-1_1200x1200_p735tl.webp",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981466/my-uploads/nextgen/commons/tools/2/TRADE_hz6sia.jpg",
+      ],
+
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 150,
+          totalRevenue: 375000, // 150 units * price of 2500 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 120,
+            favorites: 60,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 170,
+          totalRevenue: 425000, // 170 units * price of 2500 PHP
+          engagementMetrics: {
+            views: 500,
+            addsToCart: 140,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 130,
+          totalRevenue: 325000, // 130 units * price of 2500 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 110,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 200,
+          totalRevenue: 500000, // 200 units * price of 2500 PHP
+          engagementMetrics: {
+            views: 600,
+            addsToCart: 160,
+            favorites: 90,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 140,
+          totalRevenue: 350000, // 140 units * price of 2500 PHP
+          engagementMetrics: {
+            views: 450,
+            addsToCart: 130,
+            favorites: 70,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 160,
+          totalRevenue: 400000, // 160 units * price of 2500 PHP
+          engagementMetrics: {
+            views: 550,
+            addsToCart: 150,
+            favorites: 75,
+          },
+        },
       ],
       ratings: 4.4,
       specifications: [
@@ -1684,6 +2370,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         { attribute: "Lens Type", value: "Photochromic" },
         { attribute: "Battery Life", value: "10 hours" },
         { attribute: "Weight", value: "30 grams" },
+      ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 150,
+          totalRevenue: 213743.95, // 150 units * price of 14249.43 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 120,
+            favorites: 60,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 170,
+          totalRevenue: 242437.81, // 170 units * price of 14249.43 PHP
+          engagementMetrics: {
+            views: 500,
+            addsToCart: 140,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 130,
+          totalRevenue: 185238.23, // 130 units * price of 14249.43 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 110,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 200,
+          totalRevenue: 284986.6, // 200 units * price of 14249.43 PHP
+          engagementMetrics: {
+            views: 600,
+            addsToCart: 160,
+            favorites: 90,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 140,
+          totalRevenue: 199492.02, // 140 units * price of 14249.43 PHP
+          engagementMetrics: {
+            views: 450,
+            addsToCart: 130,
+            favorites: 70,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 160,
+          totalRevenue: 227187.04, // 160 units * price of 14249.43 PHP
+          engagementMetrics: {
+            views: 550,
+            addsToCart: 150,
+            favorites: 75,
+          },
+        },
       ],
       createdAt: new Date(),
       isFeatured: false,
@@ -1875,6 +2623,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           ],
         },
       ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 80,
+          totalRevenue: 68800, // 80 units * price of 860 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 90,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 120,
+          totalRevenue: 103200, // 120 units * price of 860 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 110,
+            favorites: 70,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 100,
+          totalRevenue: 86000, // 100 units * price of 860 PHP
+          engagementMetrics: {
+            views: 250,
+            addsToCart: 80,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 150,
+          totalRevenue: 129000, // 150 units * price of 860 PHP
+          engagementMetrics: {
+            views: 500,
+            addsToCart: 130,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 70,
+          totalRevenue: 60200, // 70 units * price of 860 PHP
+          engagementMetrics: {
+            views: 200,
+            addsToCart: 60,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 90,
+          totalRevenue: 77400, // 90 units * price of 860 PHP
+          engagementMetrics: {
+            views: 350,
+            addsToCart: 95,
+            favorites: 60,
+          },
+        },
+      ],
       createdAt: new Date(),
       isFeatured: false,
       deliveryLocation: "Domestic",
@@ -1958,6 +2768,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         { attribute: "Style", value: "Minimalist" },
         { attribute: "Color", value: "White, Black" },
         { attribute: "Sizes", value: "M, L, XL" },
+      ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 80,
+          totalRevenue: 32000, // 80 units * price of 400 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 90,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 120,
+          totalRevenue: 48000, // 120 units * price of 400 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 110,
+            favorites: 70,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 100,
+          totalRevenue: 40000, // 100 units * price of 400 PHP
+          engagementMetrics: {
+            views: 250,
+            addsToCart: 80,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 150,
+          totalRevenue: 60000, // 150 units * price of 400 PHP
+          engagementMetrics: {
+            views: 500,
+            addsToCart: 130,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 70,
+          totalRevenue: 28000, // 70 units * price of 400 PHP
+          engagementMetrics: {
+            views: 200,
+            addsToCart: 60,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 90,
+          totalRevenue: 36000, // 90 units * price of 400 PHP
+          engagementMetrics: {
+            views: 350,
+            addsToCart: 95,
+            favorites: 60,
+          },
+        },
       ],
       createdAt: new Date(),
       isFeatured: false,
@@ -2062,6 +2934,7 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
           ],
         },
       ],
+
       productIntention:
         "Minimaly is introduced as a minimalist fashion staple, catering to customers who prefer clean designs with a focus on simplicity, available in neutral colors for everyday wear.",
     },
@@ -2163,7 +3036,6 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         {
           name: "Affordability",
           subtext: "Impacts Availability & Continuation",
-
           thoughts: [
             { name: "Expensive", value: 5 },
             { name: "Pricey", value: 4 },
@@ -2198,6 +3070,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       ],
       productIntention:
         "Anki Vector is introduced as an educational and playful companion, aimed at blending fun with learning through AI technology, making robotics accessible for both kids and adults.",
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 80,
+          totalRevenue: 240000, // 80 units * price of 3000 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 90,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 120,
+          totalRevenue: 360000, // 120 units * price of 3000 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 110,
+            favorites: 70,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 100,
+          totalRevenue: 300000, // 100 units * price of 3000 PHP
+          engagementMetrics: {
+            views: 250,
+            addsToCart: 80,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 150,
+          totalRevenue: 450000, // 150 units * price of 3000 PHP
+          engagementMetrics: {
+            views: 500,
+            addsToCart: 130,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 70,
+          totalRevenue: 210000, // 70 units * price of 3000 PHP
+          engagementMetrics: {
+            views: 200,
+            addsToCart: 60,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 90,
+          totalRevenue: 270000, // 90 units * price of 3000 PHP
+          engagementMetrics: {
+            views: 350,
+            addsToCart: 95,
+            favorites: 60,
+          },
+        },
+      ],
     },
     {
       productId: "productId16",
@@ -2223,6 +3157,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         { attribute: "Battery Life", value: "2 hours" },
         { attribute: "Sensors", value: "Touch and Voice" },
         { attribute: "Weight", value: "0.8 kg" },
+      ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 60,
+          totalRevenue: 131940, // 60 units * price of 2199 PHP
+          engagementMetrics: {
+            views: 350,
+            addsToCart: 80,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 90,
+          totalRevenue: 197910, // 90 units * price of 2199 PHP
+          engagementMetrics: {
+            views: 420,
+            addsToCart: 100,
+            favorites: 60,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 110,
+          totalRevenue: 241890, // 110 units * price of 2199 PHP
+          engagementMetrics: {
+            views: 480,
+            addsToCart: 120,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 150,
+          totalRevenue: 329850, // 150 units * price of 2199 PHP
+          engagementMetrics: {
+            views: 600,
+            addsToCart: 150,
+            favorites: 90,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 75,
+          totalRevenue: 164925, // 75 units * price of 2199 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 70,
+            favorites: 30,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 85,
+          totalRevenue: 186915, // 85 units * price of 2199 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 90,
+            favorites: 50,
+          },
+        },
       ],
       createdAt: new Date(),
       isFeatured: false,
@@ -2358,6 +3354,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         { attribute: "Weight", value: "4.5 kg" },
         { attribute: "Power", value: "200 watts" },
       ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 50,
+          totalRevenue: 849950, // 50 units * price of 16999 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 150,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 70,
+          totalRevenue: 1189930, // 70 units * price of 16999 PHP
+          engagementMetrics: {
+            views: 500,
+            addsToCart: 200,
+            favorites: 120,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 90,
+          totalRevenue: 1529910, // 90 units * price of 16999 PHP
+          engagementMetrics: {
+            views: 600,
+            addsToCart: 220,
+            favorites: 150,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 120,
+          totalRevenue: 2039880, // 120 units * price of 16999 PHP
+          engagementMetrics: {
+            views: 800,
+            addsToCart: 300,
+            favorites: 200,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 65,
+          totalRevenue: 1104935, // 65 units * price of 16999 PHP
+          engagementMetrics: {
+            views: 350,
+            addsToCart: 100,
+            favorites: 70,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 75,
+          totalRevenue: 1274925, // 75 units * price of 16999 PHP
+          engagementMetrics: {
+            views: 450,
+            addsToCart: 120,
+            favorites: 90,
+          },
+        },
+      ],
       createdAt: new Date(),
       isFeatured: true, // New property
       deliveryLocation: "Overseas",
@@ -2452,7 +3510,6 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
       productIntention:
         "Juicero is marketed as a luxury juicing appliance, appealing to health-conscious consumers who value convenience, style, and cutting-edge technology in their kitchen.",
     },
-
     {
       productId: "productIdBreezeE",
       businessId: "businessId5", // Assuming Appliances Industry
@@ -2471,6 +3528,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981459/my-uploads/nextgen/commons/Appliance/1/GUEST_dfb6581b-3d0d-480a-9437-7d44caea8124_hcnhfa.png",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981458/my-uploads/nextgen/commons/Appliance/1/240985504alt7_fg3dyf.png",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981457/my-uploads/nextgen/commons/Appliance/1/images_yw6ifp.png",
+      ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 50,
+          totalRevenue: 449971.5, // 50 units * price of 8999.43 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 150,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 70,
+          totalRevenue: 629958.1, // 70 units * price of 8999.43 PHP
+          engagementMetrics: {
+            views: 500,
+            addsToCart: 200,
+            favorites: 120,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 90,
+          totalRevenue: 809948.7, // 90 units * price of 8999.43 PHP
+          engagementMetrics: {
+            views: 600,
+            addsToCart: 220,
+            favorites: 150,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 120,
+          totalRevenue: 1079925.6, // 120 units * price of 8999.43 PHP
+          engagementMetrics: {
+            views: 800,
+            addsToCart: 300,
+            favorites: 200,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 65,
+          totalRevenue: 584915.95, // 65 units * price of 8999.43 PHP
+          engagementMetrics: {
+            views: 350,
+            addsToCart: 100,
+            favorites: 70,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 75,
+          totalRevenue: 674957.25, // 75 units * price of 8999.43 PHP
+          engagementMetrics: {
+            views: 450,
+            addsToCart: 120,
+            favorites: 90,
+          },
+        },
       ],
       ratings: 4.5,
       specifications: [
@@ -2599,6 +3718,69 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981456/my-uploads/nextgen/commons/Appliance/2/en-PSP-SCS-braun-PowerBlend-9-2022-highlights-04-Speed-Season-Summer-1080x810_grysj7.png",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981458/my-uploads/nextgen/commons/Appliance/2/en-psp-scs-braun-PowerBlend-9-highlights-def-03-powerful-motor-1080x806_fse2um.png",
       ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 50,
+          totalRevenue: 524971.5, // 50 units * price of 10499.43 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 150,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 70,
+          totalRevenue: 734958.1, // 70 units * price of 10499.43 PHP
+          engagementMetrics: {
+            views: 500,
+            addsToCart: 200,
+            favorites: 120,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 90,
+          totalRevenue: 944948.7, // 90 units * price of 10499.43 PHP
+          engagementMetrics: {
+            views: 600,
+            addsToCart: 220,
+            favorites: 150,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 120,
+          totalRevenue: 1259925.6, // 120 units * price of 10499.43 PHP
+          engagementMetrics: {
+            views: 800,
+            addsToCart: 300,
+            favorites: 200,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 65,
+          totalRevenue: 684915.95, // 65 units * price of 10499.43 PHP
+          engagementMetrics: {
+            views: 350,
+            addsToCart: 100,
+            favorites: 70,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 75,
+          totalRevenue: 787457.25, // 75 units * price of 10499.43 PHP
+          engagementMetrics: {
+            views: 450,
+            addsToCart: 120,
+            favorites: 90,
+          },
+        },
+      ],
+
       ratings: 4.8,
       specifications: [
         { attribute: "Power", value: "1200W" },
@@ -2726,6 +3908,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981461/my-uploads/nextgen/commons/cookwares/1/61AiuGkOh6L._AC_UF894_1000_QL80__n1npln.jpg",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981460/my-uploads/nextgen/commons/cookwares/1/11176747_800x_bpi9gm.webp",
       ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 45,
+          totalRevenue: 36000, // 45 units * 800 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 100,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 60,
+          totalRevenue: 48000, // 60 units * 800 PHP
+          engagementMetrics: {
+            views: 600,
+            addsToCart: 150,
+            favorites: 75,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 75,
+          totalRevenue: 60000, // 75 units * 800 PHP
+          engagementMetrics: {
+            views: 700,
+            addsToCart: 200,
+            favorites: 100,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 90,
+          totalRevenue: 72000, // 90 units * 800 PHP
+          engagementMetrics: {
+            views: 900,
+            addsToCart: 250,
+            favorites: 120,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 55,
+          totalRevenue: 44000, // 55 units * 800 PHP
+          engagementMetrics: {
+            views: 500,
+            addsToCart: 120,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 65,
+          totalRevenue: 52000, // 65 units * 800 PHP
+          engagementMetrics: {
+            views: 650,
+            addsToCart: 140,
+            favorites: 90,
+          },
+        },
+      ],
       ratings: 4.2,
       specifications: [
         { attribute: "Material", value: "Aluminum" },
@@ -2852,6 +4096,68 @@ const BUSINESS_PRODUCTS: Record<string, IProduct[]> = {
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981463/my-uploads/nextgen/commons/cookwares/2/vn-11134207-7qukw-lfrrvilbkqcqb7_db7ale.png",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981461/my-uploads/nextgen/commons/cookwares/2/395927_666x468_nagqb7.jpg",
         "https://res.cloudinary.com/dop8qsdej/image/upload/v1728981461/my-uploads/nextgen/commons/cookwares/2/379945_666x468_lpxl9c.jpg",
+      ],
+      salesAndEngagement: [
+        {
+          date: new Date(2024, 9, 26),
+          unitsSold: 40,
+          totalRevenue: 40000, // 40 units * 1000 PHP
+          engagementMetrics: {
+            views: 300,
+            addsToCart: 80,
+            favorites: 40,
+          },
+        },
+        {
+          date: new Date(2024, 8, 26),
+          unitsSold: 55,
+          totalRevenue: 55000, // 55 units * 1000 PHP
+          engagementMetrics: {
+            views: 500,
+            addsToCart: 120,
+            favorites: 60,
+          },
+        },
+        {
+          date: new Date(2024, 7, 27),
+          unitsSold: 70,
+          totalRevenue: 70000, // 70 units * 1000 PHP
+          engagementMetrics: {
+            views: 600,
+            addsToCart: 150,
+            favorites: 80,
+          },
+        },
+        {
+          date: new Date(2024, 6, 28),
+          unitsSold: 85,
+          totalRevenue: 85000, // 85 units * 1000 PHP
+          engagementMetrics: {
+            views: 800,
+            addsToCart: 200,
+            favorites: 100,
+          },
+        },
+        {
+          date: new Date(2024, 5, 28),
+          unitsSold: 50,
+          totalRevenue: 50000, // 50 units * 1000 PHP
+          engagementMetrics: {
+            views: 400,
+            addsToCart: 90,
+            favorites: 50,
+          },
+        },
+        {
+          date: new Date(2024, 4, 29),
+          unitsSold: 60,
+          totalRevenue: 60000, // 60 units * 1000 PHP
+          engagementMetrics: {
+            views: 450,
+            addsToCart: 110,
+            favorites: 70,
+          },
+        },
       ],
       ratings: 4.5,
       specifications: [
