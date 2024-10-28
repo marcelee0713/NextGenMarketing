@@ -19,6 +19,8 @@ const config: Config = {
     extend: {
       gridTemplateColumns: {
         myGridTemplate: "repeat(auto-fit, minmax(355px, 1fr))",
+        gridTemplateQualityAverageRating:
+          "repeat(auto-fit, minmax(200px, 1fr))",
       },
       fontFamily: {
         sora: ["var(--font-sora)"],

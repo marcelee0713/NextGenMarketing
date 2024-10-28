@@ -38,7 +38,7 @@ export const QualitiesAverageRating: React.FC<props> = ({ analyzedData }) => {
     <div className="flex-1 flex flex-col gap-1">
       <div className="font-bold text-xl">{"Qualities Average Rating"}</div>
 
-      <div className="flex-1 grid grid-cols-2 gap-5  rounded-lg py-3 px-4">
+      <div className="flex-1 grid grid-cols-gridTemplateQualityAverageRating gap-5 rounded-lg py-3 px-4">
         {analyzedData.marketValueRating.qualities.map((val, index) => {
           const selectedColor = getColorForRating(val.totalAverage);
 
@@ -46,7 +46,7 @@ export const QualitiesAverageRating: React.FC<props> = ({ analyzedData }) => {
             <div
               key={index}
               onClick={() => onClick(index)}
-              className="flex-1 flex flex-col justify-center items-center text-center bg-white px-5 py-3 rounded-lg transition-shadow duration-500 hover:shadow-nav cursor-pointer"
+              className="flex-1 flex flex-col justify-center items-center text-center bg-white px-5 py-3 rounded-lg transition-shadow duration-500 hover:shadow-nav cursor-pointer min-h-[140px]"
             >
               <div
                 style={{ color: selectedColor }}
@@ -58,6 +58,9 @@ export const QualitiesAverageRating: React.FC<props> = ({ analyzedData }) => {
             </div>
           );
         })}
+
+        <div className="flex-1 flex flex-col justify-center items-center text-center px-5 py-3 rounded-lg border border-[#DCDCDC] min-h-[140px]"></div>
+        <div className="flex-1 flex flex-col justify-center items-center text-center px-5 py-3 rounded-lg border border-[#DCDCDC] min-h-[140px]"></div>
       </div>
       {modal && (
         <AverageQualityRatingModal
