@@ -20,14 +20,14 @@ export const UserSwitcher = () => {
     >
       <div
         className={`select-none flex justify-center items-center rounded-3xl p-5 w-24 m-2 -mr-1 ${
-          mode === "SERVICES" && "bg-white text-primary"
+          mode === "SERVICES" && "bg-primary text-white"
         }`}
       >
         Services
       </div>
       <div
         className={`select-none flex justify-center items-center rounded-3xl p-5 w-24 m-2 -ml-1 ${
-          mode === "PRODUCT" && "bg-white text-primary"
+          mode === "PRODUCT" && "bg-primary text-white"
         }`}
       >
         Products

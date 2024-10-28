@@ -16,9 +16,9 @@ interface props {
 
 export const OrdersByProvince: React.FC<props> = ({ analyzedData }) => {
   return (
-    <div className="flex-[2] flex flex-col gap-1 text-xs">
+    <div className="flex-1 flex flex-col gap-1 text-xs">
       <div className="flex flex-col">
-        <div className="font-bold text-xl">Sales By Province</div>
+        <div className="font-bold text-xl">Sales By Region</div>
       </div>
       <div className="flex-1">
         <ResponsiveContainer width="100%" height="100%">
